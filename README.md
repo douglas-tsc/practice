@@ -8,6 +8,56 @@
 
 
 ##Why use a git flow? And how does this help with resolving conflicts?
+
+ A git flow is a standardised route for information that enables a team to work together on a single repository. Without a git flow, team members are likely to lose work, overwrite the work of others and so on. Resolving conflicts between different versions of files takes a significant amount of time, and working to the git flow minimises wasted effort across the team.
+
+ A proper git flow results in each team member being able to compare their working files stored on their computer with the most up to date version of the repository _prior_ to pushing files to github.
+
+ The basic path of information is:
+ *Master Branch (GH)
+ *Master Branch (Local)
+ *Own Branch (Local)
+ *Own Branch (GH)
+
+ The cardinal rule is that no-one pushes updates to the GH master branch from any local folder.
+
+ The basic steps to setting up a successful git flow:
+ 1. Someone _creates_ the main git repo (GH Master
+ 2. *Everyone* _creates_ a branch of the master branch (GH Branch)
+ 3. All team members _clone_ the master branch to their computer (Local Master)
+ 4. All team members _create_ a personal branch where they can work on files (Local Branch)
+
+ The basic way to work through the flow (commands in italics)
+ 1. _Pull_ the master from GH Master to Local Master
+ 2. _Pull_ the master from GH Master to the Local Branch
+ 3. Work on files in Local Branch
+ 4. When ready to _commit_ changes to GH Branch, _move_ to Local Master and _pull_ GH Master files to Local Master
+ 5. _Move_ to your Local Branch and _merge_ Local Master with Local Branch
+ 6. Use your text editor to resolve any conflicts and save files, see below for more.
+ 7. _Add_ and _commit_ files in your Local Master
+ 8. _Push_ your work to your GH Branch
+ 9. Create a _pull_ request on Github to compare the GH Master with your GH Branch
+ 10. A *different* team member should review this pull request and either accept or reject it.
+
+ Tips:
+ *Communicate with your team
+ *Use lower case letters for everything in filenames
+ *Be as detailed as possible when identifying the contents of a commit
+ *Try to have as few people working on the same file as possible (preferably 1!)
+ *When using Harp on github, gh-pages should be treated as the GH Master
+ *The person looking after to repo still has to work from their own branch in git hub
+ *Think about breathing in (data) through the master branch, and breathing out (data) through your local branches
+ 
+##Resolving Conflicts
+
+ You have to resolve conflicts using a text editor. This will happen, and is generally annoying. The idea of git flow is to minimise the number of conflicts that you will have to resolve, but ultimately they are unavoidable.
+
+ When a conflict arises, git will create a single text file including the non-conflicting material in the two conflicting files, as well as the conflicting material surrounded by <<<<<< and >>>>>>
+
+ Git uses ========= to separate the two conflicting sections of text, so you can compare them easily.
+
+ Resolve conflicts by using a text editor and changing the requisite files, selecting whatever text you wish to keep. Just saving the file will leave the separators and dual pieces of text in the file itself. You can't resolve merge conflicts on github, so if you find one occurs when merging GH Branches to the GH Master, you will have to pull the existing GH Master down to your Local Master, and resolve the conflict when you merge this with your Local Branch.
+
 ##What are some new helpful git commands that could improve your work flows?
 
 Responsibilities Include:
