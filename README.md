@@ -131,5 +131,64 @@ you write the least amount of code needed to get your software to do what it nee
 
 Ideally testing fits in after you have all your user stories. User stories help you understand the tests you will need and the test will drive the code.
 
+##Where Next?
+
+So you want to implement your tests on your site pages? 
+
+**Problem**: We're testing objects in test.html but we want to test the objects in index.html... (or even more)
+
+**Solution**: IFRAMES! We can use one individual tests.js file to test multiple html files, using iframes.
+
+##What is an iframe?
+
+The iframe links the doument you want to test (e.g. index.html) into your test.html file so you can access the docoument's objects to test. Also by seeting width and height you can get a visualisation of the page you are testing (...handy for mobile first, no? Yeah you know!)
+
+```html
+<iframe id="if-index" width="100%" height="200px" src="index.html" frameborder="0"></iframe>
+```
+
+Inspect its attributes, all make sense?
+
+##So how do we access those elements?
+
+```javascript
+test("This is how you start your test!", function(){
+var iframe = document.getElementById('if-index'); //iframe chosen by index
+var target = iframe.contentDocument || iframe.contentWindow.document; //silly internet explorer issue sorted!!1!1!
+var first = target.getElementsByTagName("div")[0].id; //now using target instead of document you can find all the objects you want on the page.
+insert test here //ie equal(...)
+});
+```
+
+##But you're not there yet!
+
+Chrome and other browsers have security problems so...
+
+To bypass these you use a simple python server to host the site locally.
+
+
+When in folder containing your test.html file, call: 
+
+```terminal
+$ python -m SimpleHTTPServer 
+```
+
+from your terminal. 
+
+You can access your site at localhost:8000/test.html
+
+##Have your tests passed? Go fix them!
+
+
+
+
+
+
+
+
+
+
+
+
 
 If you want more practice this is [the tutorial we used](https://github.com/docdis/learn-qunit);
