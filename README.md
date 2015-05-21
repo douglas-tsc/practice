@@ -134,12 +134,14 @@ Ideally testing fits in after you have all your user stories. User stories help 
 ##Where Next?
 
 So you want to implement your tests on your site pages? 
-Problem: we're testing objects in test.html but we want to test the objects in index.html... (or even more)
-Solution: IFRAMES! We can use one individual tests.js file to test multiple html files, using iFrames.
+
+**Problem**: We're testing objects in test.html but we want to test the objects in index.html... (or even more)
+
+**Solution**: IFRAMES! We can use one individual tests.js file to test multiple html files, using iframes.
 
 ##What is an iframe?
 
-The iframe links the doument you want to test (e.g. index.html) into your test.html file so you can access the docoument's objects to test. Also by seeting width and height you can get a visualisation of the page you are testing. 
+The iframe links the doument you want to test (e.g. index.html) into your test.html file so you can access the docoument's objects to test. Also by seeting width and height you can get a visualisation of the page you are testing (...handy for mobile testing, no??)
 
 ```html
 <iframe id="if-index" width="100%" height="200px" src="index.html" frameborder="0"></iframe>
