@@ -141,7 +141,7 @@ So you want to implement your tests on your site pages?
 
 ##What is an iframe?
 
-The iframe links the doument you want to test (e.g. index.html) into your test.html file so you can access the docoument's objects to test. Also by seeting width and height you can get a visualisation of the page you are testing (...handy for mobile testing, no??)
+The iframe links the doument you want to test (e.g. index.html) into your test.html file so you can access the docoument's objects to test. Also by seeting width and height you can get a visualisation of the page you are testing (...handy for mobile first, no? Yeah you know!)
 
 ```html
 <iframe id="if-index" width="100%" height="200px" src="index.html" frameborder="0"></iframe>
