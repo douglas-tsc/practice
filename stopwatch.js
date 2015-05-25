@@ -38,19 +38,20 @@ function reset(){
 };
 
 function stop(endTime){
-
-	// need to create a variable endTime  that stores when stop is pressed.
-	
-    // elapsed = endTime - start + timeElapsed;
-    // console.log("timeElapsed: "+ timeElapsed +" ms");
-    // clearInterval(timerInterval);
-    
+	var now = new Date().getTime();
+	var elapsed = now - window.start;
+	var timeElapsed = endTime - start + elapsed;
+	clearInterval(window.tenMillisecondUpdate);
     // $('#stop').hide();
-    // $('#start').show();
+    // $('#go').show();
     // $('#clear').show();
-    
-    // return timeElapsed;
+    return timeElapsed;
+    var timestamp = 
     };
+
+// function continue(){
+
+// };
 
 
 

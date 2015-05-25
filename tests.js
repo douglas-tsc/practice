@@ -51,9 +51,30 @@ test('timer only starts when I click start', function(){
 // 	equal( $('#start').text(), 'Reset');		 
 // });
 
-test( "clicking stop stops counter counting", function() {
-	$('#stop').trigger("click");
-    equal( $('#timer').text(), 'timeElapsed');
+test( "clicking stop stops timer counting", function() {
+
+	var startTime   = new Date().getTime(),
+        endTime     = 0,
+        timeElapsed = 0;
+    equal( startTimer(startTime), startTime);
+    endTime = startTime + 2000; // manually add 1 second
+    timeElapsed = endTime - startTime;
+    equal( stop(endTime), timeElapsed);
+	
 });
+
+// test( "stopwatch continues counting after timer stops", function() {
+//     reset();
+// 	// the first interval
+//     var startTime   = new Date().getTime(),
+//         endTime     = 0,
+//         timeElapsed = 0;
+//     endTime = startTime + 5000; 
+//     // start the timer again
+//     startTime = new Date().getTime();
+//     endTime = startTime + 7000; 
+//     // we stopTimer we expect to have counted a total of 12 sec (7 + 5)
+//     equal( stop(endTime), 12000);
+// });
 
 
