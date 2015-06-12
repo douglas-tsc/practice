@@ -1,4 +1,6 @@
-# How to Write a HTTP Server, in Plain English.
+# WORK IN PROGRESS
+
+##How to Write a HTTP Server, in Plain English.
 
 This page will explain how to get a simple multipage website up a running from scratch.
 
@@ -46,17 +48,49 @@ It doesn't do very much. We are now going to build on it. Each line of the code 
 ### Now for the hard part...
 We are going create an html file and then load the contents of that up instead of 'Hello Word'. This is useful because we can get the HTML file to say anything we want. The foundation of any website.
 
-- [ ] Go to example.com and copy out the source code and save the file as index.html
+- Go to example.com and copy out the source code and save the file as index.html
 
-- [ ] Add the fs variable just below the http variable.
+- Add the fs variable just below the http variable.
 `var fs = require('fs');` This is just a  node thing. Accept it and move on.
 
-- [ ] Create a variable called index and set it to:
+- Create a variable called index and set it to:
 `var index = fs.readFileSync(__dirname + '/index.html');`
   This gives the server access to html file you created.
 
-- [ ] Inside the res.end() function change the parameter from 'Hello World\n' to index. This will load up the index file instead of 'Hello World'
+- Inside the res.end() function change the parameter from 'Hello World\n' to index. This will load up the index file instead of 'Hello World'
 
-- [ ] If you try and restart the server at this point it won't load up because the server is looking for a plain text file as defined on line 3 where it says {'Content-Type': 'text/plain'}. You can either delete the entire line or just change {'Content-Type': 'text/html'} so that it knows to look for an html file and now restart the server. I recommedn keeping teh line and changing it because what it is doing is tk checking that the server has responded and and keeping this in will allow us to handle errors ina  little bit tk thsi would be a great point to ktrhow is a little error handler.
+- If you try and restart the server at this point it won't load up because the server is looking for a plain text file as defined on line 3 where it says {'Content-Type': 'text/plain'}. You can either delete the entire line or just change {'Content-Type': 'text/html'} so that it knows to look for an html file and now restart the server. I recommend keeping the line and changing it because what it is doing is tk checking that the server has responded and and keeping this in will allow us to handle errors ina  little bit tk thsi would be a great point to ktrhow is a little error handler.
 
-- [ ] Load up you page and you will shoudl see the contents of you html file. All I did at thsi point was trhow in the write up so far. yAdd anything you wan tot the file 
+- Load up you page and you will shoudl see the contents of you html file. All I did at thsi point was trhow in the write up so far. yAdd anything you wan tot the file
+
+## Now to add a new page
+
++ add page 1 in above create server
+```js
+var page1 = fs.readFileSync(__dirname + '/page1.html');
+```
+
++ add a fork inside the server so that it knows to go to page 1 when requested.
+
+instead of
+
+#Super Node Resources:
+learnyounode https://github.com/workshopper/learnyounode
+setting up learnyounode if its a problem http://www.freecodecamp.com/challenges/waypoint-start-a-node.js-server
+learnyounode walkthrough https://github.com/leochilds/learnyounode-walkthrough
+video walkthrough https://www.youtube.com/watch?v=PvWHzcebjjQ
+and part 2 https://www.youtube.com/watch?v=PvWHzcebjjQ
+art of node https://github.com/maxogden/art-of-node
+
+
+###calling files in node
+
+To perform a filesystem operation you are going to need the fs module from the Node core library. To load this kind of module, or any other "global" module, use the following incantation:
+
+    var fs = require('fs')
+
+Now you have the full fs module available in a variable named fs.
+
+All synchronous (or blocking) filesystem methods in the fs module end with 'Sync'. To read a file, you'll need to use fs.readFileSync('/path/to/file'). This method will return a Buffer object containing the complete contents of the file.
+
+Buffer objects are Node's way of efficiently representing arbitrary arrays of data, whether it be ascii, binary or some other format. Buffer objects can be converted to strings by simply calling the toString() method on them. e.g. var str = buf.toString().
