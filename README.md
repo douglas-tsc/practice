@@ -81,6 +81,7 @@ learnyounode walkthrough https://github.com/leochilds/learnyounode-walkthrough
 video walkthrough https://www.youtube.com/watch?v=PvWHzcebjjQ
 and part 2 https://www.youtube.com/watch?v=PvWHzcebjjQ
 art of node https://github.com/maxogden/art-of-node
+mastering node https://github.com/visionmedia/masteringnode
 
 
 ###calling files in node
