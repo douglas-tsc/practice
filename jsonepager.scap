@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ScappleDocument Version="1.1" ID="63DC2AFA-797E-4E0B-AE96-9F1509C3A48B">
     <Notes>
-        <Note ID="0" FontSize="12.0" Position="51.0,441.046875" Width="68.0">
+        <Note ID="0" FontSize="24.0" Position="589.0,525.0" Width="127.0">
             <Appearance>
                 <Alignment>Left</Alignment>
             </Appearance>
             <String>Javascript</String>
-            <ConnectedNoteIDs>1, 18, 21</ConnectedNoteIDs>
+            <ConnectedNoteIDs>1, 18, 21, 101-105</ConnectedNoteIDs>
             <Formatting>
-                <FormatRange Bold="Yes" Underline="Yes">0,10</FormatRange>
+                <FormatRange Bold="Yes">0,10</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="1" FontSize="12.0" Position="425.0,179.0" Width="66.0">
+        <Note ID="1" FontSize="17.76" Position="962.548417,263.104307" Width="93.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
             </Appearance>
             <String>Identifiers</String>
             <ConnectedNoteIDs>0, 2, 4-5, 8, 13</ConnectedNoteIDs>
@@ -21,7 +22,7 @@
                 <FormatRange Bold="Yes">0,11</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="2" FontSize="12.0" Position="415.703125,110.984375" Width="87.0">
+        <Note ID="2" FontSize="12.0" Position="953.548417,195.104307" Width="87.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -29,7 +30,7 @@
             <String>Case-sensitive</String>
             <ConnectedNoteIDs>1, 3</ConnectedNoteIDs>
         </Note>
-        <Note ID="3" FontSize="12.0" Position="498.0,79.0" Width="40.0">
+        <Note ID="3" FontSize="12.0" Position="1035.548417,163.104307" Width="40.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -37,7 +38,7 @@
             <String>a != A</String>
             <ConnectedNoteIDs>2</ConnectedNoteIDs>
         </Note>
-        <Note ID="4" FontSize="12.0" Position="511.738281,114.332031" Width="93.0">
+        <Note ID="4" FontSize="12.0" Position="1049.548417,198.104307" Width="93.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -45,7 +46,7 @@
             <String>start with letters</String>
             <ConnectedNoteIDs>1, 6</ConnectedNoteIDs>
         </Note>
-        <Note ID="5" FontSize="12.0" Position="558.460938,152.125" Width="63.0">
+        <Note ID="5" FontSize="12.0" Position="1095.548417,236.104307" Width="63.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -53,7 +54,7 @@
             <String>key words</String>
             <ConnectedNoteIDs>1, 7</ConnectedNoteIDs>
         </Note>
-        <Note ID="6" FontSize="12.0" Position="592.871094,87.402344" Width="81.0">
+        <Note ID="6" FontSize="12.0" Position="1130.548417,171.104307" Width="81.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -61,7 +62,7 @@
             <String>ascii, unicode</String>
             <ConnectedNoteIDs>4</ConnectedNoteIDs>
         </Note>
-        <Note ID="7" FontSize="12.0" Position="705.808594,6.589844" Width="70.0">
+        <Note ID="7" FontSize="12.0" Position="1243.548417,20.0" Width="70.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -93,7 +94,7 @@ while;
 with</String>
             <ConnectedNoteIDs>5</ConnectedNoteIDs>
         </Note>
-        <Note ID="8" FontSize="12.0" Position="531.679688,197.832031" Width="91.0">
+        <Note ID="8" FontSize="12.0" Position="1069.548417,282.104307" Width="91.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -101,7 +102,7 @@ with</String>
             <String>reserved words</String>
             <ConnectedNoteIDs>1, 9, 11</ConnectedNoteIDs>
         </Note>
-        <Note ID="9" FontSize="12.0" Position="590.0,225.0" Width="58.0">
+        <Note ID="9" FontSize="12.0" Position="1127.548417,309.104307" Width="58.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -109,7 +110,7 @@ with</String>
             <String>non-strict</String>
             <ConnectedNoteIDs>8, 10</ConnectedNoteIDs>
         </Note>
-        <Note ID="10" FontSize="12.0" Position="625.0,260.0" Width="57.0">
+        <Note ID="10" FontSize="12.0" Position="1162.548417,344.104307" Width="57.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -123,7 +124,7 @@ import;
 super;</String>
             <ConnectedNoteIDs>9</ConnectedNoteIDs>
         </Note>
-        <Note ID="11" FontSize="12.0" Position="511.0,231.0" Width="62.0">
+        <Note ID="11" FontSize="12.0" Position="1048.548417,315.104307" Width="62.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -131,7 +132,7 @@ super;</String>
             <String>‘use strict’</String>
             <ConnectedNoteIDs>8, 12</ConnectedNoteIDs>
         </Note>
-        <Note ID="12" FontSize="12.0" Position="504.167969,284.304688" Width="77.0">
+        <Note ID="12" FontSize="12.0" Position="1041.548417,368.104307" Width="77.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -147,7 +148,7 @@ static;
 yield;</String>
             <ConnectedNoteIDs>11</ConnectedNoteIDs>
         </Note>
-        <Note ID="13" FontSize="12.0" Position="413.0,245.082031" Width="57.0">
+        <Note ID="13" FontSize="12.0" Position="950.548417,329.104307" Width="57.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -155,7 +156,7 @@ yield;</String>
             <String>variables</String>
             <ConnectedNoteIDs>1, 14-15</ConnectedNoteIDs>
         </Note>
-        <Note ID="14" FontSize="12.0" Position="348.859375,296.0" Width="33.0">
+        <Note ID="14" FontSize="12.0" Position="886.548417,380.104307" Width="33.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -163,7 +164,7 @@ yield;</String>
             <String>local</String>
             <ConnectedNoteIDs>13, 16</ConnectedNoteIDs>
         </Note>
-        <Note ID="15" FontSize="12.0" Position="430.0,303.0" Width="41.0">
+        <Note ID="15" FontSize="12.0" Position="967.548417,387.104307" Width="41.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -171,7 +172,7 @@ yield;</String>
             <String>global</String>
             <ConnectedNoteIDs>13, 17</ConnectedNoteIDs>
         </Note>
-        <Note ID="16" FontSize="12.0" Position="318.222656,358.929688" Width="69.0">
+        <Note ID="16" FontSize="12.0" Position="855.548417,443.104307" Width="69.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -179,7 +180,7 @@ yield;</String>
             <String>var a = 123</String>
             <ConnectedNoteIDs>14</ConnectedNoteIDs>
         </Note>
-        <Note ID="17" FontSize="12.0" Position="441.0,360.0" Width="49.0">
+        <Note ID="17" FontSize="12.0" Position="978.548417,444.104307" Width="49.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -187,7 +188,7 @@ yield;</String>
             <String>a = 123</String>
             <ConnectedNoteIDs>15</ConnectedNoteIDs>
         </Note>
-        <Note ID="18" FontSize="12.0" Position="192.664062,399.167969" Width="69.0">
+        <Note ID="18" FontSize="18.0" Position="778.0,524.0" Width="99.0">
             <Appearance>
                 <Alignment>Left</Alignment>
             </Appearance>
@@ -197,7 +198,7 @@ yield;</String>
                 <FormatRange Bold="Yes">0,8</FormatRange>
             </Formatting>
         </Note>
-        <Note ID="19" FontSize="12.0" Position="225.910156,369.414062" Width="69.0">
+        <Note ID="19" FontSize="12.0" Position="876.142756,485.946496" Width="69.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -205,7 +206,7 @@ yield;</String>
             <String>//single line</String>
             <ConnectedNoteIDs>18</ConnectedNoteIDs>
         </Note>
-        <Note ID="20" FontSize="12.0" Position="286.285156,396.355469" Width="49.0">
+        <Note ID="20" FontSize="12.0" Position="923.384706,528.0" Width="49.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -214,22 +215,26 @@ yield;</String>
 line */</String>
             <ConnectedNoteIDs>18</ConnectedNoteIDs>
         </Note>
-        <Note ID="21" FontSize="12.0" Position="430.878906,596.714844" Width="69.0">
+        <Note ID="21" FontSize="17.76" Position="968.548417,681.104307" Width="102.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
             </Appearance>
             <String>Data Types</String>
-            <ConnectedNoteIDs>0, 22</ConnectedNoteIDs>
+            <ConnectedNoteIDs>0, 63-64</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,10</FormatRange>
+            </Formatting>
         </Note>
-        <Note ID="22" FontSize="12.0" Position="549.007812,521.503906" Width="57.0">
+        <Note ID="22" FontSize="12.0" Position="1513.548417,163.292614" Width="57.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
             </Appearance>
             <String>Numbers</String>
-            <ConnectedNoteIDs>21, 23, 25, 27, 32, 34</ConnectedNoteIDs>
+            <ConnectedNoteIDs>23, 25, 27, 32, 34, 64</ConnectedNoteIDs>
         </Note>
-        <Note ID="23" FontSize="12.0" Position="571.488281,456.222656" Width="41.0">
+        <Note ID="23" FontSize="12.0" Position="1520.93478,78.642045" Width="41.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -237,7 +242,7 @@ line */</String>
             <String>typeof</String>
             <ConnectedNoteIDs>22, 24</ConnectedNoteIDs>
         </Note>
-        <Note ID="24" FontSize="12.0" Position="607.207031,408.605469" Width="55.0">
+        <Note ID="24" FontSize="12.0" Position="1556.93478,31.642045" Width="55.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -245,7 +250,7 @@ line */</String>
             <String>‘number’</String>
             <ConnectedNoteIDs>23</ConnectedNoteIDs>
         </Note>
-        <Note ID="25" FontSize="12.0" Position="695.132812,476.027344" Width="37.0">
+        <Note ID="25" FontSize="12.0" Position="1644.93478,98.642045" Width="37.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -253,7 +258,7 @@ line */</String>
             <String>value</String>
             <ConnectedNoteIDs>22, 26</ConnectedNoteIDs>
         </Note>
-        <Note ID="26" FontSize="12.0" Position="760.949219,412.882812" Width="52.0">
+        <Note ID="26" FontSize="12.0" Position="1710.93478,35.642045" Width="52.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -266,7 +271,7 @@ line */</String>
 NaN</String>
             <ConnectedNoteIDs>25</ConnectedNoteIDs>
         </Note>
-        <Note ID="27" FontSize="12.0" Position="692.0,532.0" Width="59.0">
+        <Note ID="27" FontSize="12.0" Position="1641.93478,154.642045" Width="59.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -274,7 +279,7 @@ NaN</String>
             <String>Number()</String>
             <ConnectedNoteIDs>22, 28, 30-31</ConnectedNoteIDs>
         </Note>
-        <Note ID="28" FontSize="12.0" Position="852.699219,482.09375" Width="128.0">
+        <Note ID="28" FontSize="12.0" Position="1802.93478,104.642045" Width="128.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -282,7 +287,7 @@ NaN</String>
             <String>parseInt(“2.7”, 10); // 2</String>
             <ConnectedNoteIDs>27, 29</ConnectedNoteIDs>
         </Note>
-        <Note ID="29" FontSize="12.0" Position="873.164062,414.367188" Width="112.0">
+        <Note ID="29" FontSize="12.0" Position="1822.93478,36.642045" Width="112.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -290,7 +295,7 @@ NaN</String>
             <String>parseInt(’10’,2); // 2</String>
             <ConnectedNoteIDs>28</ConnectedNoteIDs>
         </Note>
-        <Note ID="30" FontSize="12.0" Position="876.0,531.0" Width="129.0">
+        <Note ID="30" FontSize="12.0" Position="1825.93478,153.642045" Width="129.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -298,7 +303,7 @@ NaN</String>
             <String>parseFloat(‘2.5’); // 2.5</String>
             <ConnectedNoteIDs>27</ConnectedNoteIDs>
         </Note>
-        <Note ID="31" FontSize="12.0" Position="873.0,573.0" Width="163.0">
+        <Note ID="31" FontSize="12.0" Position="1822.93478,195.642045" Width="163.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.918452 0.807302 0.863467</Fill>
@@ -306,7 +311,7 @@ NaN</String>
             <String>isNaN(parseFloat(‘a’)): // true</String>
             <ConnectedNoteIDs>27</ConnectedNoteIDs>
         </Note>
-        <Note ID="32" FontSize="12.0" Position="770.058949,581.683949" Width="59.0">
+        <Note ID="32" FontSize="12.0" Position="1719.93478,204.642045" Width="59.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -314,7 +319,7 @@ NaN</String>
             <String>operators</String>
             <ConnectedNoteIDs>22, 33</ConnectedNoteIDs>
         </Note>
-        <Note ID="33" FontSize="12.0" Position="903.013494,606.423295" Width="20.0">
+        <Note ID="33" FontSize="12.0" Position="1852.93478,228.642045" Width="20.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -326,7 +331,7 @@ NaN</String>
 %</String>
             <ConnectedNoteIDs>32</ConnectedNoteIDs>
         </Note>
-        <Note ID="34" FontSize="12.0" Position="693.0,603.0" Width="71.0">
+        <Note ID="34" FontSize="12.0" Position="1642.93478,225.642045" Width="71.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -334,7 +339,7 @@ NaN</String>
             <String>comparison</String>
             <ConnectedNoteIDs>22, 35</ConnectedNoteIDs>
         </Note>
-        <Note ID="35" FontSize="12.0" Position="771.0,665.0" Width="23.0">
+        <Note ID="35" FontSize="12.0" Position="1720.93478,287.642045" Width="23.0">
             <Appearance>
                 <Alignment>Left</Alignment>
                 <Fill>0.790123 0.882327 0.80198</Fill>
@@ -347,47 +352,597 @@ NaN</String>
 ==</String>
             <ConnectedNoteIDs>34</ConnectedNoteIDs>
         </Note>
-        <Note ID="36" FontSize="12.0" Position="637.638494,619.12642" Width="43.0">
+        <Note ID="36" FontSize="12.0" Position="1055.318303,909.109375" Width="43.0">
             <Appearance>
                 <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
             </Appearance>
             <String>logical</String>
+            <ConnectedNoteIDs>37</ConnectedNoteIDs>
+        </Note>
+        <Note ID="37" FontSize="12.0" Position="949.208928,886.204545" Width="48.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>! not
+&amp;&amp; and
+|| or</String>
+            <ConnectedNoteIDs>36</ConnectedNoteIDs>
+        </Note>
+        <Note ID="38" FontSize="12.0" Position="1453.975973,359.705966" Width="53.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean</String>
+            <ConnectedNoteIDs>39, 41, 43, 64</ConnectedNoteIDs>
+        </Note>
+        <Note ID="39" FontSize="12.0" Position="1463.814042,274.697443" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>typeof</String>
+            <ConnectedNoteIDs>38, 40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="40" FontSize="12.0" Position="1524.017167,235.857955" Width="57.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>‘boolean’</String>
+            <ConnectedNoteIDs>39</ConnectedNoteIDs>
+        </Note>
+        <Note ID="41" FontSize="12.0" Position="1526.950405,312.403409" Width="37.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>value</String>
+            <ConnectedNoteIDs>38, 42</ConnectedNoteIDs>
+        </Note>
+        <Note ID="42" FontSize="12.0" Position="1611.272848,285.771307" Width="34.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>true
+false</String>
+            <ConnectedNoteIDs>41</ConnectedNoteIDs>
+        </Note>
+        <Note ID="43" FontSize="12.0" Position="1594.288473,351.683239" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean()</String>
+            <ConnectedNoteIDs>38, 44, 48, 53-54</ConnectedNoteIDs>
+        </Note>
+        <Note ID="44" FontSize="12.0" Position="1738.896428,399.569602" Width="49.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>number</String>
+            <ConnectedNoteIDs>43, 45-47</ConnectedNoteIDs>
+        </Note>
+        <Note ID="45" FontSize="12.0" Position="1838.276529,361.019688" Width="109.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean(0); // false</String>
+            <ConnectedNoteIDs>44</ConnectedNoteIDs>
+        </Note>
+        <Note ID="46" FontSize="12.0" Position="1868.276529,402.019688" Width="127.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean(NaN); // false</String>
+            <ConnectedNoteIDs>44</ConnectedNoteIDs>
+        </Note>
+        <Note ID="47" FontSize="12.0" Position="1871.276529,451.019688" Width="108.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean(!0); // true</String>
+            <ConnectedNoteIDs>44</ConnectedNoteIDs>
+        </Note>
+        <Note ID="48" FontSize="12.0" Position="1765.169674,492.773888" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>string
+</String>
+            <ConnectedNoteIDs>43, 49-50</ConnectedNoteIDs>
+        </Note>
+        <Note ID="49" FontSize="12.0" Position="1920.642457,486.043041" Width="108.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean(‘’); // false</String>
+            <ConnectedNoteIDs>48</ConnectedNoteIDs>
+        </Note>
+        <Note ID="50" FontSize="12.0" Position="1925.577605,511.220125" Width="108.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean(‘*’); // true</String>
+            <ConnectedNoteIDs>48</ConnectedNoteIDs>
+        </Note>
+        <Note ID="51" FontSize="12.0" Position="1859.221422,586.648384" Width="106.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean({}); // true</String>
+            <ConnectedNoteIDs>53</ConnectedNoteIDs>
+        </Note>
+        <Note ID="52" FontSize="12.0" Position="1872.956133,555.148888" Width="121.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean(null); // false</String>
+            <ConnectedNoteIDs>53</ConnectedNoteIDs>
+        </Note>
+        <Note ID="53" FontSize="12.0" Position="1721.861207,556.698619" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>object</String>
+            <ConnectedNoteIDs>43, 51-52</ConnectedNoteIDs>
+        </Note>
+        <Note ID="54" FontSize="12.0" Position="1659.760232,618.773888" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>undefined</String>
+            <ConnectedNoteIDs>43, 55</ConnectedNoteIDs>
+        </Note>
+        <Note ID="55" FontSize="12.0" Position="1765.760232,632.773888" Width="155.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Boolean(undefined); // false</String>
+            <ConnectedNoteIDs>54</ConnectedNoteIDs>
+        </Note>
+        <Note ID="56" FontSize="12.0" Position="1291.883982,518.090101" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>undefined</String>
+            <ConnectedNoteIDs>57, 59, 61, 64</ConnectedNoteIDs>
+        </Note>
+        <Note ID="57" FontSize="12.0" Position="1355.941646,478.876188" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>typeof</String>
+            <ConnectedNoteIDs>56, 58</ConnectedNoteIDs>
+        </Note>
+        <Note ID="58" FontSize="12.0" Position="1477.387144,435.19743" Width="67.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>‘undefined’</String>
+            <ConnectedNoteIDs>57</ConnectedNoteIDs>
+        </Note>
+        <Note ID="59" FontSize="12.0" Position="1440.573156,487.629908" Width="37.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>value</String>
+            <ConnectedNoteIDs>56, 60</ConnectedNoteIDs>
+        </Note>
+        <Note ID="60" FontSize="12.0" Position="1583.757866,522.549242" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>undefined</String>
+            <ConnectedNoteIDs>59</ConnectedNoteIDs>
+        </Note>
+        <Note ID="61" FontSize="12.0" Position="1427.81925,537.331731" Width="140.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>undefined != Not defined</String>
+            <ConnectedNoteIDs>56, 62</ConnectedNoteIDs>
+        </Note>
+        <Note ID="62" FontSize="12.0" Position="1454.810836,598.513622" Width="175.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>undefined == undefined;  // true var a; a == undefined;     // true console.log(d);     // Error</String>
+            <ConnectedNoteIDs>61</ConnectedNoteIDs>
+        </Note>
+        <Note ID="63" FontSize="12.0" Position="1080.351261,786.729284" Width="37.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>basic</String>
+            <ConnectedNoteIDs>21, 68, 85</ConnectedNoteIDs>
+        </Note>
+        <Note ID="64" FontSize="12.0" Position="1032.548417,617.0" Width="53.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>primitive</String>
+            <ConnectedNoteIDs>21-22, 38, 56, 78</ConnectedNoteIDs>
+        </Note>
+        <Note ID="68" FontSize="12.0" Position="1230.548417,745.0" Width="43.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>Object</String>
+            <ConnectedNoteIDs>63, 69, 71, 76, 78</ConnectedNoteIDs>
+        </Note>
+        <Note ID="69" FontSize="12.0" Position="1351.548417,722.0" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>typeof</String>
+            <ConnectedNoteIDs>68, 70</ConnectedNoteIDs>
+        </Note>
+        <Note ID="70" FontSize="12.0" Position="1432.309258,709.757494" Width="46.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>‘object’</String>
+            <ConnectedNoteIDs>69</ConnectedNoteIDs>
+        </Note>
+        <Note ID="71" FontSize="12.0" Position="1502.537734,755.465402" Width="20.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>{ }</String>
+            <ConnectedNoteIDs>68, 72-73</ConnectedNoteIDs>
+        </Note>
+        <Note ID="72" FontSize="12.0" Position="1570.868888,729.942921" Width="37.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>literal</String>
+            <ConnectedNoteIDs>71, 75</ConnectedNoteIDs>
+        </Note>
+        <Note ID="73" FontSize="12.0" Position="1649.95929,762.924267" Width="68.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>constructor
+</String>
+            <ConnectedNoteIDs>71, 74</ConnectedNoteIDs>
+        </Note>
+        <Note ID="74" FontSize="12.0" Position="1765.913053,759.959343" Width="173.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>var q = {};
+q.name = ‘Bob’;
+q.age = 24;  console.log(q.name);     // 'Bob' console.log(q['age']);     // 24</String>
+            <ConnectedNoteIDs>73</ConnectedNoteIDs>
+        </Note>
+        <Note ID="75" FontSize="12.0" Position="1666.105814,683.614318" Width="179.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>var p = { name: ‘Bob’, ‘age’: 24};</String>
+            <ConnectedNoteIDs>72</ConnectedNoteIDs>
+        </Note>
+        <Note ID="76" FontSize="12.0" Position="1352.045812,805.743056" Width="77.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>new Object()</String>
+            <ConnectedNoteIDs>68, 77</ConnectedNoteIDs>
+        </Note>
+        <Note ID="77" FontSize="12.0" Position="1520.510495,812.126931" Width="127.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>var p   = new Object(); p.sayHi = function(){   console.log('Hi!'); }; p.sayHi();      // 'Hi!'</String>
+            <ConnectedNoteIDs>76</ConnectedNoteIDs>
+        </Note>
+        <Note ID="78" FontSize="12.0" Position="1095.845467,709.728055" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>Null //</String>
+            <ConnectedNoteIDs>64, 68, 79, 81, 83</ConnectedNoteIDs>
+        </Note>
+        <Note ID="79" FontSize="12.0" Position="1145.771056,645.463917" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>typeof</String>
+            <ConnectedNoteIDs>78, 80</ConnectedNoteIDs>
+        </Note>
+        <Note ID="80" FontSize="12.0" Position="1166.937988,610.607093" Width="46.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>‘object’</String>
+            <ConnectedNoteIDs>79</ConnectedNoteIDs>
+        </Note>
+        <Note ID="81" FontSize="12.0" Position="1213.091049,649.514299" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>value </String>
+            <ConnectedNoteIDs>78, 82</ConnectedNoteIDs>
+        </Note>
+        <Note ID="82" FontSize="12.0" Position="1271.515794,597.541244" Width="27.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>null</String>
+            <ConnectedNoteIDs>81</ConnectedNoteIDs>
+        </Note>
+        <Note ID="83" FontSize="12.0" Position="1273.015959,654.141691" Width="102.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>‘undefined object’</String>
+            <ConnectedNoteIDs>78, 84</ConnectedNoteIDs>
+        </Note>
+        <Note ID="84" FontSize="12.0" Position="1321.963445,576.243504" Width="138.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>null == undefined; // true</String>
+            <ConnectedNoteIDs>83</ConnectedNoteIDs>
+        </Note>
+        <Note ID="85" FontSize="12.0" Position="1187.376542,935.117451" Width="55.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>Function</String>
+            <ConnectedNoteIDs>63, 87, 89, 93</ConnectedNoteIDs>
+        </Note>
+        <Note ID="87" FontSize="12.0" Position="1221.112848,831.294417" Width="41.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>typeof</String>
+            <ConnectedNoteIDs>85, 88</ConnectedNoteIDs>
+        </Note>
+        <Note ID="88" FontSize="12.0" Position="1246.41973,796.435393" Width="55.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>‘function'</String>
+            <ConnectedNoteIDs>87</ConnectedNoteIDs>
+        </Note>
+        <Note ID="89" FontSize="12.0" Position="1264.820362,964.992451" Width="42.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>create</String>
+            <ConnectedNoteIDs>85, 90-92</ConnectedNoteIDs>
+        </Note>
+        <Note ID="90" FontSize="12.0" Position="1342.548417,862.0" Width="158.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>var a = function(arg1, arg2){   //func body; }</String>
+            <ConnectedNoteIDs>89</ConnectedNoteIDs>
+        </Note>
+        <Note ID="91" FontSize="12.0" Position="1342.548417,918.0" Width="127.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>function a(arg1, arg2){   //func body; }</String>
+            <ConnectedNoteIDs>89</ConnectedNoteIDs>
+        </Note>
+        <Note ID="92" FontSize="12.0" Position="1342.921184,974.0" Width="118.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.790123 0.882327 0.80198</Fill>
+            </Appearance>
+            <String>(function(arg1,arg2){   //func body; })</String>
+            <ConnectedNoteIDs>89</ConnectedNoteIDs>
+        </Note>
+        <Note ID="93" FontSize="12.0" Position="1239.548417,1061.0" Width="85.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>inside function</String>
+            <ConnectedNoteIDs>85, 94</ConnectedNoteIDs>
+        </Note>
+        <Note ID="94" FontSize="12.0" Position="1361.041472,1110.911458" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>arguments</String>
+            <ConnectedNoteIDs>93, 95, 97-98</ConnectedNoteIDs>
+        </Note>
+        <Note ID="95" FontSize="12.0" Position="1510.548417,1019.855035" Width="63.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>// by order</String>
+            <ConnectedNoteIDs>94, 96</ConnectedNoteIDs>
+        </Note>
+        <Note ID="96" FontSize="12.0" Position="1674.548417,1081.855035" Width="181.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>var f = function(x, y){   console.log('x: ' + x + ', y: ' + y); }; var x = 'x', y = 'y'; f(x, y);      // x: x, y: y f(y, x);      // x: y, y: x</String>
+            <ConnectedNoteIDs>95</ConnectedNoteIDs>
+        </Note>
+        <Note ID="97" FontSize="12.0" Position="1510.548417,991.855035" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>undefined</String>
+            <ConnectedNoteIDs>94, 99</ConnectedNoteIDs>
+        </Note>
+        <Note ID="98" FontSize="12.0" Position="1510.548417,963.855035" Width="65.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>arguments</String>
+            <ConnectedNoteIDs>94, 100</ConnectedNoteIDs>
+        </Note>
+        <Note ID="99" FontSize="12.0" Position="1674.548417,1011.855035" Width="109.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>var f = function(x){   console.log(x); }; f();       // undefined</String>
+            <ConnectedNoteIDs>97</ConnectedNoteIDs>
+        </Note>
+        <Note ID="100" FontSize="12.0" Position="1674.548417,941.855035" Width="182.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.918452 0.807302 0.863467</Fill>
+            </Appearance>
+            <String>var f = function(){   console.log(arguments); }; f(3,2,1);      // { '0': 3, '1': 2, '2': 1 }</String>
+            <ConnectedNoteIDs>98</ConnectedNoteIDs>
+        </Note>
+        <Note ID="101" FontSize="17.76" Position="681.974195,925.308949" Width="90.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>operators</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,9</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="102" FontSize="17.76" Position="490.462595,931.070076" Width="60.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>scope
+</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,6</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="103" FontSize="17.76" Position="79.687027,753.387784" Width="40.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>tips</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,4</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="104" FontSize="17.76" Position="246.850142,882.452888" Width="130.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>reference type</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,14</FormatRange>
+            </Formatting>
+        </Note>
+        <Note ID="105" FontSize="17.76" Position="20.0,303.216372" Width="109.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+                <Fill>0.840969 0.866828 0.925903</Fill>
+            </Appearance>
+            <String>flow control</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+            <Formatting>
+                <FormatRange Bold="Yes">0,12</FormatRange>
+            </Formatting>
         </Note>
     </Notes>
     <BackgroundShapes></BackgroundShapes>
-    <AutoFit>0-36</AutoFit>
+    <Stacks>
+        <Stack>90-92</Stack>
+        <Stack>97, 95</Stack>
+        <Stack>99, 96</Stack>
+    </Stacks>
+    <AutoFit>0-64, 68-85, 87-105</AutoFit>
     <NoteStyles>
-        <Style Name="Title Text" ID="5A98602C-ACCE-41E5-95E3-901298477E85" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
-            <FontSize>28.0</FontSize>
-            <IsBold>Yes</IsBold>
-        </Style>
-        <Style Name="Red Text" ID="1249A47F-9788-4094-9919-70D540AA2BFB" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
-            <TextColor>1.0 0.0 0.0</TextColor>
+        <Style Name="Blue Bubble" ID="A5D31646-6F36-46B9-B3FE-854CD56D3161" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
         </Style>
         <Style Name="Brown Bubble" ID="B6B11D31-7B98-440C-8589-8B12257D12C2" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
             <BorderColor>0.290055 0.1523 0.182215</BorderColor>
             <FillColor>0.940019 0.892907 0.779716</FillColor>
         </Style>
-        <Style Name="Yellow Bubble" ID="B99B4590-188B-444D-814D-11BE2D88B06C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
-            <BorderThickness>1</BorderThickness>
-            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
-            <FillColor>0.906773 0.910625 0.634363</FillColor>
-        </Style>
         <Style Name="Green Bubble" ID="5A3915B1-5698-4E87-B2A8-57E81BE8AEE9" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
             <BorderColor>0.331867 0.609932 0.356197</BorderColor>
             <FillColor>0.790123 0.882327 0.80198</FillColor>
         </Style>
-        <Style Name="Blue Bubble" ID="A5D31646-6F36-46B9-B3FE-854CD56D3161" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
-            <BorderThickness>1</BorderThickness>
-            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
-            <FillColor>0.840969 0.866828 0.925903</FillColor>
-        </Style>
         <Style Name="Pink Bubble" ID="D799C391-6E55-41C1-A9F1-A0ADA0833AF6" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
             <BorderThickness>1</BorderThickness>
             <BorderColor>0.747881 0.366532 0.542813</BorderColor>
             <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="1249A47F-9788-4094-9919-70D540AA2BFB" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="5A98602C-ACCE-41E5-95E3-901298477E85" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Yellow Bubble" ID="B99B4590-188B-444D-814D-11BE2D88B06C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
         </Style>
     </NoteStyles>
     <UISettings>
@@ -395,5 +950,5 @@ NaN</String>
         <DefaultFont>Helvetica</DefaultFont>
         <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
     </UISettings>
-    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+    <PrintSettings PaperSize="595.275553,841.889771" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
 </ScappleDocument>
