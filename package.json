@@ -1,0 +1,22 @@
+{
+  "name": "greatreviews",
+  "version": "1.0.0",
+  "description": "a collection of great reviews",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshpitzalis/greatReviews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshpitzalis/greatReviews/issues"
+  },
+  "homepage": "https://github.com/joshpitzalis/greatReviews#readme",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}
