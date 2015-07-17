@@ -1,3 +1,5 @@
+var imageModel = require('../models/image');
+
 exports.postImage = function(req, res){
   res.json({message:"posted an image"});
 };

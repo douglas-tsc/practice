@@ -2,6 +2,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var imageController = require('./controllers/images.js');
+var adminController = require('./controllers/admin.js');
 
 // mongoose.connect('mongodb://localhost:27017/greatReviews');
 
@@ -21,7 +22,14 @@ router.route('/image')
   .get(imageController.getImage);
 
 router.route('/decision')
-  .get(imageController.postDecision);
+  .get(adminController.postDecision);
+
+router.route('/admin/event')
+  .post(adminController.postEvent)
+  .get(adminController.getEvent);
+
+router.route('/admin/getConnections')
+  .get(adminController.getConnections);
 
 app.use('/api', router);
 
