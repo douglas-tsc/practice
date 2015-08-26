@@ -1,6 +1,6 @@
 # 100 Websites in 100 Days
 
-To learn how to code I am making 100 websites in 100 days.
+My name is Josh and I am making 100 websites in 100 days.
 
 ## The Story
 
