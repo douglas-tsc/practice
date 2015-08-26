@@ -18,6 +18,7 @@ Hello Client,
 I understand you are looking for a simple landing page with an email entry form.
 
 I have put together the following example for you:
+[http://joshpitzalis.github.io/websites/](http://joshpitzalis.github.io/websites/)
 
 It's clean, professional and can be modified however you want. For example, if you don't have a video we can replace that bit with some text. If you don't have any testimonials we can take that section away.
 
