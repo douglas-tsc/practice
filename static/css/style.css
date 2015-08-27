@@ -1,3 +1,12 @@
+/**{
+  border: 1px dotted gray;
+}*/
+
+.center{
+  margin: 0 auto;
+  text-align: center;
+
+}
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 .dropdown-arrow-inverse {
   border-bottom-color: #34495e !important;
@@ -876,7 +885,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   font-weight: normal;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #7BC6DA;
 }
 .header-1 .navbar .nav > li > a:hover,
 .header-1 .navbar .nav > li > a:focus,
@@ -899,7 +908,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   height: 500px;
   padding: 0;
   overflow: hidden;
-  color: white;
+  color: #7BC6DA;
   background-color: #222527;
 }
 @media (max-width: 480px) {
@@ -920,28 +929,28 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   margin: 0 0 20px 0;
   font-size: 36px;
   font-weight: normal;
-  color: #ffffff;
+  color: #7BC6DA;
   font-weight: 500;
 }
 @media (max-width: 600px) {
   .header-1-sub h3 {
     font-size: 30px;
     font-weight: normal;
-    color: #ffffff;
+    color:#7BC6DA;
   }
 }
 @media (max-width: 480px) {
   .header-1-sub h3 {
     font-size: 26px;
     font-weight: normal;
-    color: #ffffff;
+    color: #7BC6DA;
     margin: 0 0 24px 0;
   }
 }
 .header-1-sub .lead {
   font-size: 30px;
   font-weight: normal;
-  color: #ffffff;
+  color: #7BC6DA;
   font-weight: 300;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0;
@@ -950,14 +959,14 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   .header-1-sub .lead {
     font-size: 26px;
     font-weight: normal;
-    color: #ffffff;
+    color: #7BC6DA;
   }
 }
 @media (max-width: 480px) {
   .header-1-sub .lead {
     font-size: 22px;
     font-weight: normal;
-    color: #ffffff;
+    color: ##7BC6DA;
   }
 }
 .header-1-sub .pt-perspective {
@@ -1055,7 +1064,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #7f8c8d;
   font-weight: normal;
   font-style: normal;
-  color: #ffffff;
+  color: #7BC6DA;
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
@@ -1148,7 +1157,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .header-20-sub h3 {
   font-size: 30px;
   font-weight: normal;
-  color: #2c3e50;
+  color: #7BC6DA;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: -1px;
@@ -1162,7 +1171,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
 .header-20-sub p {
   font-size: 18px;
   font-weight: normal;
-  color: #7f8c8d;
+  color: #7BC6DA;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 30px;
 }
@@ -1373,10 +1382,10 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   text-align: center;
   padding-top: 35px;
   padding-bottom: 35px;
-  background: rgba(241, 196, 15, 0.1);
+  background: #7EC7DA;
   font-size: 24px;
   font-weight: normal;
-  color: #34495e;
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
