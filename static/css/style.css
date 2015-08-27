@@ -825,7 +825,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   color: #fff;
 }
 /**
- * Header 1 stylesheet  
+ * Header 1 stylesheet
  * */
 .header-1 {
   left: 0;
@@ -987,7 +987,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   transform-style: preserve-3d;
 }
 .header-1-sub .pt-page-1 .background {
-  background-image: url("../../startup/common-files/img/NY_002.jpg");
+  background-image: url("../../startup/common-files/img/leaves.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
@@ -995,7 +995,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-2 .background {
-  background-image: url("../../startup/common-files/img/header/img-2.jpg");
+  background-image: url("../../startup/common-files/img/IT2006-barnimages-1.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
@@ -1003,7 +1003,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   background-position: 50% 30%;
 }
 .header-1-sub .pt-page-3 .background {
-  background-image: url("../../startup/common-files/img/header/img-3.jpg");
+  background-image: url("../../startup/common-files/img/photo-1414445092210-ee1a2da44ad7.jpg");
   opacity: 75;
   filter: alpha(opacity=7500);
   opacity: 0.75;
@@ -1075,7 +1075,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   left: 45px;
 }
 /**
- * Header 20 stylesheet  
+ * Header 20 stylesheet
  * */
 .header-20-startup-antiflicker {
   border-bottom: 2px solid #ECF0F1;
@@ -1366,7 +1366,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 11 stylesheet  
+ * Content 11 stylesheet
  * */
 .content-11 {
   position: relative;
@@ -1408,7 +1408,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 5 stylesheet  
+ * Content 5 stylesheet
  * */
 .content-5 {
   padding-top: 130px;
@@ -1484,7 +1484,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   text-transform: none;
 }
 /**
- * Content 4 stylesheet  
+ * Content 4 stylesheet
  * */
 .content-4 {
   padding-top: 130px;
@@ -1744,7 +1744,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Content 18 stylesheet  
+ * Content 18 stylesheet
  * */
 .content-18 {
   padding-top: 130px;
@@ -1882,7 +1882,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   font-weight: 500;
 }
 /**
- * Copntact 2 stylesheet  
+ * Copntact 2 stylesheet
  * */
 .contacts-2 {
   padding-top: 110px;
@@ -2010,7 +2010,7 @@ body > .navbar-collapse .navbar-search .btn-primary:hover {
   }
 }
 /**
- * Footer 1 stylesheet  
+ * Footer 1 stylesheet
  * */
 .footer-1 {
   padding-top: 85px;
