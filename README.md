@@ -8,7 +8,7 @@ I created an account on Upwork and starting looking for jobs I liked.
 
 Instead of telling people what I could do for them in my proposal, I challenged myself to make the website and send it to them.
 
-I don't want to spend more than two or three hours on each website. The goal is to learn my numbers. My hypothesis is that I will learn how to make better websites by creating 100 low-fidelity websites in quick succession than I would by focusing on quality.
+The goal is to learn my numbers. My hypothesis is that I will learn how to make better websites by creating 100 low-fidelity websites in quick succession than I would by focusing on quality.
 
 ## The Rules
 
@@ -18,8 +18,6 @@ I don't want to spend more than two or three hours on each website. The goal is 
 
 + I can use what ever combination of frameworks I like, as long as I don't use website builders or online editors. The goal is to become better at building websites form scratch not using website building or installing themes.
 
-+ If clients wants a blog with the website I can attach a third party blog to the website (like WordPress) as long as the blog is not the main page.
-
 ## The Websites
 
 I'll post links to new websites here each day.
@@ -27,6 +25,9 @@ I'll post links to new websites here each day.
 I have included the Briefs for context. Click on the day for that day's brief.
 
 If you have any questions or suggestions please open a pull request or drop me a line on [twitter](https://twitter.com/joshpitzalis).
+
+[Day 3](https://github.com/joshpitzalis/website02) - [Website for an Emergency lighting Company](http://joshpitzalis.github.io/website02/)
+
 
 [Day 2](https://github.com/joshpitzalis/website01/tree/gh-pages) - [Website for a Surgeon](http://joshpitzalis.github.io/website01/)
 
