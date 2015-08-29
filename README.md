@@ -76,15 +76,17 @@ The second option costs $2420 (which is $2200 plus 10% for Up work)
 
 If you would like go for the second option, I will need to send you a questionnaire. We could also speak for half an hour over Skype so that I have the information I need to get started.
 
-Thank you for taking the time to read this and I look forward to hearing from you.
-
-I am more than happy to answer any questions you might have before moving forward.
-
 I usually charge more for my work, but I like your business and would like to work on it. You mentioned that you are looking for a long term relationship. I am happy to lower my rates in the interest of building a mutually-beneficial long-term relationship.
 
 You also mentioned that you may need a business card designed. I spent some time designing the logo used on the website so that you get a sense of what I can offer design wise.
 
 Since I have spent considerable time putting this together, if you do not want to hire me all I ask if that you let me know why. Feedback is immensely helpful and will always be appreciated.
+
+I am more than happy to answer any questions you might have before moving forward.
+
+Thank you for taking the time to read this and I look forward to hearing from you.
+
+Josh
 
 ## Colour-blind Version
 
