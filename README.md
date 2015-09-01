@@ -2,7 +2,7 @@
 My name is Josh and I am making 100 websites in 100 days.
 ## This is website #7.
 
-### [Website Design for a Packaging Equipment Manufacturing Company](http://joshpitzalis.github.io/website05/)
+### [Website Design for a Dance Institute](http://joshpitzalis.github.io/website07/)
 
 If you would like to know more about the backstory to this project and see the other websites [click here](https://github.com/joshpitzalis/websites).
 
