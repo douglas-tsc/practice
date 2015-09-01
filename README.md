@@ -26,6 +26,10 @@ I have included the Briefs for context. Click on the day for that day's brief.
 
 If you have any questions or suggestions please open a pull request or drop me a line on [twitter](https://twitter.com/joshpitzalis).
 
+[Day 7](https://github.com/joshpitzalis/website07) - [Website for a Dance Institute](http://joshpitzalis.github.io/website07/)
+
+[Day 6](https://github.com/joshpitzalis/llamado) - [A simple To Do App](http://llama.meteor.com/)
+
 [Day 5](https://github.com/joshpitzalis/website05) - [Website for a Packaging Equipment Manufacturing Company](http://joshpitzalis.github.io/website05/)
 
 [Day 4](https://github.com/joshpitzalis/website03) - [Website for a Language Learning Vacation Business](http://joshpitzalis.github.io/website03/)
