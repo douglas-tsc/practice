@@ -1,6 +1,6 @@
-# 100 Websites in 100 Days
+# 100 Websites in 101 Days
 
-My name is Josh and I am making 100 websites in 100 days.
+My name is Josh and I am making 100 websites in 100 days. I missed one day so far.
 
 Scroll the to bottom to see the websites.
 
@@ -25,6 +25,14 @@ I'll post links to new websites here each day.
 I have included the Briefs for context. Click on the day for that day's brief.
 
 If you have any questions or suggestions please open a pull request or drop me a line on [twitter](https://twitter.com/joshpitzalis).
+
+Day 11 - [Website for a Property Managemnet Company](http://joshpitzalis.github.io/website10/)
+
+Day 10 - No Website. My excuse is jetlag.
+
+Day 9 - [A poem by Herman Hesse](http://joshpitzalis.github.io/nextEffect/)
+
+Day 8 - [Website for a Packing Company](http://joshpitzalis.github.io/website07/)
 
 [Day 7](https://github.com/joshpitzalis/website07) - [Website for a Dance Institute](http://joshpitzalis.github.io/website07/)
 
