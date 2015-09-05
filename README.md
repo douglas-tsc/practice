@@ -26,7 +26,7 @@ I have included the Briefs for context. Click on the day for that day's brief.
 
 If you have any questions or suggestions please open a pull request or drop me a line on [twitter](https://twitter.com/joshpitzalis).
 
-Day 11 - [Website for a Property Managemeent Company](http://joshpitzalis.github.io/website10/)
+Day 11 - [Website for a Property Management Company](http://joshpitzalis.github.io/website10/)
 
 Day 10 - No Website. My excuse is jetlag.
 
