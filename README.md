@@ -1,6 +1,6 @@
-# 100 Websites in 101 Days
+# 100 Websites in 104 Days
 
-My name is Josh and I am making 100 websites in 100 days. I missed one day so far.
+My name is Josh and I am making 100 websites in 100 days. I missed four days so far.
 
 Scroll the to bottom to see the websites.
 
