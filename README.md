@@ -27,7 +27,7 @@ I have included the Briefs for context. Click on the day for that day's brief.
 If you have any questions or suggestions please open a pull request or drop me a line on [twitter](https://twitter.com/joshpitzalis).
 
 
-[Day 18](https://github.com/joshpitzalis/website14) - [Simple landing page](http://joshpitzalis.github.io/website14/)
+Day 18 - [Simple landing page](http://joshpitzalis.github.io/website14/)
 
 Day 17 - No website. No Excuse
 
