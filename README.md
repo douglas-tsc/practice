@@ -26,6 +26,21 @@ I have included the Briefs for context. Click on the day for that day's brief.
 
 If you have any questions or suggestions please open a pull request or drop me a line on [twitter](https://twitter.com/joshpitzalis).
 
+
+Day 18 - Working on it as you read this...
+
+Day 17 - No website. No Excuse
+
+Day 16 - No website. No Excuse
+
+Day 15 - [Reusable website design chunks](http://joshpitzalis.github.io/website13/)
+
+Day 14 - [Boiler plate website for Material Design](http://joshpitzalis.github.io/website12/)
+
+Day 13 - No website. No Excuse
+
+Day 12 - [Material Design Course Landing Page](http://joshpitzalis.github.io/website11/)
+
 Day 11 - [Website for a Property Management Company](http://joshpitzalis.github.io/website10/)
 
 Day 10 - No Website. My excuse is jetlag.
