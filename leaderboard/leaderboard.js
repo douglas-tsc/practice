@@ -25,28 +25,23 @@ if (Meteor.isClient) {
     },
     'click .increment': function(){
       var selectedPlayer = Session.get('selectedPlayer');
-      PlayersList.update({_id: selectedPlayer}, {$inc:{score: 1}});
+      Meteor.call('modifyScore', selectedPlayer, 1);
     },
     'click .flag':function(){
       var selectedPlayer = Session.get('selectedPlayer');
-      PlayersList.remove(selectedPlayer);
+      Meteor.call('removePlayer', selectedPlayer);
     },
     'click .decrement': function(){
       var selectedPlayer = Session.get('selectedPlayer');
-      PlayersList.update({_id: selectedPlayer}, {$inc:{score: -1}});
+      Meteor.call('modifyScore', selectedPlayer, -1);
     }
   });
 
   Template.addPlayerForm.events({
-    'submit form': function(event, template){
+    'submit form': function(event){
       event.preventDefault();
-      var playerNameVar = template.find('.playerName').value;
-      PlayersList.insert({
-        name: playerNameVar,
-        score: 0
-      });
-
-      console.log(playerNameVar);
+      var playerNameVar = event.target.playerName.value;
+      Meteor.call('insertPlayerData', playerNameVar);
     }
 });
 
@@ -54,7 +49,22 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
   // this code only runs on the server
-
+  Meteor.methods({
+    'insertPlayerData': function(playerNameVar){
+      var currentUserId = Meteor.userId();
+      PlayersList.insert({
+        name: playerNameVar,
+        score: 0,
+        createdBy: currentUserId
+      });
+    },
+    'removePlayer': function(selectedPlayer){
+      PlayersList.remove(selectedPlayer);
+    },
+    'modifyScore':function(selectedPlayer, scoreChange){
+      PlayersList.update({_id: selectedPlayer}, {$inc:{score: scoreChange}});
+    }
+  });
 }
 
 PlayersList = new Mongo.Collection('thePlayers');
