@@ -9,21 +9,65 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <style type="text/css">
 
-  table{
+  .center{
     margin:auto;
+    text-align: center;
   }
 
-  tbody tr:nth-child(even)  td {
+  .padding{
+    padding: 0 1em;
+  }
+
+  .grey{
+    color: #737373;
+  }
+
+  .blue{
+    background-color: #448AFF;
+    color: white;
+  }
+
+  .lightgrey{
     background-color: #eee;
+    color: #737373;
+    border: 1px solid #C7C7C7;
   }
-
 
   </style>
 </head>
 <body>
   <section>
-    <div class="mdl-grid center">
-      <table class="mdl-cell--4-col mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+    <div class="mdl-grid mdl-shadow--2dp blue">
+      <div class="mdl-cell mdl-cell--12-col">
+      <h1 class='center'>100 Websites in <wbr>100 Days</h1>
+    </div>
+    </div>
+  </section>
+  <section>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--8-col center">
+      <h3 class='padding grey'>
+        The goal is to make 100 websites in as short a time as possible. If I don't finish this by the end of 2015 then it's over.
+      </h3>
+      <!-- <a href="#">Why am I doing this?</a> -->
+    </div>
+    </div>
+    <section>
+      <div class="mdl-grid lightgrey">
+        <div class="mdl-cell mdl-cell--12-col">
+        <h3 class='center'>Websites So Far:</h3><h1 class='center'>19</h1><br>
+        <h3 class='center'>Days Missed:</h3><h1 class='center'>7</h1>
+        <p class='center'>Last updated on the 21st September 2015.</p>
+      </div>
+      </div>
+    </section>
+</div>
+  </section>
+  <section>
+    <br>
+    <br>
+    <div class="mdl-grid">
+      <table class="mdl-cell--8-col mdl-data-table mdl-js-data-table mdl-shadow--2dp center">
         <thead>
           <tr>
             <th class="mdl-data-table__cell--non-numeric" style="text-align:right;">Brief</th>
@@ -44,7 +88,10 @@
           </tr>
           <tr>
             <td class="mdl-data-table__cell">17</td>
-            <td class="mdl-data-table__cell--non-numeric" style="text-align:center;background-color:#448AFF;color:white;">Work</td>
+            <td class="mdl-data-table__cell--non-numeric" id='tt1' style="text-align:center;background-color:#448AFF;color:white;">Work</td>
+            <div class="mdl-tooltip mdl-tooltip--large" for="tt1">
+$500
+</div>
             <td class="mdl-data-table__cell--non-numeric" ><a href="http://jazzminjiwa.com/"> Journalist's Portfolio</a></td>
           </tr>
           <tr>
@@ -135,10 +182,8 @@
   <br>
   <footer class="mdl-mini-footer">
       <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">Title</div>
         <ul class="mdl-mini-footer__link-list">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Privacy & Terms</a></li>
+          <li><a href="https://twitter.com/joshpitzalis">@joshpitzalis</a></li>
         </ul>
       </div>
     </footer>
