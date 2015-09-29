@@ -70,6 +70,14 @@ body {
   padding: 40px 0;
 }
 
+.contact {
+  padding: 40px 0;
+}
+
+.contact textarea {
+  min-height: 200px;
+}
+
 footer {
   padding: 40px 0;
   color: white;
