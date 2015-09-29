@@ -1,0 +1,91 @@
+* {
+  /*outline: 1px dotted green;*/
+}
+
+body {
+  padding-top: 50px;
+}
+
+.em-text {
+  color: #d65656 !important;
+}
+
+.jumbotron {
+  overflow: hidden;
+  height: 500px;
+  color: white;
+  /*background: url('optional background image') no-repeat center center;*/
+  background: #d65656;
+}
+
+.jumbotron h1 {
+  margin-top: 60px;
+}
+
+.jumbotron .app-btn {
+  width: 200px;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+
+.jumbotron .showcase-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.tri {
+  padding: 40px 0;
+}
+
+.tri .features {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.benefits {
+  padding: 40px 0;
+  color: white;
+  background: #d65656;
+}
+
+.benefits ul li {
+  font-size: 22px;
+  line-height: 2em;
+  list-style: circle;
+}
+
+.benefits .showcase-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.title-bar {
+  height: 80px;
+  color: white;
+  background-color: #d65656;
+}
+
+.about {
+  padding: 40px 0;
+}
+
+footer {
+  padding: 40px 0;
+  color: white;
+  background: black;
+}
+
+footer li {
+  float: left;
+  padding: 0 10px;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  float: right;
+}
