@@ -1,5 +1,5 @@
 # Curocracy
-A news website focusing on technology and entrepreneurship in India
+A curatenews website focusing on technology and entrepreneurship in India
 
 ## Why are you developing this?
 India has it's own version of Hacker news but it is now overrun with spam. We deserve a better alternative.
