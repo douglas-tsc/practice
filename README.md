@@ -1,5 +1,5 @@
 # Curocracy
-A news website focusing on technology and entrepreneurship in India
+A curated news website for technology and entrepreneurship in India
 
 ## Why are you developing this?
 India has it's own version of Hacker news but it is now overrun with spam. We deserve a better alternative.
@@ -18,11 +18,14 @@ India has it's own version of Hacker news but it is now overrun with spam. We de
 
 ### Packages
 
-+ Bootstrap
++ Bootstrap | meteor add twbs:bootstrap
++ Cucumber | meteor add xolvio:cucumber
++ Iron router | meteor add iron:router
++ Spin | meteor add sacha:spin
 
 ## How do you get it running?
 
-Just go to [curocracy.meteor.com](http://curocracy.meteor.com/).
+Just go to [curocracy.meteor.com](http://curocracy.meteor.com/)
 
 ## How can I help?
 
