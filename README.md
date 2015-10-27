@@ -1,4 +1,5 @@
 # Curocracy
+
 A curated news website for technology and entrepreneurship in India
 
 ## Why are you developing this?
