@@ -5,7 +5,7 @@ A curated news website for technology and entrepreneurship in India
 ## Why are you developing this?
 India has it's own version of Hacker news but it is now overrun with spam. We deserve a better alternative.
 
-## What did we use to build it?
+## What did you use to build it?
 
 ### Meteor
 
@@ -25,8 +25,10 @@ India has it's own version of Hacker news but it is now overrun with spam. We de
 + Spin | meteor add sacha:spin
 + Accounts | meteor add ian:accounts-ui-bootstrap-3
 + Password | meteor add accounts-password
++ Check | meteor add check
++ Audit | meteor add audit-argument-checks
 
-## How do you get it running?
+## How do I get it to run?
 
 Just go to [curocracy.meteor.com](http://curocracy.meteor.com/)
 
