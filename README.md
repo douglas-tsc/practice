@@ -23,6 +23,8 @@ India has it's own version of Hacker news but it is now overrun with spam. We de
 + Cucumber | meteor add xolvio:cucumber
 + Iron router | meteor add iron:router
 + Spin | meteor add sacha:spin
++ Accounts | meteor add ian:accounts-ui-bootstrap-3
++ Password | meteor add accounts-password
 
 ## How do you get it running?
 
