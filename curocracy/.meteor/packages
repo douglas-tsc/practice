@@ -19,8 +19,8 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 twbs:bootstrap
 iron:router
 sacha:spin
-xolvio:cucumber
 ian:accounts-ui-bootstrap-3
 accounts-password
 check
 audit-argument-checks
+xolvio:cucumber
