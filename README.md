@@ -20,7 +20,6 @@ India has it's own version of Hacker news but it is now overrun with spam. We de
 ### Packages
 
 + Bootstrap | meteor add twbs:bootstrap
-+ Cucumber | meteor add xolvio:cucumber
 + Iron router | meteor add iron:router
 + Spin | meteor add sacha:spin
 + Accounts | meteor add ian:accounts-ui-bootstrap-3
