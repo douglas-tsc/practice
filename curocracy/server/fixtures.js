@@ -4,20 +4,21 @@ if (Posts.find().count() === 0) {
 
   // create two users
   var tomId = Meteor.users.insert({
-    profile: { name: 'Josh Pitzalis' }
+    profile: { name: 'Tom Coleman' }
   });
   var tom = Meteor.users.findOne(tomId);
   var sachaId = Meteor.users.insert({
-    profile: { name: 'Random Dude' }
+    profile: { name: 'Sacha Greif' }
   });
   var sacha = Meteor.users.findOne(sachaId);
 
   var telescopeId = Posts.insert({
-    title: '"Phenomenal time" to be an entrepreneur in India: Nikesh Arora',
+    title: 'Introducing Telescope',
     userId: sacha._id,
     author: sacha.profile.name,
-    url: 'http://ecoti.ms/R1QK9a',
-    submitted: new Date(now - 7 * 3600 * 1000)
+    url: 'http://sachagreif.com/introducing-telescope/',
+    submitted: new Date(now - 7 * 3600 * 1000),
+    commentsCount: 2
   });
 
   Comments.insert({
@@ -25,7 +26,7 @@ if (Posts.find().count() === 0) {
     userId: tom._id,
     author: tom.profile.name,
     submitted: new Date(now - 5 * 3600 * 1000),
-    body: 'Curocracy sounds like an interesting project, can I get involved?'
+    body: 'Interesting project Sacha, can I get involved?'
   });
 
   Comments.insert({
@@ -33,22 +34,35 @@ if (Posts.find().count() === 0) {
     userId: sacha._id,
     author: sacha.profile.name,
     submitted: new Date(now - 3 * 3600 * 1000),
-    body: 'You sure can!'
+    body: 'You sure can Tom!'
   });
 
   Posts.insert({
-    title: 'Mitra Biotech\'s Personalization Of Cancer Care With Technology Made In India',
+    title: 'Meteor',
     userId: tom._id,
     author: tom.profile.name,
-    url: 'http://onforb.es/1O1ZUmP',
-    submitted: new Date(now - 10 * 3600 * 1000)
+    url: 'http://meteor.com',
+    submitted: new Date(now - 10 * 3600 * 1000),
+    commentsCount: 0
   });
 
   Posts.insert({
-    title: 'Boosting entrepreneurship: Venture capital funds can now invest 25% in India-linked firms',
+    title: 'The Meteor Book',
     userId: tom._id,
     author: tom.profile.name,
-    url: 'http://bit.ly/1OKUJY8',
-    submitted: new Date(now - 12 * 3600 * 1000)
+    url: 'http://themeteorbook.com',
+    submitted: new Date(now - 12 * 3600 * 1000),
+    commentsCount: 0
   });
+
+  for (var i = 0; i < 10; i++) {
+    Posts.insert({
+      title: 'Test post #' + i,
+      author: sacha.profile.name,
+      userId: sacha._id,
+      url: 'http://google.com/?q=test-' + i,
+      submitted: new Date(now - i * 3600 * 1000 + 1),
+      commentsCount: 0
+    });
+  }
 }
