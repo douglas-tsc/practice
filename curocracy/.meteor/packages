@@ -24,3 +24,6 @@ accounts-password
 check
 audit-argument-checks
 xolvio:cucumber
+meteorhacks:kadira
+meteorhacks:kadira-profiler
+meteorhacks:zones
