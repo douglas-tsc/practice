@@ -23,6 +23,11 @@ curl https://install.meteor.com/ | sh
 ```
 git clone https://github.com/Differential/meteor-boilerplate.git <yourAppName>
 ```
-+
++ [Toastr](https://github.com/chrismbeckett/meteor-toastr)
+```
+  meteor add chrismbeckett:toastr
+ ```
 
-## How can I help?
+## How do I use it?
+
+I will publish a link to the app here when it is ready to be used.
