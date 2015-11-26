@@ -1,4 +1,4 @@
-Items.allow({
+projects.allow({
   'insert': function(userId, doc) {
     return userId;
   },
