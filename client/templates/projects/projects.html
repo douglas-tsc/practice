@@ -1,5 +1,5 @@
-<template name="ideas">
-  <div class="template-ideas">
+<template name="projects">
+  <div class="template-projects">
     <div class="page-header">
       <h1>Ideas</h1>
     </div>
@@ -7,6 +7,10 @@
     <ul class="list-group">
       {{#each items}}
         <li class="list-group-item">{{ name }} <span class="label label-default">{{ needs }}</span></li>
+
+        {{else}}
+        <p>There are currently no active projects.</p>
+
       {{/each}}
     </ul>
 
