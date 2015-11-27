@@ -7,8 +7,8 @@ Router.route('/projects', {
   controller: 'projectsController'
 });
 
-Router.route('/addProjects', {
-  name: 'addProjects',
+Router.route('/projects/add', {
+  name: 'add',
   controller: 'projectsController'
 });
 
