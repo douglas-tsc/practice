@@ -1,0 +1,31 @@
+<template name="add">
+    <div class="template-add">
+        <div class="page-header">
+            <h1>Add a Project</h1>
+        </div>
+        <form class="add-project-form">
+            <div class="form-group">
+                <label for="title">Project Name</label>
+                <input type="text" class="title form-control" id="title" placeholder="">
+                <p class="help-block">This is what people will see in the listing.</p>
+            </div>
+            <div class="form-group">
+                <label for="description">Project Description</label>
+                <textarea id='description' class='form-control' name="Name" rows="8" cols="40"></textarea>
+                <p class="help-block">Please explain why you started this project, what the project goals are and how it will make money.</p>
+            </div>
+            <div class="form-group">
+              <label for="help">Looking for help with:</label>
+              <select id="help" name="help" class='form-control'>
+                  <option value="design">Design</option>
+                  <option value="devemopment">Development</option>
+                  <option value="marketing">Marketing</option>
+              </select>
+            </div>
+            <br/>
+            <button type="submit" class="btn btn-primary">
+                Add Project
+            </button>
+        </form>
+    </div>
+</template>

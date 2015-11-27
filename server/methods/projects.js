@@ -1,5 +1,5 @@
 Meteor.methods({
-  'projects.insert': function (params) {
+  'add': function (params) {
     projects.insert(params);
   }
 });
