@@ -21,11 +21,13 @@ projectsController.events({
             help: help,
             user: Meteor.userId(),
             username: Meteor.user().username,
+            contact: Meteor.user().emails[0].address,
             createdAt: new Date()
         };
 
         Meteor.call('add', params);
         toastr.success('Project Added');
+        Router.go('/projects');
         return false;
     }
 });

@@ -6,7 +6,30 @@
 
     <ul class="list-group">
       {{#each projects}}
-        <li class="list-group-item">{{ title }} <span class="label label-default">{{ help }}</span></li>
+        <li class="list-group-item"> <a data-toggle="modal" data-target="#modal{{_id}}">{{ title }}</a> <span class="label label-default">{{ help }}</span></li>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal{{_id}}" tabindex="-1" role="dialog" aria-labelledby="modal{{_id}}Label">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal{{_id}}Label">{{title}}</h4>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group">
+                  <li class="list-group-item">Description: {{description}}</li>
+                  <li class="list-group-item">Need help with: {{help}}</li>
+                </ul>
+                <p class='well'>CONTACT : {{contact}}</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
         {{else}}
         <p>There are currently no active projects.</p>
