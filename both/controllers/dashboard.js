@@ -1,17 +1,11 @@
 DashboardController = AppController.extend({
   waitOn: function() {
-    return this.subscribe('projects');
-  },
-  data: {
-    projects: projects.find({})
-  },
-  onAfterAction: function () {
-    Meta.setTitle('Dashboard');
+    return this.subscribe('myProjects');
   }
 });
 
-DashboardController.events({
-  'click [data-action=doSomething]': function (event, template) {
-    event.preventDefault();
-  }
+DashboardController.helpers({
+    'myProjects' : function(){
+        return projects.find({user: Meteor.userId()});
+    }
 });
