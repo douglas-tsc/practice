@@ -12,6 +12,16 @@ Router.route('/projects/add', {
   controller: 'projectsController'
 });
 
+Router.route('/grunts', {
+  name: 'grunts',
+  controller: 'gruntsController'
+});
+
+Router.route('/grunts/addGrunts', {
+  name: 'addGrunts',
+  controller: 'gruntsController'
+});
+
 Router.route('/dashboard', {
   name: 'dashboard',
   controller: 'DashboardController'
