@@ -4,6 +4,11 @@
       <h1>My Projects</h1>
     </div>
 
+    <a href="/projects/add" class='btn btn-lg btn-primary'>+ Start a new project</a>
+    <a href="/grunts/addGrunts" class='btn btn-lg btn-primary'>+ Find a project to work on</a>
+    <br/>
+    <br/>
+
     <ul class="list-group">
       {{#each myProjects}}
         <li class="list-group-item"> <a data-toggle="modal" data-target="#modal{{_id}}">{{ title }}</a> <span class="label label-default">{{ help }}</span><a id={{_id}} class='pull-right remove-project'><i class='fa fa-remove'></i></a></li>
