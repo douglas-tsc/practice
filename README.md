@@ -8,4 +8,12 @@ In addition to this, clients should have a simple interface to log in and submit
 
 I'm following the [Meteor React Book](http://kenrogers.co/meteor-react/) by [@iamkenrogers](https://twitter.com/iamkenrogers).
 
-You can see what I have done so far by clicking on the demo [here]().
+You can see what I have done so far by clicking on the demo [here](http://ninjatrackr.meteor.com).
+
+
+## Packages Used
+
++ ```meteor add react```
++ ```meteor add kadira:react-layout```
++ ```meteor add kadira:flow-router```
++ ```meteor add twbs:bootstrap```
