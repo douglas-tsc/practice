@@ -40,7 +40,7 @@ FlowRouter.route('/ninjas', {
 FlowRouter.route('/login', {
     name: 'Login',
     action() {
-        ReactLayout.render(App,{
+        ReactLayout.render(App, {
             content: <Login name="Login" />,
             nav: <Nav/>
         });
@@ -52,7 +52,7 @@ FlowRouter.route('/register', {
       action() {
         ReactLayout.render(App, {
           content: <Register name="Register"/>,
-          nav: <Nav />
+          nav: <Nav/>
   });
  }
 });
