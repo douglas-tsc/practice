@@ -14,7 +14,7 @@ FlowRouter.route('/request', {
         ReactLayout.render(App, {
             content: <RequestForm/>,
             nav: <Nav/>
-        })
+    });
     }
 });
 
@@ -24,7 +24,7 @@ FlowRouter.route('/new-ninja', {
         ReactLayout.render(App, {
             content: <NewNinja/>,
             nav: <Nav/>
-        })
+    });
     }
 });
 
@@ -34,6 +34,16 @@ FlowRouter.route('/ninjas', {
         ReactLayout.render(App, {
             content: <NinjasList/>,
             nav: <Nav/>
-        })
+    });
+    }
+});
+
+FlowRouter.route('/login', {
+    name: 'Login',
+    action() {
+        ReactLayout.render(App,{
+            content: <Login/>,
+        nav: <Nav/>
+        });
     }
 });

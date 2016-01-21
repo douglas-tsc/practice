@@ -1,7 +1,13 @@
 App = React.createClass({
-    render() {
+    mixins: [ReactMeteorData],
+    getMeteorData() {
+        return {
+            loggedIn: !!Meteor.user()
+        };
+    },
+    showLayout() {
         return (
-            <div className="container-fluid main-container">
+            <div className="row">
                 <div className="col-xs-3">
                     {this.props.nav}
                 </div>
@@ -9,6 +15,25 @@ App = React.createClass({
                     {this.props.content}
                 </div>
             </div>
-        )
+        );
+    },
+    showLogin() {
+        return (
+            <div className="row">
+                <div className="col-xs-12 text-center">
+                    <p>You must be logged in to do that.</p>
+                </div>
+                <Login/>
+            </div>
+        );
+    },
+    render() {
+        return (
+            <div className="container-fluid main-container">
+                <div className="row">
+                    {this.data.loggedIn ? this.showLayout() : this.showLogin()}
+                </div>
+            </div>
+        );
     }
 });
