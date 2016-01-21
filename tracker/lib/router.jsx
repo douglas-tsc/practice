@@ -41,7 +41,7 @@ FlowRouter.route('/login', {
     name: 'Login',
     action() {
         ReactLayout.render(App,{
-            content: <RequestForm name="Request" />,
+            content: <Login name="Login" />,
             nav: <Nav/>
         });
     }
