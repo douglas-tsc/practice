@@ -8,7 +8,7 @@ In addition to this, clients should have a simple interface to log in and submit
 
 I'm following the [Meteor React Book](http://kenrogers.co/meteor-react/) by [@iamkenrogers](https://twitter.com/iamkenrogers).
 
-You can see what I have done so far by clicking on the demo [here](http://ninjatrackr.meteor.com).
+You can see what I have done so far by clicking on the demo [here](http:// ).
 
 
 ## Packages Used
@@ -17,3 +17,8 @@ You can see what I have done so far by clicking on the demo [here](http://ninjat
 + ```meteor add kadira:react-layout```
 + ```meteor add kadira:flow-router```
 + ```meteor add twbs:bootstrap```
++ ```meteor add accounts-password```
++ ```meteor add msavin:mongol```
++ ```meteor add aldeed:collection2```
++ ```meteor add dburles:collection-helpers```
++ ```meteor add ongoworks:security```

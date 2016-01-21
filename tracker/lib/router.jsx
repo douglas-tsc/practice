@@ -12,9 +12,8 @@ FlowRouter.route('/request', {
     name: 'RequestForm',
     action() {
         ReactLayout.render(App, {
-            content: <RequestForm/>,
-            nav: <Nav/>
-        })
+            content: <RequestForm name="Request" />
+    });
     }
 });
 
@@ -24,7 +23,7 @@ FlowRouter.route('/new-ninja', {
         ReactLayout.render(App, {
             content: <NewNinja/>,
             nav: <Nav/>
-        })
+    });
     }
 });
 
@@ -34,6 +33,26 @@ FlowRouter.route('/ninjas', {
         ReactLayout.render(App, {
             content: <NinjasList/>,
             nav: <Nav/>
-        })
+    });
     }
+});
+
+FlowRouter.route('/login', {
+    name: 'Login',
+    action() {
+        ReactLayout.render(App, {
+            content: <Login name="Login" />,
+            nav: <Nav/>
+        });
+    }
+});
+
+FlowRouter.route('/register', {
+      name: 'Register',
+      action() {
+        ReactLayout.render(App, {
+          content: <Register name="Register"/>,
+          nav: <Nav/>
+  });
+ }
 });
