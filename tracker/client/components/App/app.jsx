@@ -37,7 +37,7 @@ App = React.createClass({
         );
     },
     allowedLayout() {
-    var allowedLayouts = ['Request', 'Login', 'Register'];
+        var allowedLayouts = ['Request', 'Login', 'Register'];
         var layoutAllowed = false;
         if ($.inArray(this.props.content.props.name, allowedLayouts) > -1 || this.data.loggedIn) {
             layoutAllowed = true;
@@ -46,10 +46,13 @@ App = React.createClass({
     },
     render() {
         return (
-          <div className="container-fluid main-container">
-            <div className="row">
-              { this.allowedLayout() ? this.showLayout() : this.showLogin() }
+            <div className="container-fluid main-container">
+                <div className="row">
+                    {this.allowedLayout()
+                        ? this.showLayout()
+                        : this.showLogin()}
+                </div>
             </div>
-          </div>
-) }
+        )
+    }
 });
