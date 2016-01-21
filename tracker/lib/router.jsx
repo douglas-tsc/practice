@@ -12,8 +12,7 @@ FlowRouter.route('/request', {
     name: 'RequestForm',
     action() {
         ReactLayout.render(App, {
-            content: <RequestForm/>,
-            nav: <Nav/>
+            content: <RequestForm name="Request" />
     });
     }
 });
@@ -42,8 +41,8 @@ FlowRouter.route('/login', {
     name: 'Login',
     action() {
         ReactLayout.render(App,{
-            content: <Login/>,
-        nav: <Nav/>
+            content: <RequestForm name="Request" />,
+            nav: <Nav/>
         });
     }
 });
