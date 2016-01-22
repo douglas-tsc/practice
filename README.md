@@ -1,4 +1,4 @@
-# ninjatracker
+# Ninja Tracker
 
 The main idea of the app is to provide a simple interface to the leader of a gang of ninjas can take in requests from clients, and then delegate out those requests to his ninjas.
 
@@ -8,7 +8,7 @@ In addition to this, clients should have a simple interface to log in and submit
 
 I'm following the [Meteor React Book](http://kenrogers.co/meteor-react/) by [@iamkenrogers](https://twitter.com/iamkenrogers).
 
-You can see what I have done so far by clicking on the demo [here](http:// ).
+You can see what I have done so far by clicking on the demo [here](http://ninjatrackr.meteor.com/).
 
 
 ## Packages Used
