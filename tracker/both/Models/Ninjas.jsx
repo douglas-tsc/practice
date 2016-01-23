@@ -45,7 +45,7 @@ Ninjas.helpers({
 Meteor.methods({
   addNinja(ninja) {
     if (! Meteor.userId()) {
-        return
+        return;
       }
 
       Ninjas.insert({
@@ -54,19 +54,15 @@ Meteor.methods({
         score: 0,
         status: true,
         jobsCompleted: 0
-      }, function() {
-        alert('Ninja added successfully.');
       });
   },
   editNinja(ninja) {
       if (! Meteor.userId()) {
-          return
+          return;
         }
 
         Ninjas.update(ninja._id, {
         $set: {firstName: ninja.firstName, lastName: ninja.lastName}
-        }, function() {
-          alert('Ninja edited.');
         });
     }
 });

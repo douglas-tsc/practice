@@ -1,16 +1,22 @@
 NewNinja = React.createClass({
     addNinja(e) {
-    e.preventDefault();
-    var firstName = $('#firstName').val();
-    var lastName = $('#lastName').val();
-    var ninja = {
-        firstName: firstName,
-        lastName: lastName
-    };
-    Meteor.call('addNinja', ninja);
-     $('#firstName').val('');
-     $('#lastName').val('');
- },
+        e.preventDefault();
+        var firstName = $('#firstName').val();
+        var lastName = $('#lastName').val();
+        var ninja = {
+            firstName: firstName,
+            lastName: lastName
+        };
+        Meteor.call('addNinja', ninja, function(error, result) {
+            if (error) {
+                return sAlert.error(error.reason, {effect: 'genie'});
+            } else {
+                $('#firstName').val('');
+                $('#lastName').val('');
+                return sAlert.success('Ninja successfully created! Add another?', {effect: 'genie'});
+            }
+        });
+    },
     render() {
         return (
             <div className="container">
