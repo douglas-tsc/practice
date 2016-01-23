@@ -22,3 +22,4 @@ You can see what I have done so far by clicking on the demo [here](http://ninjat
 + ```meteor add aldeed:collection2```
 + ```meteor add dburles:collection-helpers```
 + ```meteor add ongoworks:security```
++ ``` meteor add juliancwirko:s-alert```
