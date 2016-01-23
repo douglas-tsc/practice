@@ -28,7 +28,15 @@ Meteor.methods({
             target: request.target,
             fulfilled: false
         });
-    }
+    },
+ updateRequest(request) {
+   if (! Meteor.userId()) {
+       return
+     }
+     Requests.update(request, {
+       $set: {fulfilled: true}
+    });
+}
 });
 
 if (Meteor.isServer) {

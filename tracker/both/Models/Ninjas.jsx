@@ -64,7 +64,17 @@ Meteor.methods({
         Ninjas.update(ninja._id, {
         $set: {firstName: ninja.firstName, lastName: ninja.lastName}
         });
-    }
+    },
+   assignNinja(ninja) {
+     if (! Meteor.userId()) {
+        return;
+      }
+
+      Ninjas.update(ninja, {
+       $set: {status: false}
+      });
+  },
+  
 });
 
 if (Meteor.isServer) {
