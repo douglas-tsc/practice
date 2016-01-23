@@ -18,3 +18,21 @@ Schemas.Requests = new SimpleSchema({
     type: Boolean
   }
 });
+
+Requests.attachSchema(Schemas.Requests);
+
+Meteor.methods({
+    newRequest(request) {
+        Requests.insert({
+            clientName: request.clientName,
+            target: request.target,
+            fulfilled: false
+        });
+    }
+});
+
+if (Meteor.isServer) {
+   Meteor.publish('requests', function() {
+        return Requests.find();
+    });
+}

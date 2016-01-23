@@ -2,10 +2,10 @@ RequestForm = React.createClass({
 
     submitRequest(e){
     e.preventDefault();
-    var clientName = $('#name').val('');
-    var target = $('#target').val('');
+    var clientName = $('#name').val();
+    var target = $('#target').val();
 
-    var request = {clientName: clientname, target: target};
+    var request = {clientName: clientName, target: target};
 
     Meteor.call('newRequest', request, function(error, result){
         if(error){
@@ -13,7 +13,7 @@ RequestForm = React.createClass({
         }else{
             $('#clientName').val('');
             $('#target').val('');
-            return sAlert.success('Your request has been received. Target will be eliminatated.', {effect: 'genie'});
+            return sAlert.success('Your request has been received. Target will be eliminatated. Add another?', {effect: 'genie'});
         }
     });
     },

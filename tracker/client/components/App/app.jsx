@@ -1,9 +1,31 @@
 App = React.createClass({
     mixins: [ReactMeteorData],
     getMeteorData() {
+        Meteor.subscribe('requests');
         return {
             loggedIn: !!Meteor.user()
         };
+    },
+    componenDidMount() {
+        var count = 0;
+        Tracker.autorun(function() {
+            count++;
+            var requests = Requests.find().count();
+            if (count > 2 && Meteor.user()) {
+                sAlert.success('New request. <a href="/">Go to Dashboard < /a>', {
+                    html: true,
+                    effect: 'genie'
+                });
+            }
+        });
+    },
+    allowedLayout() {
+        var allowedLayouts = ['Request', 'Login', 'Register'];
+        var layoutAllowed = false;
+        if ($.inArray(this.props.content.props.name, allowedLayouts) > -1 || this.data.loggedIn) {
+            layoutAllowed = true;
+        }
+        return layoutAllowed;
     },
     showLayout() {
         if (this.props.content.props.name == 'Request') {
@@ -42,14 +64,6 @@ App = React.createClass({
             </div>
         );
     },
-    allowedLayout() {
-        var allowedLayouts = ['Request', 'Login', 'Register'];
-        var layoutAllowed = false;
-        if ($.inArray(this.props.content.props.name, allowedLayouts) > -1 || this.data.loggedIn) {
-            layoutAllowed = true;
-        }
-        return layoutAllowed;
-    },
     render() {
         return (
             <div className="container-fluid main-container">
@@ -57,7 +71,7 @@ App = React.createClass({
                     {this.allowedLayout()
                         ? this.showLayout()
                         : this.showLogin()}
-                </div>
+                </div >
             </div>
         )
     }
