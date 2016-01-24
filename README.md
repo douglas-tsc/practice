@@ -30,3 +30,12 @@ Meteor is awesome, but things can get out of hand as the app grows. React is sup
 + ```meteor add kadira:react-layout```
 + ```meteor add kadira:flow-router```
 + ```meteor add twbs:bootstrap```
+
+### How do I use it?
+
+It's not ready yet.
+
+If you like to play with it as it is being build you are welcome to check it out at [gruntfinder.meteor.com](http://gruntfinder.meteor.com).
+
+
+If you have any questions or comments please send them my way on [twitter](https://twitter.com/joshpitzalis).
