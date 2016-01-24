@@ -1,2 +1,17 @@
-# gruntFinder
-Helps people find other people in their city who want to start a business using dynamic equity.
+# Grunt Finder
+
+## A web app to meet Co-Founders in your city.
+
+Helps you find other people in their city who want to start a business using dynamic equity.
+
+### Why is this useful?
+
+Dynamic equity is an interesting concept I first heard about in a book called 'Slicing Pie' by Mike Moyers.
+
+In a nutshell, dynamic equity lets you start a business with someone without having to define a split before the business is created. You each work on the business and your contributions are calculated at regular intervals. The percentage of who owns what constantly changes depending on who is putting the most work in. This keeps things fair and lets you focus on the work, instead of worrying about the money.
+
+Rather than having to find a co-founder and then explain The whole idea of dynamic equity to them I wanted to create a co-founder platform for people who already know what it is and who want to use it.
+
+For a more detailed explanation read the book, it's incredible: [Slicing Pie](http://amzn.to/1IiValf).
+
+On a broader note, this project is useful because you could repurpose this web app for an introduction app for any interest.
