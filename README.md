@@ -15,3 +15,18 @@ Rather than having to find a co-founder and then explain The whole idea of dynam
 For a more detailed explanation read the book, it's incredible: [Slicing Pie](http://amzn.to/1IiValf).
 
 On a broader note, this project is useful because you could repurpose this web app for an introduction app for any interest.
+
+### What did you use to build it?
+
+Meteor and React.
+
+[Meteor](https://www.meteor.com/) is an incredible framework. Massive potential to make create amazing applications easy and quick. I'm just building an MVP to see if anyone will use it so Meteor was the obvious choice.
+
+Meteor is awesome, but things can get out of hand as the app grows. React is super compartmentalized. It makes it easier to keep individual aspects of an application separated. Hopefully this will make things easier down the road.
+
+#### Packages Used
+
++ ```meteor add react```
++ ```meteor add kadira:react-layout```
++ ```meteor add kadira:flow-router```
++ ```meteor add twbs:bootstrap```
