@@ -7,3 +7,12 @@ FlowRouter.route('/', {
         });
     }
 });
+
+FlowRouter.route('/newGrunt', {
+      name: 'NewGrunt',
+      action() {
+        ReactLayout.render(App, {
+          content: <NewGrunt />,
+          nav: <Nav />
+}) }
+});
