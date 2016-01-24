@@ -9,10 +9,21 @@ FlowRouter.route('/', {
 });
 
 FlowRouter.route('/newGrunt', {
-      name: 'NewGrunt',
-      action() {
+    name: 'NewGrunt',
+    action() {
         ReactLayout.render(App, {
-          content: <NewGrunt />,
-          nav: <Nav />
-}) }
+            content: <NewGrunt/>,
+            nav: <Nav/>
+        });
+    }
+});
+
+FlowRouter.route('/grunts', {
+    name: 'GruntList',
+    action() {
+        ReactLayout.render(App, {
+            content: <GruntList/>,
+            nav: <Nav/>
+        });
+    }
 });

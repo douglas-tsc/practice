@@ -9,7 +9,7 @@ Nav = React.createClass({
                     <a href="/newGrunt">New Grunt</a>
                 </li>
                 <li>
-                    <a href="#">Link 3</a>
+                    <li><a href="/grunts">List Grunts</a></li>
                 </li>
             </ul>
         );
