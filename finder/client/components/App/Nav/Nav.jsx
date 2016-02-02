@@ -33,6 +33,7 @@ Nav = React.createClass({
                 <li>
                     <li><a href="/grunts">List Grunts</a></li>
                 </li>
+                {this.getLoginLink()}
             </ul>
         );
     }
