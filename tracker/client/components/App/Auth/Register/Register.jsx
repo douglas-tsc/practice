@@ -29,11 +29,11 @@ Register = React.createClass({
                 <form id="register-form" action="#" onSubmit={this.register}>
                     <div className="form-group">
                         <label htmlFor="firstName">First Name:</label>
-                        <input type="firstName" id="firstName" name="firstName" class Name="form-control"/>
+                        <input type="firstName" id="firstName" name="firstName" className="form-control"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="lastName">Last Name:</label>
-                        <input type="lastName" id="lastName" name="lastName" classNam e="form-control"/>
+                        <input type="lastName" id="lastName" name="lastName" className="form-control"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email:</label>
