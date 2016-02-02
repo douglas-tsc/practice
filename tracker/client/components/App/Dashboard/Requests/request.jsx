@@ -4,7 +4,7 @@ Request = React.createClass({
     Meteor.subscribe('ninjas');
     return {
       ninjas: Ninjas.find({status: true}).fetch()
-  };
+    }
   },
   ninjaSelect() {
     return this.data.ninjas.map((ninja) => {
@@ -19,7 +19,7 @@ Request = React.createClass({
   assignNinja(e) {
     e.preventDefault();
     var ninja = $('#ninjas option:selected').val();
-    var request = this.props.request._id;
+    var request = {_id: this.props.request._id, ninja: ninja};
     Meteor.call('assignNinja', ninja);
     Meteor.call('updateRequest', request);
   },
@@ -39,6 +39,6 @@ Request = React.createClass({
           <h2>{this.props.request.target}</h2>
         </div>
       </div>
-  );
+    )
   }
 });
