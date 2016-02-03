@@ -31,6 +31,9 @@ Meteor is awesome, but things can get out of hand as the app grows. React is sup
 + ```meteor add kadira:flow-router```
 + ```meteor add twbs:bootstrap```
 + ```meteor add mrgalaxy:stripe```
++ ```meteor add kadira:blaze-layout```
++ ```meteor add reactive-var```
++ ```meteor add check```
 
 ### How do I use it?
 
