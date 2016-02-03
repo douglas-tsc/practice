@@ -31,7 +31,7 @@ Nav = React.createClass({
                     <a href="/newGrunt">New Grunt</a>
                 </li>
                 <li>
-                    <li><a href="/grunts">List Grunts</a></li>
+                    <a href="/grunts">List Grunts</a>
                 </li>
                 {this.getLoginLink()}
             </ul>
