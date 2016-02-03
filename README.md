@@ -24,12 +24,13 @@ Meteor and React.
 
 Meteor is awesome, but things can get out of hand as the app grows. React is super compartmentalized. It makes it easier to keep individual aspects of an application separated. Hopefully this will make things easier down the road.
 
-#### Packages Used
+#### Packages Included
 
 + ```meteor add react```
 + ```meteor add kadira:react-layout```
 + ```meteor add kadira:flow-router```
 + ```meteor add twbs:bootstrap```
++ ```meteor add mrgalaxy:stripe```
 
 ### How do I use it?
 
