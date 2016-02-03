@@ -47,3 +47,10 @@ FlowRouter.route('/register', {
   });
  }
 });
+
+FlowRouter.route('/checkout', {
+      name: 'services',
+      action: function() {
+          BlazeLayout.render("services");
+  }
+});

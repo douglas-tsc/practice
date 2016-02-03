@@ -25,3 +25,6 @@ twbs:bootstrap
 accounts-password
 msavin:mongol
 mrgalaxy:stripe
+kadira:blaze-layout
+reactive-var
+check
