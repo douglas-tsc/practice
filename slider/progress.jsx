@@ -1,5 +1,12 @@
 /*jshint esversion: 6 */
 
+if (Meteor.isClient) {
+  Meteor.startup(function () {
+    // Use Meteor.startup to render the component after the page is ready
+    React.render(<Progress />, document.getElementById("render-target"));
+  });
+}
+
 Progress = React.createClass({
     getInitialState() {
         return {value: 25};
