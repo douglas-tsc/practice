@@ -54,13 +54,3 @@ FlowRouter.route('/services', {
           BlazeLayout.render("services");
   }
 });
-
-FlowRouter.route('/checkout', {
-    name: 'Checkout',
-    action() {
-        ReactLayout.render(App, {
-            content: <Checkout/>,
-            nav: <Nav/>
-        });
-    }
-});
