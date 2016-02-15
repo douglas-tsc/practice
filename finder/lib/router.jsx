@@ -48,7 +48,7 @@ FlowRouter.route('/register', {
  }
 });
 
-FlowRouter.route('/checkout', {
+FlowRouter.route('/services', {
       name: 'services',
       action: function() {
           BlazeLayout.render("services");

@@ -53,6 +53,10 @@ Template.services.events({
       'full-roaming-vapor': {
         amount: 500000,
         description: "Full Roaming Vapor Removal"
+    },
+      'connect': {
+        amount: 1,
+        description: "Connect"
       }
     };
 

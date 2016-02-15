@@ -31,10 +31,19 @@ Meteor is awesome, but things can get out of hand as the app grows. React is sup
 + ```meteor add kadira:flow-router```
 + ```meteor add twbs:bootstrap```
 + ```meteor add mrgalaxy:stripe```
++ ```meteor add kadira:blaze-layout```
++ ```meteor add reactive-var```
++ ```meteor add check```
 
 ### How do I use it?
 
 It's not ready yet.
+
+For version 1.0 I need to:
++ [ ] Connect the More info button in the grunt component to stripe checkout.
++ [ ] Connect checkout to reveal email for individual grunts.
++ [ ] Update relevant fields for grunts.
++ [ ] Make it so that you fill relevant fields on sign up.
 
 If you like to play with it as it is being build you are welcome to check it out at [gruntfinder.meteor.com](http://gruntfinder.meteor.com).
 

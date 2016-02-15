@@ -1,12 +1,12 @@
 GruntList = React.createClass({
     renderGrunts() {
-        return <Grunt/>
+        return <Grunt/>;
     },
     render() {
         return (
             <div className="row">
                 {this.renderGrunts()}
             </div>
-        )
+        );
     }
 });
