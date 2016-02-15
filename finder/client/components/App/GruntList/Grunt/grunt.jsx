@@ -11,6 +11,9 @@ Grunt = React.createClass({
                         <h4>Current Pies: 3</h4>
                         <h4>Pies Baked: 7</h4>
                     </div>
+                    <div className="panel-body">
+                    <a href="/services"><button type="button" className="btn btn-info">Show More Details</button></a>
+                    </div>
                 </div>
             </div>
         );
