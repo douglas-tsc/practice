@@ -34,3 +34,6 @@ reactive-var
 reactive-dict
 aldeed:collection2
 tracker
+iron:router
+random
+http
