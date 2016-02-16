@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # The Meteor Chef - Base
 A starting point for Meteor apps.
 
@@ -15,3 +16,7 @@ A starting point for Meteor apps.
 </table>
 
 [Read the Documentation](http://themeteorchef.com/base)
+=======
+# api
+This project is to help me learn how to write a RESTful API with meteor
+>>>>>>> 65b287cc1f5cd801bf5d5fe69816c6887997cb84
