@@ -1,4 +1,4 @@
-APIKeys = new Meteor.Collection( 'api-keys' );
+APIKey = new Meteor.Collection( 'api-keys' );
 
 /*
 * Allow
