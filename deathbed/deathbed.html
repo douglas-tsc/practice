@@ -3,16 +3,42 @@
 </head>
 
 <body>
-  <h1>Welcome to Death Bed</h1>
 
-  {{> hello}}
+<header>
+  <h1>Welcome to Death Bed</h1>
+</header>
+  {{> points}}
+  <br/>
+  <br/>
+    {{> notes}}
+
+    <ul>
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </ul>
+
+
 </body>
 
-<template name="hello">
+<template name="task">
+  <li>{{note}} {{people}} {{work}} {{alone}} {{count}}</li>
+</template>
+
+<template name="points">
       <p>You have {{counter}} Death Bed points.</p>
 
       <button type="button" id='alone'>Alone</button>
        <button type="button" id='people'>People</button>
         <button type="button" id='work'>Work</button>
+        <button type="button" id='none'>None</button>
+
+
+</template>
+
+<template name="notes">
+    <form class="new-note">
+      <input type="text" name="text" placeholder="Type to add new note" />
+    </form>
 
 </template>
