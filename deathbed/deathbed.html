@@ -1,22 +1,21 @@
 <head>
     <title>Death Bed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
     <header>
-        <h1>Welcome to Death Bed</h1>
+        <img src="/images/coffin.png" alt="coffin" id="logo">
+        <h1>Welcome to <br/>
+        Death Bed</h1>
+
     </header>
 
-    {{> loginButtons}}
 
-
-    {{#if currentUser}}
-    {{> points}}
+    {{> loginButtons}} {{#if currentUser}} {{> points}}
     <br/>
-    <br/>
-    {{> notes}}
-    {{/if}}
+    <br/> {{> notes}} {{/if}}
 
 </body>
 
@@ -34,7 +33,8 @@
 
 <template name="notes">
     <form class="new-note">
-        <input type="text" name="text" placeholder="Type to add new note" />
+        <input type="text" name="text" placeholder="Type to add a note for today" />
+        <input type="submit" value="Submit" class="button">
     </form>
 
 </template>
