@@ -5,7 +5,10 @@ I read [this article](https://medium.com/@buster/the-death-bed-game-20cc8d9c7494
 
 I will be using meteor and react.
 
+You can play with what I've put together so far [here](http://deathbed.meteor.com/).
+
 ## Packages Included
 
-```meteor add accounts-ui accounts-password msavin:mongol
-````
+```
+meteor add accounts-ui accounts-password msavin:mongol
+```
