@@ -13,11 +13,6 @@ const Layout = ({
                 </PageHeader>
             </Col>
         </Row>
-        <Row>
-            <Col xs={12}>
-                <ItemProgress/>
-            </Col>
-        </Row>
         {content()}
     </Grid>
 );
