@@ -1,12 +1,13 @@
 import React from 'react';
-
-const Layout = ({content = () => null }) => (    
-   <div>
-     <header>
-         <h1>Impossible List</h1>
-</header>
-     <div>
+ import { Grid, Row, Col, PageHeader } from 'react-bootstrap';
+ const Layout = ({content = () => null }) => (
+   <Grid>
+         <Row>
+                 <Col xs={12}>
+                         <PageHeader>Impossible List </PageHeader>
+                 </Col>
+</Row>
          {content()}
-</div>
-</div> );
+   </Grid>
+ );
  export default Layout;
