@@ -1,7 +1,18 @@
 import React from 'react';
- const ItemList = ({content = () => null }) => (
-   <div>
-     <p>This is where the items will be.</p>
-   </div>
- );
- export default ItemList;
+import Item from './Item.jsx';
+import {Row, Col, Glyphicon} from 'react-bootstrap';
+
+const ItemList = ({
+    content = () => null
+}) => (
+    <Row className="show-grid">
+        <Col xs={12}>
+            <a href="/edit">
+                <Glyphicon glyph="plus"></Glyphicon>
+                New Item</a>
+            <Item/>
+        </Col>
+    </Row>
+);
+
+export default ItemList;
