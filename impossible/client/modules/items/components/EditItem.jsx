@@ -1,5 +1,6 @@
 import React from 'react';
 import {Col, Panel, Input, ButtonInput, Glyphicon} from 'react-bootstrap';
+ import DateTimeField from 'react-bootstrap-datetimepicker';
 
 const EditItem = ({
     content = () => null
@@ -10,10 +11,11 @@ const EditItem = ({
                 <Glyphicon glyph="chevron-left"></Glyphicon>
                 Back to Items</a>
             <h1>Edit Item</h1>
-
             <form>
                 <Input type="text" placeholder="Name"/>
                 <Input type="textarea" placeholder="Description"/>
+                <DateTimeField />
+                <br/>
                 <ButtonInput bsStyle="primary" type="submit" value="Save Item"/>
             </form>
         </Panel>
