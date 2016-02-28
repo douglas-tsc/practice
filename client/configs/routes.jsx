@@ -19,5 +19,23 @@ export const initRoutes = (context, actions) => {
       });
     }
   });
-  //more routes will be added here later
+
+  FlowRouter.route('/post/:postId', {
+  name: 'posts.single',
+  action({postId}) {
+    mount(MainLayoutCtx, {
+      content: () => (<Post postId={postId}/>)
+    });
+  }
+});
+
+FlowRouter.route('/new-post', {
+  name: 'newpost',
+  action() {
+    mount(MainLayoutCtx, {
+      content: () => (<NewPost/>)
+    });
+  }
+});
+
 };
