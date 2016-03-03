@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Panel, Input, ButtonInput, Glyphicon } from 'react-bootstrap';
+
 class NewUser extends React.Component {
  render() {
  const {error} = this.props;

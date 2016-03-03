@@ -1,6 +1,5 @@
 import React from 'react';
 import {Grid, Row} from 'react-bootstrap';
-
 const Layout = ({content = () => null }) => (
  <Grid>
   <Row>
