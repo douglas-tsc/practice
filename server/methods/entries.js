@@ -7,7 +7,7 @@ export default function () {
    check(text, String);
    const createdAt = new Date();
    const entry = {text, createdAt};
-   Entry.insert(entry);
+   Entries.insert(entry);
   }
  });
 }

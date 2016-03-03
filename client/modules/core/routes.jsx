@@ -4,9 +4,10 @@ import Layout from './components/MainLayout.jsx';
 import Home from './components/Home.jsx';
 import NewUser from '../users/containers/NewUser.js';
 import Login from '../users/containers/Login.js';
-import EntryList from './containers/EntryList.js';
-import Entry from './containers/Entry.js';
-import NewEntry from './containers/NewEntry.js';
+import EntryList from '../entries/containers/EntryList.js';
+import Entry from '../entries/containers/Entry.js';
+import NewEntry from '../entries/containers/NewEntry.js';
+
 export default function (injectDeps, {FlowRouter}) {
  const MainLayoutCtx = injectDeps(Layout);
  FlowRouter.route('/', {

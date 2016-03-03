@@ -4,7 +4,7 @@ const Entry = ({entry}) => (
  <Grid>
   <Row>
    <Col xs={6} xsOffset={3}>
-    <h2>{entry.title}</h2>
+    {/*<h2>{entry.title}</h2>*/}
     <p>
      {entry.text}
     </p>

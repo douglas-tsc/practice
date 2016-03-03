@@ -6,7 +6,7 @@ const EntryList = ({entries}) => (
    {entries.map(entry => (
     <Col xs={3} key={entry._id}>
      <Panel>
-      <p>{entry.title}</p>
+      <p>{entry.text}</p>
       <a href={'/entry/${entry._id}'}>View Entry</a>
      </Panel>
     </Col>

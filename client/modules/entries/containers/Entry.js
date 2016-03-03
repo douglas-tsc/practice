@@ -1,4 +1,4 @@
-import Entry from '../components/entry.jsx';
+import Entry from '../components/Entry.jsx';
 import {useDeps, composeWithTracker, composeAll} from 'mantra-core';
 export const composer = ({context, entryId}, onData) => {
  const {Meteor, Collections} = context();

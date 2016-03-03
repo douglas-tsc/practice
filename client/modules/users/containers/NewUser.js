@@ -5,7 +5,6 @@ export const composer = ({context, clearErrors}, onData) => {
   const {LocalState} = context();
   const error = LocalState.get('CREATE_USER_ERROR');
   onData(null, {error});
-
   // clearErrors when unmounting the component
   return clearErrors;
 };
