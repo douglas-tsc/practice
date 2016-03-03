@@ -15,7 +15,7 @@ class Login extends React.Component {
      </form>
     </Panel>
    </Col>
-  )
+  );
  }
 login(e) {
  e.preventDefault();

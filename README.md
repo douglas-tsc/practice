@@ -10,9 +10,8 @@ Then you can add users to the app by following [this tutorial](https://medium.co
 
 Once you understand how mantra is structured you can play with the [official manta sample app](https://github.com/mantrajs/mantra-sample-blog-app) and add comments to your app. There is no tutorial but by this point it should be easy enough to figure out.
 
-## More Meteor+React Tutorials
+### More Meteor + React Tutorials
 
 As I find new tutorial I'll add them to [this list](https://forums.meteor.com/t/step-by-step-meteor-react-books-courses-and-tutorials/18582). If you find any that are not on the list, please add them to the comments.  
 
-Take care
 [@joshpitzalis]()
