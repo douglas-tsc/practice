@@ -1,26 +1,13 @@
-## A Sample Blog App Written in Mantra
+#Mantraplate
 
-This is a sample blog app written in [Mantra](https://github.com/kadirahq/mantra) covering core features of it.
+<img src='mantra.png'/>
 
-### Setting Up
+Mantraplate is a simple boilerplate project for quickly creating Meteor apps with the Mantra spec.
 
-* Clone this repo
-* Do `npm install` to install dependencies
-* Make sure you've installed Meteor locally
+For more info on Mantra, read the [specs](https://kadirahq.github.io/mantra/) and check out the [sample app](https://github.com/mantrajs/mantra-sample-blog-app).
 
-### Running The App
+To get this set up clone the repo with:
 
-Simply start you app with `meteor -p 5005`.
-Then you can access the app on <http://localhost:5005>
+`git clone https://github.com/joshpitzalis/mantraplate.git`
 
-### Running Tests
-
-In this app, every part of the client side is fully tested using the familiar tools like Mocha, Chai and Sinon.
-
-Run tests with:
-
-```
-npm test
-```
-
-**See package.json for more information about testing setup.**
+And then run `npm install`
