@@ -1,32 +1,32 @@
 import React from 'react';
 import { Col, Panel, Input, ButtonInput, Glyphicon } from 'react-bootstrap';
 
-class NewUser extends React.Component {
+class Login extends React.Component {
 	render() {
 		const {error} = this.props;
 		return (
 			<Col xs={12} sm={6} smOffset={3}>
 				<Panel>
-					<h1>Register</h1>
+					<h1>Login</h1>
 					{error ? <p style={{color: 'red'}}>{error}</p> : null}
 					<form>
 						<Input ref="email" type="email" placeholder="Email" />
 						<Input ref="password" type="password" placeholder="Password" />
-						<ButtonInput onClick={this.createUser.bind(this)} bsStyle="primary" type="submit" value="Sign Up"/>
+						<ButtonInput onClick={this.login.bind(this)} bsStyle="primary" type="submit" value="Login"/>
 					</form>
 				</Panel>
 			</Col>
 		);
 	}
 
-	createUser(e) {
+	login(e) {
 		e.preventDefault();
-		const {create} = this.props;
+		const {loginUser} = this.props;
 		const {email, password} = this.refs;
-		create(email.getValue(), password.getValue());
+		loginUser(email.getValue(), password.getValue());
 		email.getInputDOMNode().value = '';
 		password.getInputDOMNode().value = '';
 	}
 }
 
-export default NewUser;
+export default Login;
