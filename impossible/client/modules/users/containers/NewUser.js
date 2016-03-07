@@ -1,4 +1,4 @@
-import NewUser from '../components/newUser.jsx';
+import NewUser from '../components/NewUser.jsx';
 
 import {
     useDeps,
