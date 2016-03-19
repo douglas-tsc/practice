@@ -1,4 +1,4 @@
-InvoiceItems = new Mongo.Collection('invoive-items');
+InvoiceItems = new Mongo.Collection('invoice-items');
 
 InvoiceItems.allow({
     insert: () => false,

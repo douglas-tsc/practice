@@ -11,8 +11,8 @@ InvoicesList = React.createClass({
 
         if (invoices.length > 0) {
             return invoices.map((item, index) => {
-                return <a className= 'list-group-item' key={item.id} href={ `/invoices/${ item.id}`}>
-                {'Invoices #${ item.number}'}
+                return <a className= 'list-group-item' key={item._id} href={ `/invoices/${item.id}`}>
+                {`Invoices #${item.number}`}
                 </a>
             });
         }else{
@@ -33,7 +33,9 @@ InvoicesList = React.createClass({
             <h4 className='page-header'>
                 Invoices</h4>
             <button type='button' className='btn btn-success' onClick={this.handleNewInvoice}> New Invoice</button>
+
             <div className='list-group'>
+                <br/>
                 {this.listInvoices()}
             </div>
         </div>

@@ -15,10 +15,10 @@ Meteor.methods( {
         return invoiceId;
     },
 
-    addInvoiceItem() {
-        check( invoiceId, String );
+    addInvoiceItem(invoiceId) {
+        check(invoiceId, String );
 
-        return InvoiceItem.insert( {
+        return InvoiceItems.insert({
             invoice: invoiceId,
             description: '',
             qty: null,
@@ -27,7 +27,7 @@ Meteor.methods( {
     },
 
     removeInvoiceItem(itemId) {
-        check(itemId,String);
-        return InvoicedItems.remove(itemId);       
+        check(itemId, String);
+        return InvoiceItems.remove(itemId);
     }
 });

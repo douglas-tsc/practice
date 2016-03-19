@@ -5,13 +5,13 @@ const invoiceRoutes = FlowRouter.group({
 invoiceRoutes.route('/invoices', {
     name: 'invoices',
     action(){
-        ReactLayout.render(App, { yield: <invoiceList/> });
+        ReactLayout.render(App, { yield: <InvoicesList/> });
     }
 });
 
 invoiceRoutes.route('/invoices/:id', {
     name: 'invoice',
     action(params) {
-        ReactLayout.render(App, {yield: <Invoice invoice={param.id}/> });
+        ReactLayout.render(App, { yield: <Invoice invoice={ params._id}/> });
     }
 });
