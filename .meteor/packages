@@ -19,11 +19,10 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 react
-mquandalle:jade
 http
-coffeescript
-meteorhacks:npm
 cosmos:browserify
 
 
 npm-container
+meteorhacks:async
+meteorhacks:npm

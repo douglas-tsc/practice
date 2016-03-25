@@ -1,13 +1,8 @@
 const {
-  FontIcons,
   IconButton,
-  Icons,
-  List,
   ListItem,
-  ListDivider,
   Avatar
 } = mui;
-
 
 // Task component - represents a single todo item
 Job = React.createClass({
@@ -20,6 +15,6 @@ Job = React.createClass({
         href={this.props.job.company_url}
         rightIcon={ <IconButton iconClassName="muidocs-icon-custom-github" tooltip="GitHub" /> }
       />
-    );
+    )
   }
-});
+})

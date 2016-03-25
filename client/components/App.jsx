@@ -1,14 +1,6 @@
 const {
-  Paper,
   List,
-  ListItem,
-  ListDivider,
-  Avatar,
-  RaisedButton,
-  AppBar,
-  FlatButton,
-  IconButton,
-  NavigationClose
+  AppBar
 } = mui;
 
 const ThemeManager = new mui.Styles.ThemeManager();
@@ -20,44 +12,42 @@ App = React.createClass({
     muiTheme: React.PropTypes.object
   },
 
-  getChildContext: function() {
+  getChildContext: function () {
     return {
       muiTheme: ThemeManager.getCurrentTheme()
     };
   },
 
-  getMeteorData() {
+  getMeteorData () {
     return {
       jobs: Jobs.find({}).fetch()
     }
   },
 
-  componentDidMount() {
-      {this.loadJobs()}
+  componentDidMount () {
+      {this.loadJobs() }
   },
 
-  loadJobs() {
-    loadJobs = Meteor.call("loadGithubJobs");
+  loadJobs () {
+    loadJobs = Meteor.call("loadJobs");
   },
 
-  renderJobs() {
+  renderJobs () {
     return this.data.jobs.map((job) => {
-      return <Job key={job._id} job={job} />;
+      return <Job key={job._id} job={job} />
     });
   },
 
-  render() {
+  render () {
     return (
-      <div className="wrapper">
-        <AppBar
-          title="Github Jobs" />
-
-        <div className="container">
-          <List subheader="Latest Github Jobs">
+      <div className='wrapper'>
+        <AppBar title='Latest Jobs' showMenuIconButton={false}/>
+        <div className='container'>
+          <List subheader='Click on any job for details.'>
             {this.renderJobs()}
           </List>
         </div>
       </div>
-    );
+    )
   }
-});
+})
