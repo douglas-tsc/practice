@@ -1,3 +1,8 @@
 <template name="recipes">
-{{> newRecipe}}
+  {{> newRecipe}}
+  <section class="recipes">
+      {{#each recipes}}
+        {{> recipe}}
+      {{/each}}
+  </section>
 </template>
