@@ -1,4 +1,4 @@
-Template.Recipes.onCreated(function() {
+Template.recipes.onCreated(function() {
   var self = this;
   self.autorun(function() {
     self.subscribe('recipes');
