@@ -1,5 +1,5 @@
 <template name="recipe">
-  <article class="recipe">
+  <article class="recipe {{#if inMenu}}in-menu{{/if}}">
     <h3>{{name}}</h3>
     <p>
       {{desc}}
@@ -10,5 +10,7 @@
       {{/each}}
     </p>
     <a href='/recipe/{{_id}}'>View Details</a>
+    <button type="button" name="button" class='btn-primary toggle-menu'> Add to Menu</button>
+    <button type="button" name="button" class='btn-deny toggle-menu'> Remove from Menu</button>
   </article>
 </template>
