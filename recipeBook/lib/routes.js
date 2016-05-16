@@ -48,3 +48,11 @@ FlowRouter.route('/menu', {
     BlazeLayout.render('mainLayout', {main:'menu'});
   }
 });
+
+FlowRouter.route('/shopping-list', {
+  name: 'list',
+  action() {
+    GAnalytics.pageview();
+    BlazeLayout.render('mainLayout', {main:'shoppingList'});
+  }
+});
