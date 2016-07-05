@@ -7,3 +7,5 @@ If you're just getting into code I recommend [Free Code Camp](http://www.freecod
 Flexbox practice is from [What The Flexbox?!](http://flexbox.io/) by Wes Bos.
 
 I also found [Flexbox Froggy](http://flexboxfroggy.com/) helpful.
+
+The github section is forked from [https://github.com/NataliaLKB/learn-git-basics](https://github.com/NataliaLKB/learn-git-basics)
