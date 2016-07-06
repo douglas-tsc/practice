@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header';
+import LinkCreate from './components/linkCreate';
 
 const App = () => {
   return (
-    <Header />
+    <div>
+      <Header />
+      <LinkCreate />
+    </div>
   );
 };
 
