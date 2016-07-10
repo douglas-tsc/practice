@@ -5,7 +5,7 @@ import { Links } from '../../imports/collections/links';
 class LinkList extends Component {
   renderRows () {
     return this.props.links.map(link => {
-      const {url, clicks, token } = link;
+      const { url, clicks, token } = link;
       const shortLink = `http://localhost:3000/${token}`;
       return (
         <tr key={token}>
