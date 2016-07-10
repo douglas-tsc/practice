@@ -1,3 +1,7 @@
+* {
+  outline: 1px dotted red;
+}
+
 #login-buttons {
   margin: 18px;
   font-size: 14px;
@@ -5,4 +9,21 @@
 
 .list-group-item {
   height: 55px;
+}
+
+.binShare {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.binShare .input-group {
+  width: 30%;
+}
+
+.binShare > div {
+  margin: 0 10px;
 }
