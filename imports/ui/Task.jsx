@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Tasks } from '../api/tasks.js';
 import { Meteor } from 'meteor/meteor';
 import classnames from 'classnames';
+import moment from 'moment';
 // Task component - represents a single todo item
 export default class Task extends Component {
   toggleChecked () {
@@ -15,13 +16,17 @@ export default class Task extends Component {
     Meteor.call('tasks.remove', this.props.task._id);
   }
   render () {
+    const style = this.props.task.due < currentDate ? {'border': 'solid 1px red'} : {'border': 'solid 1px #e3e3e3'};
+
+    const {currentDate} = this.props;
+
     const taskClassName = classnames({
       checked: this.props.task.checked,
       private: this.props.task.private,
     });
 
     return (
-      <li className={taskClassName}>
+      <li className={taskClassName} style={style}>
         <button className='delete' onClick={this.deleteThisTask.bind(this)}>
           &times;
         </button>
@@ -38,7 +43,10 @@ export default class Task extends Component {
           </button>
         ) : ''}
         <span className='text'>
-          <strong>{this.props.task.username}</strong>: {this.props.task.text}
+          <strong>{this.props.task.username}</strong>:
+          {this.props.task.text}
+          {this.props.task.due ?
+          '- ' + moment(Number(this.props.task.due)).format('MM/DD/YYYY') : ''}
         </span>
       </li>
     );

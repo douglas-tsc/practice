@@ -5,6 +5,7 @@ import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 import { Tasks } from '../api/tasks.js';
 import { Meteor } from 'meteor/meteor';
 import Task from './Task.jsx';
+import DatePicker from 'react-datepicker';
 
 // App component - represents the whole app
 class App extends Component {
@@ -76,8 +77,10 @@ class App extends Component {
               ref='textInput'
               placeholder='Type to add new tasks'
             />
+
           </form> : ''
           }
+          {/*<DatePicker inline selected={this.state.date} onChange={this.handleChange} />*/}
         </header>
 
         <ul>
