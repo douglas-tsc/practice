@@ -8,7 +8,11 @@ A study guide for Meteor 1.3:
   + [ ] Learn about [the main component lifecycle methods](https://facebook.github.io/react/docs/component-specs.html).
   + [ ] Understand how to use state and props.
   + [ ] Understand how to write functional stateless components.
-    - [x] Free [Official Meteor Tutorial](https://www.meteor.com/tutorials/react/creating-an-app) ([Github files](https://github.com/meteor/simple-todos-react/tree/e2ede7952b00434f63386423bf8ecb0d9f5d7047))
+    - [ ] Free [Official Meteor Tutorial](https://www.meteor.com/tutorials/react/creating-an-app) ([Github files](https://github.com/meteor/simple-todos-react/tree/e2ede7952b00434f63386423bf8ecb0d9f5d7047))
+
+    - [ ] Free/Paid [Build a resolution list](https://www.youtube.com/watch?v=B_HJCmoSvmc&list=PLJ0yN6AIWGkOM6OFCkjZf-Vy4WYn1r04f)
+
+    - [x] Paid [Build an impossible List](http://meteorandreact.com/book/) ([Github files](https://github.com/kenrogers/impossiblelist))
 
     - [x] Paid [Create an imgur style image viewer List](https://www.udemy.com/meteor-react-tutorial/)  ([Github files](https://github.com/StephenGrider/MeteorCasts/tree/master/images))
 
