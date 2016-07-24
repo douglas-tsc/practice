@@ -1,6 +1,10 @@
 import { Meteor } from 'meteor/meteor';
-import '../imports/api/tasks.js';
+import { Projects } from '../imports/collections/projects'
 
 Meteor.startup(() => {
-  
+  Meteor.publish('projects', function () {
+    return Projects.find({
+      //  ownerId: this.userId
+    });
+  });
 });
