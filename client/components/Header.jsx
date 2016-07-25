@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class Header extends Component {
 onCreateClick (event) {
@@ -8,7 +9,7 @@ onCreateClick (event) {
   render () {
     return (
       <nav className='nav navbar-default'>
-        <div className='navbar-header'><a className='navbar-brand'>Havtoo</a>
+        <div className='navbar-header'><Link to='/' className='navbar-brand'>Havtoo</Link>
         </div>
         <ul className='nav navbar-nav'>
           <li className=''>

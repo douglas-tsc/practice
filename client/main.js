@@ -17,7 +17,7 @@ const routes = (
   <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute  component={ProjectList} />
-      <Route path='workspace' component={Workspace}>
+      <Route path='workspace/:projectId' component={Workspace}>
       </Route>
     </Route>
   </Router>
