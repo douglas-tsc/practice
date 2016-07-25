@@ -1,12 +1,11 @@
 import React from 'react';
-import Header from './Header.jsx';
-import ProjectList from './ProjectList';
+import Header from './header.jsx';
 
-export default () => {
+export default (props) => {
   return (
     <div>
       <Header />
-      <ProjectList />
+      {props.children}
     </div>
   );
 };

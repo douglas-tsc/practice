@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import App from './components/app';
 import { Projects } from '../imports/collections/projects'
+import Workspace from './components/workspace'
+import ProjectList from './components/projectList'
 
 // import { Meteor } from 'meteor/meteor';
 // import { render } from 'react-dom';
@@ -14,9 +16,9 @@ import { Router, Route, IndexRoute, browserHistory} from 'react-router';
 const routes = (
   <Router history={browserHistory}>
     <Route path='/' component={App}>
-      {/*<IndexRoute component={App} />
-        <Route path='edit' component={EditItem}>
-      </Route>*/}
+      <IndexRoute  component={ProjectList} />
+      <Route path='workspace' component={Workspace}>
+      </Route>
     </Route>
   </Router>
 );
