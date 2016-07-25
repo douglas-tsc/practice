@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
-onCreateClick(event){
+onCreateClick (event) {
   event.preventDefault();
   Meteor.call('projects.insert');
 }
@@ -12,7 +12,7 @@ onCreateClick(event){
         </div>
         <ul className='nav navbar-nav'>
           <li className=''>
-            <a href="#" onClick={this.onCreateClick.bind(this)}>Create Project</a>
+            <a href='#' onClick={this.onCreateClick.bind(this)}>Create Project</a>
           </li>
         </ul>
       </nav>

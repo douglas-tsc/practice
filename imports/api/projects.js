@@ -2,7 +2,7 @@ import { Mongo } from 'meteor/mongo';
 
 Meteor.methods({
   'projects.insert': function () {
-    return Projects.insert({
+    return Project.insert({
       createdAt: new Date(),
       content: {},
       sharedWith: [],
@@ -11,4 +11,4 @@ Meteor.methods({
   }
 });
 
-export const Projects = new Mongo.Collection('projects');
+export const Project = new Mongo.Collection('projects');
