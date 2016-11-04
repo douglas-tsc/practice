@@ -1,4 +1,3 @@
-
 HTML and CSS practice comes from [The Complete Web Developer Course]()
 
 I found [DASH](https://dash.generalassemb.ly/) helpful when I was first learning about HTML and CSS.
@@ -108,9 +107,3 @@ Now you have the full fs module available in a variable named fs.
 All synchronous (or blocking) filesystem methods in the fs module end with 'Sync'. To read a file, you'll need to use fs.readFileSync('/path/to/file'). This method will return a Buffer object containing the complete contents of the file.
 
 Buffer objects are Node's way of efficiently representing arbitrary arrays of data, whether it be ascii, binary or some other format. Buffer objects can be converted to strings by simply calling the toString() method on them. e.g. var str = buf.toString().
-=======
-# Meteor Practice
-
-[Meteor Guide 1.4](https://guide.meteor.com/index.html)
-
-- [x] [Voting App](https://leveluptutorials.com/tutorials/meteor-1-4-for-everyone/series-introduction() $8
