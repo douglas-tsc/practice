@@ -17,7 +17,7 @@ class StorePicker extends React.Component {
           required
           placeholder='Store Name'
           defaultValue={getFunName()}
-          ref={(input) => {this.storeInput = input }} />
+          ref={(input) => { this.storeInput = input; }} />
         <button type='submit'>
           Visit Store
         </button>
@@ -27,7 +27,7 @@ class StorePicker extends React.Component {
 }
 
 StorePicker.contextTypes = {
-  router : React.PropTypes.object
-}
+  router: React.PropTypes.object
+};
 
 export default StorePicker;
