@@ -1,22 +1,9 @@
 import React, { Component } from 'react';
 
-const list = [
-  {
-    title: 'React',
-    url: 'https://facebook.github.io/react/',
-    author: 'Jordan Walke',
-    num_comments: 3,
-    points: 4,
-    objectID: 0
-  }, {
-    title: 'Redux',
-    url: 'https://github.com/reactjs/redux',
-    author: 'Dan Abramov, Andrew Clark',
-    num_comments: 2,
-    points: 5,
-    objectID: 1
-  }
-];
+const DEFAULT_QUERY = 'redux';
+const PATH_BASE = 'https://hn.algolia.com/api/v1';
+const PATH_SEARCH = '/search';
+const PARAM_SEARCH = 'query=';
 
 const isSearched = (query) => (item) => !query || item.title.toLowerCase().indexOf(query.toLowerCase()) !== -1;
 
@@ -25,10 +12,26 @@ class App extends Component {
   constructor (props) {
     super (props);
     this.state = {
-      list,
-      query: ''
+      result: null,
+      query: DEFAULT_QUERY
     };
+    this.setSearchTopstories = this.setSearchTopstories.bind(this);
+    this.fetchSearchTopstories = this.fetchSearchTopstories.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
+  }
+
+  setSearchTopstories (result) {
+    this.setState({ result });
+  }
+
+  fetchSearchTopstories ( query ) {
+    fetch(`${PATH_BASE}${PATH_SEARCH}?${PARAM_SEARCH}${query}`).then(response => response.json())
+    .then(result => this.setSearchTopstories(result));
+  }
+
+  componentDidMount() {
+    const { query } = this.state;
+    this.fetchSearchTopstories(query);
   }
 
   onSearchChange(event) {
@@ -38,7 +41,7 @@ class App extends Component {
   }
 
   render() {
-    const { query, list } = this.state;
+    const { query, result } = this.state;
 
     return (
       <div className="page">
@@ -46,7 +49,7 @@ class App extends Component {
         <Search value={query} onChange={this.onSearchChange}>
         Search</Search>
         </div>
-        <Table list={list} pattern={query} />
+        { result ? <Table list={result.hits} pattern={query} /> : null }
       </div>
     );
   }
