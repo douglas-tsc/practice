@@ -13,35 +13,52 @@ class App extends Component {
       todos: [
         {
           id: uuid(),
-          text: 'Walk the dog'
+          text: 'Walk the dog',
+          completed: true
         }, {
           id: uuid(),
-          text: 'Clean the yard'
+          text: 'Clean the yard',
+          completed: false
         }
       ]
     };
     this.handleAddToDo = this.handleAddToDo.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
+    this.handleToggle = this.handleToggle.bind(this);
   }
   handleAddToDo (text) {
     this.setState({
       todos: [...this.state.todos,
         {
           id: uuid(),
-        text}]
+          text,
+          completed: false
+        }
+      ]
     });
   }
   handleSearch (showCompleted, searchText) {
-    this.setState = {
+    this.setState({
       showCompleted: showCompleted,
       searchText: searchText.toLowerCase()
-    };
+    });
+  }
+  handleToggle (id) {
+    const updatedToDos = this.state.todos.map((todo) => {
+      if (todo.id === id) {
+        todo.completed = !todo.completed;
+      }
+      return todo;
+    });
+    this.setState({
+      todos: updatedToDos
+    });
   }
   render () {
     return (
       <div>
         <Search onSearch={this.handleSearch} />
-        <ToDoList todos={this.state.todos} />
+        <ToDoList todos={this.state.todos} onToggle={this.handleToggle} />
         <Add onAddToDo={this.handleAddToDo} />
       </div>
     );
