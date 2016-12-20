@@ -3,6 +3,7 @@ import ToDoList from './ToDoList';
 import Add from './Add';
 import Search from './Search';
 import uuid from 'node-uuid';
+import ToDoAPI from '../api/ToDoAPI.js';
 
 class App extends Component {
   constructor () {
@@ -10,21 +11,14 @@ class App extends Component {
     this.state = {
       showCompleted: false,
       searchText: '',
-      todos: [
-        {
-          id: uuid(),
-          text: 'Walk the dog',
-          completed: true
-        }, {
-          id: uuid(),
-          text: 'Clean the yard',
-          completed: false
-        }
-      ]
+      todos: ToDoAPI.getToDos()
     };
     this.handleAddToDo = this.handleAddToDo.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
+  }
+  componentDidUpdate () {
+    ToDoAPI.setToDos(this.state.todos);
   }
   handleAddToDo (text) {
     this.setState({
