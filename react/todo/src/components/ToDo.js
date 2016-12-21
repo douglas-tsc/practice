@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
+import moment from 'moment';
 
-const ToDo = ({text, id, completed, onToggle}) => <li onClick={()=>{onToggle(id)}}>
-                                          <input type='checkbox' checked={completed} />
-                                          {text}
-                                        </li>;
+class ToDo extends Component {
+
+  render () {
+
+    const {text, id, completed, onToggle, completedAt} = this.props;
+    let renderDate = () => {
+      if (completed){
+        return`done at ${moment.unix(completedAt).format('h:m')}`;
+      }
+    }
+    return (
+      <li onClick={()=>{onToggle(id)}}>
+        <input type='checkbox' checked={completed} />
+        {text} <em>{renderDate()}</em>
+      </li>
+    );
+  }
+}
+
 export default ToDo;

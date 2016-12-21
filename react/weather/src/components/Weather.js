@@ -5,7 +5,7 @@ import api from './api';
 
 class Weather extends Component {
   constructor () {
-    super ();
+    super();
     this.state = {
       isLoading: false
     };
@@ -13,7 +13,7 @@ class Weather extends Component {
 
   handleSearch (location) {
     var that = this;
-    this.setState({ isLoading: true});
+    this.setState({ isLoading: true });
     api.getTemp(location).then(function (temp) {
       that.setState({
         location,
@@ -21,6 +21,7 @@ class Weather extends Component {
         isLoading: false
       })
     }, function (errorMessage) {
+      that.setState({isLoading: false})
       alert(errorMessage);
     });
   }
@@ -32,8 +33,8 @@ class Weather extends Component {
       if (isLoading) {
         return <p>Fetching Weather...</p>;
       } else if (temp && location) {
-        return <Message location={this.state.location}
-        temp={this.state.temp} />;
+        return <Message location={location}
+        temp={temp} />;
       }
     }
 

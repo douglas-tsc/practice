@@ -17,7 +17,7 @@ class Add extends Component {
       <div>
         <form onSubmit={(e) => this.handleSubmit(e)}>
           <input type='text' ref='toDoText' />
-          <button type='submit'>Add ToDo</button>
+          <button type='submit'>Add To Ritual</button>
         </form>
       </div>
     );

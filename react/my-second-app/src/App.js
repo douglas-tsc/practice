@@ -22,7 +22,7 @@ class App extends Component {
       type: 'GET',
       dataType: 'jsonp',
       url: URL,
-      success: function (response) { this.showResults(response)}.bind(this)
+      success: function (response) { this.showResults(response); }.bind(this)
     });
   }
 

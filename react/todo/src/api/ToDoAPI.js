@@ -13,5 +13,13 @@ module.exports = {
     } catch (e) {}
 
     return Array.isArray(todos) ? todos : [];
+  },
+  filterToDos(todos, showCompleted, searchText) {
+    let filteredToDos = todos;
+    // filter by showCompleted
+    // filter by search text
+    // organise done tasks last
+    return filteredToDos;
   }
+
 };
