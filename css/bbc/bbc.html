@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+    <title>Josh’s BBC</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style type="text/css">
+
+    body{
+        margin:0;
+      }
+
+    #topbar{
+
+      background-color:#7A0000;
+      	width:100%;
+        height:40px;
+      	color:white;
+      font-family:Arial, Helmet, Freesans, sans-serif;
+    margin:0;
+    }
+
+    .fixedwidth{
+      width:1050px;
+      margin:0 auto;
+    }
+
+
+      #logodiv{
+        padding-top:7px;
+        float:left;
+        border-right:1px solid #990000;
+        padding-right:10px;
+      }
+
+          #logodiv img{
+        margin:0 0 0 10px
+
+      }
+
+      #signindiv{
+      width:180px;
+      float:left;
+      padding:10px 0 10px 15px;
+      border-right:1px solid #990000;
+      font-weight:bold;
+      font-size: 80%;
+        }
+
+    #signindiv img {
+      position:relative;
+      top:4px;
+
+    }
+
+
+
+    #topmenudiv ul{
+      margin:0px;
+      padding:0px;
+    }
+
+
+
+    #topmenudiv li{
+      list-style:none;
+      font-weight:bold;
+      font-size: 80%;
+      border-right:1px solid #990000;
+      padding:15px 15px 10px 15px;
+      float:left;
+    }
+
+    #searchdiv{
+      float:left;
+      padding:10px 0 0 10px;
+    }
+
+    #searchdiv input{
+      height:20px;
+      border: none;
+      padding:0 0 0 10px;
+      font-size: 16px;
+      background-image:url("http://zoo32.com/images/search.png");
+      background-repeat:no-repeat;
+      background-position:right center;
+    }
+
+    #newsbar{
+
+      background-color:#990000;
+      	width:100%;
+        height:95px;
+      	color:white;
+      font-family:"Gill Sans MT", "Gill Sans", Arial, Helmet, Freesans, sans-serif;
+    margin:0;
+	padding:0 0 0 10px;
+
+    }
+
+	#newsbar p{
+		margin:0;
+	}
+
+	#newslogo{
+		font-size:280%;
+		font-weight:normal;
+		padding-top:20px;
+
+
+	}
+
+	#uklogo{
+		font-size:60%;
+		padding-left:5px;
+
+	}
+
+	#newsbar p{
+		float:left;
+	}
+
+	#rss{
+		float:right;
+		margin-top:50px;
+	}
+
+	#rss img{
+		height:15px;
+	}
+
+	.break{
+		clear:both;
+	}
+
+
+	#topicbar ul{
+
+		background-color:#3E0C0D;
+		height:17px;
+		padding:3px;
+
+	}
+
+	#topicbar li{
+		list-style:none;
+		float:left;
+		font-size:.8em;
+		border-right: 1px solid #990000;
+		padding:0 6px 0 6px;
+
+	}
+
+	.selected{
+		background-color:#EDEDED;
+		color:#666666;
+		position:relative;
+		top:-3px;
+		height:19px;
+		padding-top:4px !important;
+	}
+
+
+    #content{
+
+		color: #535353;
+      	width:100%;
+		font-size:.75em;
+
+
+    }
+
+	.date{
+		font-weight:bold;
+	}
+
+    h1 {
+		color: #1F4F82;
+		font-family: Arial, Helmet, Freesans, sans-serif;
+		font-size:2.461em;
+	padding-top:10px;
+    }
+
+    #headline {
+
+		float:left;
+	}
+
+ .newsitem {
+		font-family: Arial, Helmet, Freesans, sans-serif;
+		width:300px;
+		float:left;
+		position:relative;
+		left:10px;
+		font-size:1.1em;
+	}
+
+.newsitem a {
+	text-decoration:none;
+	position:relative;
+	top:10px;
+	line-height:1.5em;
+   	}
+
+	.newsitem a:hover {
+		text-decoration:underline;
+	   	}
+
+		#watchbox {
+			background-color:#EEEEEE;
+			font-family:Arial, Helmet, Freesans, sans-serif;
+			float:right;
+			position:relative;
+			top:-50px;
+			width:340px;
+
+			padding:0;
+		}
+
+		h2 {
+			color:#505050;
+			margin: 10px 0 10px 10px;
+			font-size:1.8em;
+		}
+
+		#watchbox img{
+
+			float:right;
+			margin:18px 10px 0 0;
+
+		}
+
+		#watchbox p{
+
+			float:left;
+		}
+
+		.slider {
+			width:340px;
+			position:relative;
+			right:-10px;
+			top:-20px;
+		}
+
+		#watchbox ul {
+			margin:0;
+			padding:0 10px 10px 10px;
+			float:left;
+			width:320px;
+		}
+
+		#watchbox li {
+			list-style:none;
+	        background-image:url("images/live.png");
+	        background-repeat:no-repeat;
+	        background-position:left center;
+			padding:10px 0 10px 50px;
+
+		}
+
+		.bb {
+			border-bottom:1px solid #DDDDDD;
+		}
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+      <div id="container">
+
+        	<div id="topbar">
+
+              	<div class="fixedwidth" >
+
+               		<div id="logodiv">
+                    	<img src= "images/bbclogo.png"/>
+              		</div>
+
+                      	<div id="signindiv">
+                          <img src="images/signin.png"/>
+                          	Sign In
+                  		</div>
+
+                  <div id="topmenudiv">
+						<ul>
+						  <li>News</li>
+                      	  <li>Sport</li>
+                      	  <li>Weather</li>
+                          <li>Earth</li>
+                          <li>Shop</li>
+                          <li>TV</li>
+                          <li>Radio</li>
+                          <li>More...</li>
+						</ul>
+					</div>
+
+                  <div id="searchdiv">
+                    <input type="text" placeholder="Search"/>
+                  </div>
+
+              	</div>
+        	</div>
+
+        	<div id="newsbar">
+
+              	<div class="fixedwidth" >
+					<p id=newslogo>
+						NEWS <span id=uklogo>
+						UK
+					</span>
+					</p>
+
+					<div id="rss">RSS
+						<img src="images/rss.png" />
+					</div>
+
+					<div class="break"/>
+
+					<div id="topicbar">
+						<ul>
+							<li>Home</li>
+							<li>World</li>
+							<li>Asia</li>
+							<li>Australia</li>
+							<li>India</li>
+							<li>China</li>
+							<li class="selected">UK</li>
+							<li>Business</li>
+							<li>Health</li>
+							<li>Science/Environment</li>
+							<li>Technology</li>
+							<li>Entertainment</li>
+							<li style="border-right:none">Video</li>
+						</ul>
+
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="break" />
+
+        	<div id="content">
+
+              	<div class="fixedwidth" >
+
+					<p><span class="date">12 November 2014</span> Last updated at 17:42</p>
+						<div class="break" />
+
+
+
+							<h1>Police face child abuse inquiry</h1>
+
+								<div id="headline">
+
+									<img src="images/headlineimage.jpg" />
+							</div>
+
+							<div class="newsitem">
+
+								<p>Three police forces are to be investigated by the Independent Police Complaints Commission for their alleged failure to act on child abuse images.</p>
+
+							<p><a href="">Porn teacher delays down to 'phrase'</a><br />
+						<a href="">IPCC inquiry over paedophile delays</a><br />
+							<a href="">Chief sorry for paedophile delays</a></p>
+
+							</div>
+
+							<div id="watchbox">
+								<img src="images/boxes.png" />
+								<h2>Watch/Listen</h2>
+								<img src="images/slider.png" class="slider"/>
+
+								<ul>
+								<li class="bb"><a href="">Radio 5 live</a></li>
+								<li><a href="">BBC News Channel</a></li>
+								</ul>
+
+							</div>
+
+
+						</div>
+
+
+
+					</div>
+						</div>
+      </div>
+</body>
+</html>
