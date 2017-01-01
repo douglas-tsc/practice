@@ -12,7 +12,7 @@ http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-
 + tictactoe
 + ritual
 + react forebase tutorials
-+ survey in react projects
++ survey in react projects on udemy
 + wiki https://code.tutsplus.com/courses/building-a-wiki-with-react-and-firebase
 + product hunt
 + first react app https://egghead.io/courses/build-your-first-react-js-application
