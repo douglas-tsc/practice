@@ -1,65 +1,68 @@
-# 100 Websites in 104 Days
-
-My name is Josh and I am making 100 websites in 100 days. I missed four days so far.
-
-Scroll the to bottom to see the websites.
-
-## The Story
-
-I created an account on Upwork and starting looking for jobs I liked.
-
-Instead of telling people what I could do for them in my proposal, I challenged myself to make the website and then send it to them.
-
-The goal is to learn my numbers. My hypothesis is that I will learn how to make better websites by creating 100 low-fidelity websites in quick succession than I would by focusing on quality.
-
-## The Rules
-
-+ Momentum is the priority. I may get sick. I might not have an internet connection some days. If I don't get a website out on that day, then the deadline extends. For example, if I miss three days by the end of the project it will be 100 websites in 103 days. The bottom line is that I make 100 websites in as short a time as possible. If I don't finish this by the end of the year its over.
-
-+ I can use what ever combination of frameworks I like, as long as I don't use website builders or online editors. The goal is to become better at building websites form scratch not using website building or installing themes.
-
-## The Websites
-
-I'll post links to new websites here each day.
-
-I have included the Briefs for context. Click on the day for that day's brief.
-
-If you have any questions or suggestions please open a pull request or drop me a line on [twitter](https://twitter.com/joshpitzalis).
+# [Stuff to Learn in 2017](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711#.ipb8zp7ri)
 
 
-Day 18 - [Simple landing page](http://joshpitzalis.github.io/website14/)
+## JavaScript & DOM Fundamentals
+Before you try to land a job using JavaScript, you should have a good grasp of JavaScript fundamentals:
 
-Day 17 - No website. No Excuse
+Builtin methods: Learn methods for the standard data types (especially arrays, objects, strings, and numbers).
 
-Day 16 - No website. No Excuse
+Functions & pure functions: You probably think you’ve got a great grasp of functions, but JavaScript has some tricks up its sleeves, and you’ll need to learn about pure functions to get a handle on functional programming.
 
-Day 15 - [Reusable website design chunks](http://joshpitzalis.github.io/website13/)
+Closures: Learn how JavaScript’s function scopes behave.
 
-Day 14 - [Boiler plate website for Material Design](http://joshpitzalis.github.io/website12/)
+Callbacks: A callback is a function used by another function to signal when there is a result ready. You say, “do your job, call me when it’s done.”
 
-Day 13 - No website. No Excuse
+Promises: A promise is a way to deal with future values. When a function returns a promise, you can attach callbacks using the .then() method to run after the promise resolves. The resolved value is passed into your callback function, e.g., doSomething().then(value => console.log(value));
 
-Day 12 - [Material Design Course Landing Page](http://joshpitzalis.github.io/website11/)
+Ajax & server API calls: Most interesting apps eventually need to talk to the network. You should know how to communicate with APIs.
 
-Day 11 - [Website for a Property Management Company](http://joshpitzalis.github.io/website10/)
+ES6: The current version of JavaScript is ES2016 (aka ES7), but a lot of developers still haven’t properly learned ES6. It’s past time.
 
-Day 10 - No Website. My excuse is jetlag.
+Classes (note: Avoid class inheritance. See How to Use Classes and Sleep at Night.)
 
-Day 9 - [A poem by Herman Hesse](http://joshpitzalis.github.io/nextEffect/)
+Functional programming basics: Functional programming produces programs by composing mathematical functions, avoiding shared state & mutable data. It’s been years since I’ve seen a production JavaScript app that didn’t make heavy use of functional programming. It’s time to master the fundamentals.
 
-Day 8 - [Website for a Packing Company](http://joshpitzalis.github.io/website07/)
+Generators & async/await: In my opinion, the best way to write asynchronous code that looks synchronous. It has a learning curve, but once you’ve learned it, the code will be easier to read.
 
-[Day 7](https://github.com/joshpitzalis/website07) - [Website for a Dance Institute](http://joshpitzalis.github.io/website07/)
+Performance: RAIL — Start with “PageSpeed Insights” & “WebPageTest.org”
 
-[Day 6](https://github.com/joshpitzalis/llamado) - [A simple To Do App](http://llama.meteor.com/)
+Progressive Web Applications (PWAs): See “Native Apps are Doomed” & “Why Native Apps Really Are Doomed”
 
-[Day 5](https://github.com/joshpitzalis/website05) - [Website for a Packaging Equipment Manufacturing Company](http://joshpitzalis.github.io/website05/)
+Node & Express: Node lets you use JavaScript on the server, meaning your users can store data in the cloud and access it anywhere. Express is the most popular framework for Node by a landslide.
 
-[Day 4](https://github.com/joshpitzalis/website03) - [Website for a Language Learning Vacation Business](http://joshpitzalis.github.io/website03/)
+Lodash: A great, modular utility belt for JavaScript, packed with functional programming goodies. Import the data-last functional modules from lodash/fp.
 
-[Day 3](https://github.com/joshpitzalis/website02) - [Website for an Emergency lighting Company](http://joshpitzalis.github.io/website02/)
+## React
+React is a JavaScript library for building user interfaces, created by Facebook. It’s based on the idea of uni-directional data flow, meaning that for each update cycle:
+React takes inputs to components as props and conditionally renders DOM updates if data has changed for specific parts of the DOM. Data updates during this phase can’t retrigger the render until the next drawing phase.
+Event handling phase — after the DOM has rendered, React listens for and events, delegating events to a single event listener at the root of its DOM tree (for better performance). You can listen to those events and update data in response.
+Using any changes to the data, the process repeats at 1.
+This is in contrast to 2-way data binding, where changes to the DOM may directly update data (e.g., as is the case with Angular 1 and Knockout). With 2-way binding, changes to the DOM during the DOM render process (called the digest cycle in Angular 1) can potentially retrigger the drawing phase before the drawing is finished, causing reflows and repaints — slowing performance.
+React does not prescribe a data management system, but a Flux-based approach is recommended. React’s 1-way data flow approach borrowing ideas from functional programming and immutable data structures transformed the way we think about front-end framework architecture.
 
+For more on React & Flux architecture, read “The Best Way to Learn to Code is to Code: Learn App Architecture by Building Apps”.
 
-[Day 2](https://github.com/joshpitzalis/website01/tree/gh-pages) - [Website for a Surgeon](http://joshpitzalis.github.io/website01/)
+create-react-app*: The quickest way to get started with React.
 
-[Day 1](https://github.com/joshpitzalis/websites/tree/gh-pages) - [Simple Landing Page](http://joshpitzalis.github.io/websites/)
+react-router*: Dead simple routing for React.
+
+Next.js*: Dead simple Universal render & Routing for Node & React.
+
+velocity-react*: Animations for React — allows you to use the VMD bookmarklet for interactive visual motion design on your pages.
+
+## Redux
+Redux provides transactional, deterministic state management for your apps. In Redux, we iterate over a stream of action objects to reduce to the current application state. To learn why that’s important, read “10 Tips for Better Redux Architecture.”
+
+To get started with Redux, check out the excellent courses by the creator of Redux, Dan Abramov:
+“Getting Started with Redux”
+“Building React Applications with Idiomatic Redux”
+
+Redux is mandatory learning, even if you never use Redux for a production project.
+
+Why?
+
+Because it will give you lots of practice and teach you the value of using pure functions and teach you new ways to think about reducers, which are general-purpose functions for iterating over collections of data and extracting some value from them. Reducers are so generally useful that Array.prototype.reduce was added to the JS specification.
+Reducers are important for more than just arrays, and learning new ways of working with Reducers is valuable all by itself.
+redux-saga*: A synchronous-style side-effect library for Redux. Use this to manage I/O (such as handling network requests).
+>>>>>>> 0266a95c9b470b29fb98d87ca310e6feb992f866
+>>>>>>> c7233f61f3c32f87aa36bd285718850d5a8ee0c3
