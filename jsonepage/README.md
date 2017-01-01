@@ -6,3 +6,7 @@ The project is inspired by https://github.com/coodict/javascript-in-one-pic. I d
 <img src="jsonepager.png"/>
 
 Click <a href="jsonepager.pdf">here</a> for a high definition pdf.
+
+## Things to think about
+
+Instead of just sprawling javascript on the page make it more useful to people learning javascript. Get checkboxes for your top 10 object methods, use links instead of examples (it's too small to read anyway), list out flow control approaches. The idea being that you can go around the map checking off things as you understand how to use them.
