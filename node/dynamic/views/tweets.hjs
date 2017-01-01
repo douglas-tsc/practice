@@ -1,0 +1,9 @@
+{{#showTweets}}
+<ul>
+  {{#tweets}}
+  <li>
+    {{.}}
+  </li>
+  {{/tweets}}
+</ul>
+{{/showTweets}}
