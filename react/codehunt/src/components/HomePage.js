@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProductList from './ProductList';
+import Navbar from './Navbar';
 
 class HomePage extends Component {
   constructor () {
@@ -37,6 +38,7 @@ class HomePage extends Component {
   render () {
     return (
       <section>
+        <Navbar />
         <header>
           <img src='/img/banner.jpeg' width='100%' alt='' />
         </header>
