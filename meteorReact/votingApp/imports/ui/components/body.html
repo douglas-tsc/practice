@@ -1,0 +1,36 @@
+<body>
+  <header>
+  <nav class="pa3 pa4-ns">
+  <a class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">Voting App</a>
+  <div class='tc pb3'>
+  <a class="link gray f6 f5-ns dib mr3" href="#" title="Sign In">  {{> loginButtons}}</a>
+  </div>
+  </nav>
+  </header>
+  <main>
+    {{#if showForm}}
+    {{#if loggedIn}}
+
+    <article class="mw7 center ph3 ph5-ns tc br2 pv5 mb5" style='background-color: {{bgColor}}'>
+
+    <form class='newItems measure center'>
+      <input type='text' name='item1' placeholder='Item1' class='pa2 input-reset ba bg-white b--white grow hover-black w-100'/>
+      <p class='tc'>Vs.</p>
+      <input type='text'
+      name='item2' placeholder='Item2' class='pa2 input-reset ba bg-white b--white grow hover-black w-100' />
+
+      <input type='submit' class='b ph3 pv2 input-reset ba b--white bg-white grow pointer f6 dib mt3 center' />
+
+    </form>
+    </article>
+    {{/if}}
+    {{else}}
+    <div class='flex '>
+      <button class='showForm center b ph3 pv2 ba b--black bg-transparent grow pointer f6 dib ma3'>Add New Poll</button>
+    </div>
+    {{/if}}
+    {{#each items}}
+      {{> item}}
+    {{/each}}
+  </main>
+</body>
