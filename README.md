@@ -38,9 +38,10 @@
 - [x]  [My second app](https://medium.com/learning-new-stuff/building-your-second-react-js-app-eb66924b3774#.erhc0lln7) (my-second-app)
 - [x]  [Complete React Web Developer](https://www.udemy.com/the-complete-react-web-app-developer-course) (inputer / [weather](https://build-clyvqpeoje.now.sh) )$
 - [x]  [Road to Learn React](http://www.robinwieruch.de/the-road-to-learn-react/) ([news](https://build-dpswyfvxij.now.sh))
-- [x]  Built my own mini app called [Ritual](https://ritual.now.sh/).
+- [x]  Built my own mini app called [Ritual](https://ritual.now.sh/)
+
 ---
-- []  Remake second app with promises and class components.
+- [ ]  Remake second app with promises and class components.
 
 - [ ]  thinking in react
 http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/
