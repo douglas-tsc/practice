@@ -38,7 +38,7 @@ class HomePage extends Component {
   render () {
     return (
       <section>
-        <Navbar />
+        <Navbar user={true} />
         <header>
           <img src='/img/banner.jpeg' width='100%' alt='' />
         </header>
