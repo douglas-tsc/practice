@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 import Popup from './Popup';
+import Firebase from 'firebase';
 
 class LoginPopup extends Component {
+  handleLogin = () => {
+      var provider = new Firebase.auth.GithubAuthProvider();
+      provider.addScope('public_profile');
+
+      Firebase.auth().signInWithPopup(provider).then(function(result) {
+        var user = result.user;
+        console.log('Login successfully!', user);
+      }).catch(function(error) {
+        console.log('Failed!', error);
+      });
+  };
+
   renderPopupContent () {
     return (
       <Popup {...this.props} style='login-popup'>
@@ -10,8 +23,8 @@ class LoginPopup extends Component {
         <p>
           A comunity that shares the latest cool stuff.
         </p>
-        <button className='facebook-btn'>
-          Login with Facebook
+        <button className='facebook-btn' onClick={this.handleLogin}>
+          Login with Github
         </button>
         <p>
           We will never post without your permission.

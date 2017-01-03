@@ -12,11 +12,9 @@ class Navbar extends Component {
   }
   showPopup = () => {
     this.setState({popupStatus: true});
-    console.log('frog');
-  };
+  }
   hidePopup = () => {
     this.setState({popupStatus: false});
-    console.log('hidding frog');
   }
   renderProductSearch () {
     return (
