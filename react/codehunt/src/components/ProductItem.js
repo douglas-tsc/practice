@@ -1,6 +1,23 @@
 import React, { Component } from 'react';
+import ProductPopup from './ProductPopup';
 
 class ProductItem extends Component {
+  constructor () {
+    super();
+    this.state = {
+      productPopupStatus: false
+    };
+  }
+  showProductPopup = () => {
+    this.setState ({
+      productPopupStatus: true
+    })
+  }
+  hideProductPopup = () => {
+    this.setState ({
+      productPopupStatus: false
+    })
+  }
   renderUpvoteButton () {
     return (
       <a className='upvote-button' href='#'><span><i className='fa fa-sort-asc'></i></span> {this.props.upvote}</a>
@@ -9,7 +26,7 @@ class ProductItem extends Component {
   renderInfoSession () {
     return (
       <div>
-        <a href='#'><h2>{this.props.name}</h2></a>
+        <a href='#' onClick={this.showProductPopup}><h2>{this.props.name}</h2></a>
         <p>
           {this.props.description}
         </p>
@@ -31,6 +48,7 @@ class ProductItem extends Component {
           {this.renderInfoSession()}
         </section>
         {this.renderNewWindowIcon()}
+        <ProductPopup status={this.state.productPopupStatus} hidePopup={this.hideProductPopup}/>
       </li>
     );
   }
