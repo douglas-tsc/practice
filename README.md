@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# website13
-=======
 # [Stuff to Learn in 2017](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711#.ipb8zp7ri)
 
 ## [A Study Plan To Cure JavaScript Fatigue](https://medium.freecodecamp.com/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1#.tc0hfwd6g)
@@ -76,4 +73,3 @@ Why?
 Because it will give you lots of practice and teach you the value of using pure functions and teach you new ways to think about reducers, which are general-purpose functions for iterating over collections of data and extracting some value from them. Reducers are so generally useful that Array.prototype.reduce was added to the JS specification.
 Reducers are important for more than just arrays, and learning new ways of working with Reducers is valuable all by itself.
 redux-saga*: A synchronous-style side-effect library for Redux. Use this to manage I/O (such as handling network requests).
->>>>>>> 8ccba7aa8214d39bead4baca0c0156c2b3f8ab9d
