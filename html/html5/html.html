@@ -20,33 +20,29 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
     <!-- Use simple syntax for linking to style sheets (the type attribute is not necessary) -->
     <style>
-      :not([class]) {
-        background-color: rgba(255, 0, 0, 0.2);
-      }
+    :not([class]) {
+      background-color: rgba(255, 0, 0, 0.2);
+    }
     </style>
   </head>
-  <body class='bg-white-90'>
-    <header class="bg-gold sans-serif">
-      <div class="mw9 center pa4 pt5-ns ph7-l">
-      <time class="f6 mb2 dib ttu tracked" datetime="2017-01-13"><small>13 January, 2017</small></time>
-      <h1 class="f2 f1-m f-headline-l measure-narrow lh-title mv0"><span class="bg-black-90 lh-copy white pa1 tracked-tight">Almost every HTML element in one place. Just waiting to be styled.</span></h1>
-      <p class="f3 fw1 georgia i">As a Tribute to HTML.</p>
-      <p class="f6 ttu tracked black-80">By Josh Pitzalis</p>
-      </div>
+  <body>
+    <header>
+      <h1>A Tribute to HTML</h1>
+      <p>Every html element in one place. Just waiting to be styled.</p>
     </header>
-
-    <nav class="pa4 ma4 ph7-l georgia mw9-l center bg-black-90 fixed top--2 w-100">
-       <a href="#semantics" class="link dim black b f6 f5-ns dib mr3 white">Semantics</a>
-       <a href="#lists" class="link dim black b f6 f5-ns dib mr3 white">Lists</a>
-       <a href="#tables" class="link dim black b f6 f5-ns dib mr3 white">Tables</a>
-       <a href="#inputs" class="link dim black b f6 f5-ns dib mr3 white">Inputs</a>
-       <a href="#buttons" class="link dim black b f6 f5-ns dib mr3 white">Buttons</a>
-       <a href="#images" class="link dim black b f6 f5-ns dib mr3 white">Images</a>
-
+    <nav>
+      <ul>
+        <li> <a href="#" title="Home">Home</a> </li>
+        <li> <a href="#" title="About">About</a> </li>
+        <li> <a href="#" title="Sign Up">Sign Up</a> </li>
+        <li> <a href="#" title="Contact">Contact</a> </li>
+        <li> <a href="#" title="Careers">Careers</a> </li>
+      </ul>
     </nav>
-    <main class="pa4 ph7-l georgia mw9-l center">
-    <article id='semantics'>
-        <h2>Paragraph</h1>
+    <hr/>
+    <main>
+    <article>
+        <h2>Semantics, Tables, Lists, Links and Formatting</h1>
         <p>
           This page contains every <abbr>HTML5</abbr> element as ofJanuary 2017.
         </p>
@@ -58,30 +54,17 @@
           The idea was inspired by <a href='https://github.com/mrmrs/html'>Adam Morse</a> but I wanted to include every possibel html elemnet and I wanted to include a few best practices I've learned from Heydon Pickering's book on <cite><a href='https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiiyK_T-7vRAhUHso8KHUJwAegQFggjMAE&url=https%3A%2F%2Fshop.smashingmagazine.com%2Fproducts%2Finclusive-design-patterns&usg=AFQjCNGXBrGehe35Bg9AdVGF-lYhtwpX6Q&sig2=QBCNcrf5W2vH1p96QcZ4jw'>Inclusive Design Patterns</a></cite>.
           It can also be used to learn more about what different kinds of HTML elements do. The source code for this document is heavily commented with explanations and best practices. For more information on each element, refer to the <a href='http://w3c.github.io/html/index.html#contents'>HTML Docs</a>.
         </p>
-        <q>This is a short quote, below is a blockquote.</q>
         <blockquote>
           <p>
             The web is about information. Make it easy to find and stay out of the way.
           </p>
           <a href="https://github.com/jxnblk/principles">- Brent Jackson</a>
         </blockquote>
-        <p>We are this close to the goal: <meter min="0" max="1000" value="824">$824</meter>.</p>
-        <!-- The HTML <meter> element represents either a scalar value within a known range or a fractional value. -->
-        <!-- <p>Heat the oven to <meter min="200" max="500"
-        value="350">350 degrees</meter>.</p> -->
-        <small>This is for things like copyright info</small>
-        <s>Content that isn't accurate or relevant anymore.</s>
-        <span>Generic span wrapper</span>
-        <p class="test-class">This is inline text with <sub>subscript</sub> and <sup>superscript</sup> elements.</p>
-        <p>
-          <var>f</var>(<var>x</var>) = <var>a</var><sub>0</sub> + <var>a</var><sub>1</sub><var>x</var> +
-          <var>a</var><sub>2</sub><var>x</var><sup>2</sup>, where <var>a</var><sup>2</sup> ≠ 0
-        </p>
-        <progress value="80" max="100">80 %</progress>
+        <q>This is a short quote</q>
     </article>
 
 
-      <aside id='lists'>
+      <aside>
       <h3>Code examples</h3>
       <code>
         <pre>
@@ -175,9 +158,24 @@
         Parthenon and many medieval manuscripts.
         </dd>
       </dl>
+
+      <progress value="80" max="100">80 %</progress>
+      <p>We are this close to the goal: <meter min="0" max="1000" value="824">$824</meter>.</p>
+      <!-- The HTML <meter> element represents either a scalar value within a known range or a fractional value. -->
+      <!-- <p>Heat the oven to <meter min="200" max="500"
+      value="350">350 degrees</meter>.</p> -->
+      <small>This is for things like copyright info</small>
+      <s>Content that isn't accurate or relevant anymore.</s>
+      <span>Generic span wrapper</span>
+      <p class="test-class">This is inline text with <sub>subscript</sub> and <sup>superscript</sup> elements.</p>
+      <p>
+        <var>f</var>(<var>x</var>) = <var>a</var><sub>0</sub> + <var>a</var><sub>1</sub><var>x</var> +
+        <var>a</var><sub>2</sub><var>x</var><sup>2</sup>, where <var>a</var><sup>2</sup> ≠ 0
+      </p>
+      <time datetime="2013-09-07" pubdate>07 September 2013</time>
     </aside>
     <section>
-    <header id='tables'>
+    <header>
       <!-- A header element is intended to usually contain the section's heading (an h1–h6 element or an hgroup element), but this is not required. The header element can also be used to wrap a section's table of contents, a search form, or any relevant logos. -->
       <!-- For cases where an developer wants to nest a header or footer within another header: The header element can only contain a header or footer if they are themselves contained within sectioning content. -->
       <h2 title="I'm a little tool tip">HTML Entities</h2>
@@ -289,8 +287,8 @@
         </table>
       </section>
     <hr/>
-    <section id='inputs'>
-      <h2>Forms and Inputs</h2>
+    <section>
+      <h2>Forms, Inputs and Buttons</h2>
       <form>
         <fieldset>
           <!--
@@ -383,17 +381,15 @@
           <input type="number" name="a" value="10" /> =
           <output name="result">60</output>
       </form>
-      <h2 id='buttons'>Buttons</h2>
-      <button>A button</button>
       <button>A large button</button>
     </section>
 
-  <section id='images'>
+  <section>
     <figure>
       <img src="http://placekitten.com/g/960/320" alt="Figure Example">
       <!-- Always add the "alt" attribute to images. This attribute is important when the image for some reason cannot be displayed. Also, always define image width and height. It reduces flickering because the browser can reserve space for the image before loading. -->
       <figcaption>
-        Photo of cat. Internet &#9829 cat.
+        Photo of the sky at night. Original by <a href="http://flickr.com/photos/heyitsadam/">@mrmrs</a>
       </figcaption>
     </figure>
   </section>
