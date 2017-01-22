@@ -1,10 +1,11 @@
 <!doctype html>
-<!-- Always declare the document type as the first line in your document: -->
+<!-- Always declare the document type as the first line in your document: omission can result in unexpected and broken behavior for users. Without a doctype declared, the browser simply doesn’t know how to interpret the content and can regress into a non-compliant and incompatible mode, often called quirks mode: http://smashed.by/quirksmode -->
 <!-- To keep things consistent with all the other tags I use lower case tags, you can use <!DOCTYPE html>, as far as I know it makes no difference -->
 <!-- Lowercase looks cleaner and it's easier to write. -->
 <!-- In HTML5, it is optional to close empty elements. I chose to close empty   elements, just because I also use react and I have to there. -->
 <html lang="en">
-<!-- Use Lower Case Attribute Names and Quote Attribute Values -->
+<!-- declaring a language makes the page more indexable by search engines, but it also becomes easier to translate by user’s operating third-party tools such as Google’s Translate API. -->
+<!-- Perhaps most starkly, a page that does not have a language declared — or has the wrong language declared for the content — will not trigger the adoption of an appropriate synthetic voice profile when used with a screen reader. That is, if <html lang="en"> is present but the text is actually in French, you’d hear a voice profile called Jack doing a bad impression of French, rather than a French profile called Jaques using authentic French pronunciation. -->
   <head>
     <meta charset="utf-8">
     <!-- To ensure proper interpretation, and correct search engine indexing, both the language and the character encoding should be defined as early as possible in a document -->
@@ -13,22 +14,115 @@
     chrome=1: specifies that Google Chrome frame should start if the user has it installed.
     Google Chrome Frame is an early-stage open source plug-in that seamlessly brings Google Chrome's open web technologies and speedy JavaScript engine to Internet Explorer. The W3C validator will flag chrome=1 as an error, but you can leave it if your users still use Chrome Frame. Despite support and updates for Chrome Frame ending, one can still install and use the final release. If you remove the flag, Chrome Frame will not be activated when installed. For other users, chrome=1 will do nothing more than consume a few bytes of bandwidth. -->
     <title> HTML Patterns </title>
+    <!-- The <title> is announced as soon as a new web document is loaded. It is your opportunity to provide a succinct summary of the page. Useful for screen readers and for search engines. Conventional practice is to describe the page and append author and site information. -->
     <meta name="author" content="Josh">
     <meta name="description" content="Every html element in one place. Just waiting to be styled.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen. -->
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"/>
-    <!-- Use simple syntax for linking to style sheets (the type attribute is not necessary) -->
+    <!-- The viewport meta tag is where responsive design is, somewhat magically, enabled. Yet it’s also where we habitually disable users’ ability to zoom content, making experiences, well, less magical. -->
+
+    <!-- a non-blocking stylesheet -->
+<link rel="stylesheet" href="main.css" media="none" onload="if(media!='all')media='all'">
+<!-- Use simple syntax for linking to style sheets (the type attribute is not necessary) -->
+<noscript><link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css"></noscript>
+
+<!-- a non-blocking base64-encoded font resource -->
+    <link rel="stylesheet" href="fonts.css" media="none" onload="if(media!='all')media='all'"> <noscript><link rel="stylesheet" href="fonts.css"> </noscript>
+    <!-- Web fonts are typically large assets which should be treated as an enhancement. In particular, a flash of invisible text should be avoided: if the font resource is indefinitely stalled (it happens!), users of some devices and browsers will be stuck with a page that has no visible text. -->
+    <!-- The trick is to load the page then the font, using the onload event as a watershed. For this to work, the fonts will have to be base64-encoded and embedded into the style sheet in question. In Keith Clark’s example,9 <http://smashed.by/render-block> has an onload handler which switches the media type from none to all. If JavaScript is entirely unavailable, the CSS is loaded regard- less, thanks to <noscript>. -->
     <style>
-    :not([class]) {
-      background-color: rgba(255, 0, 0, 0.2);
+    /*The base64-encoded font would be included inside an @font-face declaration block, like so:*/
+    @font-face {
+      font-family: Merriweather; font-style: normal; font-weight: 400;
+      src: local('Merriweather'),
+      url('data:application/x-font-woff;charset=utf-8;base64...');
     }
+    /*choose fallback system fonts with intrinsic dimensions (metrics) which are similar to the web font.*/
+
+    /*When including fonts using Google Fonts you can append a text parameter to the URI listing just the characters you need.
+    <link href="https://fonts.googleapis.com/ css?family=Roboto:900&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ" rel="stylesheet" type="text/css">*/
+
+    html {
+      font-size: calc(1em * 1vw);
+    }
+    /*Viewport units present the opportunity to set text that scales with the height (vh) or width (vw) of the viewport. Essentially, this means you can employ implicitly responsive text without the need for media queries.*/
+    /*The only modern browser that does not support viewport units at the time of writing is Opera Mini. Not to worry: font-size: calc(1em + 1vw); is a progressive enhance- ment. Where it is not recognized, browsers fall back to the user agent’s default. In other words, Opera Mini would display the body text as it would have liked to begin with.*/
+
+    main {
+      max-width: 60rem;
+    }
+
+    @media (min-width: 120rem) {
+      html {
+        font-size: 150%;
+      }
+    }
+
+    p{
+      line-height: 1.5;
+      color: #222;
+      /*In the W3C’s WCAG 2.0 accessibility guideline 1.4.8 Visual Presentation,http://smashed.by/levelaaa it is recommended that a generous “space- and-a-half” of leading is applied to paragraphs.*/
+    }
+
+    a:focus {
+      outline: none;
+      background-color: #cef;
+    }
+    /*A background color creates a filled box which is easier to identify as focus moves between elements than the dotted outline some browsers provide by default.*/
+
+    /*To make sure font-size, padding and margin all resize proportionately, each should be set using the relative units rem or em.*/
+    /*while I prefer using rem, The rem unit causes problems in Safari, as “PX, EM or REM Media Queries?”8 by Zell Liew attests: http://zellwk.com/blog/media-query-units/*/
+
+    @media print {
+      body > *:not(main) {
+        display: none;
+      }
+    }
+    /*Since <main> is designed to contain the salient content of a page, it can make the writing of a print style sheet easier. If your navigation, header, footer and sidebar (<aside>) regions are correctly made the siblings of <main>, you can target them quite easily with CSS:*/
+
+
+    /*A skip link appears above all other content on the page and points to the main content area. Sueful for screen readers but the principal beneficiaries of skip links are sighted keyboard users. Skip links should not appear visually by default because they have very limited utility to mouse and touch users and would only serve to confound them. To make skip links available to keyboard users, we should bring them into view on focus:*/
+
+    [href='#main'] {
+      position: absolute;
+      top: 0;
+      right: 100%; /* moves off screen */
+    }
+    [href='#main']:focus {
+      right: auto;
+    }
+
+    [href^="http"]:not([href*="yourWebsite.com"])::after { display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('path/to/external-icon.svg'); background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75% auto;
+    /* alternative text rules */
+    content: '(external link)';
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1em; /* the width of the icon */
+}
+
+/*The .visually-hidden class invokes a special set of prop- erties, carefully devised to hide the element visually with- out it becoming silenced in screen reader software. Using display: none;, visibility: hidden;, height: 0; or width:0;wouldn’t work — it would make the span unavail- able both visually and aurally.*/
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: rect(1px, 1px, 1px, 1px);
+}
+
+
     </style>
   </head>
   <body>
+    <!-- a handy skip link for keyboard users --> <a href="#main">skip to main content</a>
     <header>
       <h1>A Tribute to HTML</h1>
-      <p>Every html element in one place. Just waiting to be styled.</p>
+      <p><span class="visually-hidden">Subtitle:</span>Every html element in one place. Just waiting to be styled.</p>
+      <div>Published on <time datetime="2017-01-01">01/01/2017</time></div>
     </header>
     <nav>
       <ul>
@@ -40,7 +134,7 @@
       </ul>
     </nav>
     <hr/>
-    <main>
+    <main id="main">
     <article>
         <h2>Semantics, Tables, Lists, Links and Formatting</h1>
         <p>
@@ -51,7 +145,7 @@
           <br/>
           Style the html elements for your project, <em>attach your style sheet to this page</em> and you can see which ones still need to be styled for a complete pattern library.
           <wbr/>
-          The idea was inspired by <a href='https://github.com/mrmrs/html'>Adam Morse</a> but I wanted to include every possibel html elemnet and I wanted to include a few best practices I've learned from Heydon Pickering's book on <cite><a href='https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiiyK_T-7vRAhUHso8KHUJwAegQFggjMAE&url=https%3A%2F%2Fshop.smashingmagazine.com%2Fproducts%2Finclusive-design-patterns&usg=AFQjCNGXBrGehe35Bg9AdVGF-lYhtwpX6Q&sig2=QBCNcrf5W2vH1p96QcZ4jw'>Inclusive Design Patterns</a></cite>.
+          The idea was inspired by <a href='https://github.com/mrmrs/html'>Adam Morse</a> but I wanted to include every possibel html elemnet and I wanted to include a few best practices I've learned from Heydon Pickering's book on <cite><a href='https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiiyK_T-7vRAhUHso8KHUJwAegQFggjMAE&url=https%3A%2F%2Fshop.smashingmagazine.com%2Fproducts%2Five-design-patterns&usg=AFQjCNGXBrGehe35Bg9AdVGF-lYhtwpX6Q&sig2=QBCNcrf5W2vH1p96QcZ4jw'>Inclusive Design Patterns</a></cite>.
           It can also be used to learn more about what different kinds of HTML elements do. The source code for this document is heavily commented with explanations and best practices. For more information on each element, refer to the <a href='http://w3c.github.io/html/index.html#contents'>HTML Docs</a>.
         </p>
         <blockquote>
@@ -60,7 +154,7 @@
           </p>
           <a href="https://github.com/jxnblk/principles">- Brent Jackson</a>
         </blockquote>
-        <q>This is a short quote</q>
+        <q>It seems to me that developer ergonomics should be less important than our users’ needs.</q><a href="https://aerotwist.com/blog/react-plus-performance-equals-what/">— Paul Lewis</a>
     </article>
 
 
@@ -96,23 +190,22 @@
           -rw-r--r--   1    1779 Jun  4 15:59 touch-icon-iphone-retina-precomposed.png
         </pre>
       </samp>
-      <h4>Unordered list</h4>
+      <h4>When picking a typeface, ask yourself:</h4>
       <ul>
-        <li>Orange</li>
-        <li>Apple</li>
-        <li><del>Rhubarb</del></li>
-        <li>Rasberry</li>
-        <li>Blueberry</li>
-        <li>Cherry</li>
+        <li>Does it have any ornamentation that gets in the way of comprehension?</li>
+        <li><mark>Are the metrics (such as x-height)16 consistent between letterforms?</mark></li>
+        <li>Are individual letterforms distinct in shape or can they be confused with others?</li>
+        <li>Does the typeface support all of the characters and font styles that are needed?</li>
       </ul>
-      <h5>Ordered list</h5>
+      <h5>Writing Paragraphs</h5>
       <ol>
-        <li>First</li>
-        <li><mark>Second</mark></li>
-        <li>Third</li>
-        <li>Fourth</li>
-        <li>Fifth</li>
-        <li>Sixth</li>
+        <li> Write short paragraphs, sentences and words.
+“I purchased a mammalian companion of the canine variety” is never better than “I bought a dog.”
+</li>
+        <li>Be wary of passive sentences. They can often be replaced by a more direct alternative. There’s no need to say the convoluted, “a pork pie was eaten by Harry” when you can just as well say, “Harry ate a pork pie.”</li>
+        <li>Eliminate redundancy. It’s rarely worth saying the same thing twice in different ways. Avoid repetition. (See what I did there?)</li>
+        <li>Vary the length of sentences and paragraphs. This reduces monotony, encouraging focus</li>
+        <li><del>Fifth</del></li>
       </ol>
       <h6>Definition list</h6>
       <dl>
@@ -172,7 +265,6 @@
         <var>f</var>(<var>x</var>) = <var>a</var><sub>0</sub> + <var>a</var><sub>1</sub><var>x</var> +
         <var>a</var><sub>2</sub><var>x</var><sup>2</sup>, where <var>a</var><sup>2</sup> ≠ 0
       </p>
-      <time datetime="2013-09-07" pubdate>07 September 2013</time>
     </aside>
     <section>
     <header>
@@ -401,5 +493,7 @@
         Tel: (512) 471-5883 | Fax: (512) 471-5908
         </address>
       </footer>
+      <!-- a non-blocking javascript resource -->
+<script src="scripts.js"></script>
   </body>
 </html>
