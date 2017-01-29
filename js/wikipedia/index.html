@@ -49,24 +49,28 @@
 
         </script>
         <script>
-            var title = $('input:text').val()
+            const title = $('input:text').val()
+            const results = [];
+            const endpoint =
+            `https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=bear`;
 
-            console.log(title);
+            fetch(endpoint, {mode: 'no-cors'})
+              .then(blob => results.push(blob.json()))
+              .then(data => results.push(...data))
+
+            console.log(results)
+
+
+            // const endpoint = `https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=${title}&callback=JSON_CALLBACK`;
             //
-            //  $(document).ready(function() {
-            //      $.getJSON('https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=' + title + '&callback=JSON_CALLBACK',
+            // const articles = [];
+            // fetch(endpoint)
+            //   .then(blob => blob.json())
+            //   .then(data => articles.push(...data))
             //
-            //          function(results) {
-            //              var pages = results.query.pages;
-            //       console.log(pages)
-            //             //  $(".location").html(location.city);
-            //
-            //          });
-            //  })
+            // const searchInput = document.querySelector('.search');
+            // searchInput.addEventListener('keyup', displayMatches);
 
         </script>
-
-
     </body>
-
 </html>
