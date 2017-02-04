@@ -1,0 +1,21 @@
+{
+  "name": "exphead",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "express": "^4.14.1",
+    "handlebars": "^4.0.6",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.4",
+    "nodemon": "^1.11.0"
+  }
+}

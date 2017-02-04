@@ -1,98 +1,75 @@
-# 100 Websites in 100 Days
-My name is Josh and I am making 100 websites in 100 days.
+# [Stuff to Learn in 2017](https://medium.com/javascript-scene/top-javascript-frameworks-topics-to-learn-in-2017-700a397b711#.ipb8zp7ri)
 
-This is website #10.
+## [A Study Plan To Cure JavaScript Fatigue](https://medium.freecodecamp.com/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1#.tc0hfwd6g)
 
-## [Website for a Property Management Company](http://joshpitzalis.github.io/website10/)
+### JavaScript & DOM Fundamentals
 
-If you would like to know more about the backstory to this project and see the other websites [click here](https://github.com/joshpitzalis/websites).
+- [ ] ES6: The current version of JavaScript is ES2016 (aka ES7), but a lot of developers still haven’t properly learned ES6. It’s time to learn.
 
-## The Project Brief
-Our website is very basic. We would like it to look nice, have rotating photos, accept credit card payments host a blog. [www.elitehoa.com](http://www.elitehoa.com/).
+- [ ] Builtin methods: Learn methods for the standard data types (especially arrays, objects, strings, and numbers).
 
-## My Response
+- [ ] Functions & pure functions: You probably think you’ve got a great grasp of functions, but JavaScript has some tricks up its sleeves, and you’ll need to learn about pure functions to get a handle on functional programming.
 
-Hello,
+- [ ] Closures: Learn how JavaScript’s function scopes behave.
 
-I understand you are looking for a redesign your property management company website.
+- [ ] Callbacks: A callback is a function used by another function to signal when there is a result ready. You say, “do your job, call me when it’s done.”
 
-I have put together an example of what I could do for your company.
+- [ ] Promises: A promise is a way to deal with future values. When a function returns a promise, you can attach callbacks using the .then() method to run after the promise resolves. The resolved value is passed into your callback function, e.g., doSomething().then(value => console.log(value));
 
-[http://joshpitzalis.github.io/website10/](http://joshpitzalis.github.io/website10/)
+- [ ] Ajax & server API calls: Most interesting apps eventually need to talk to the network. You should know how to communicate with APIs.
 
-PLEASE CLICK ON THE LINK ABOVE FOR A DEMO OF YOUR SITE.
+- [ ] ES6: The current version of JavaScript is ES2016 (aka ES7), but a lot of developers still haven’t properly learned ES6. It’s past time.
 
-The above site is a quick demonstration only. I can adjust the layout and color palette to suit. If you give me 2-3 examples of websites you like the look and feel of I can get a better sense of what you have in mind.
+- [ ] Classes (note: Avoid class inheritance. See How to Use Classes and Sleep at Night.)
 
-As the site above is a quick demo only, it has not been optimized for mobile viewing. It certainly will be if you decide to higher me for the job. All of my work is mobile responsive and works across browsers.
+- [ ] Functional programming basics: Functional programming produces programs by composing mathematical functions, avoiding shared state & mutable data. It’s been years since I’ve seen a production JavaScript app that didn’t make heavy use of functional programming. It’s time to master the fundamentals.
 
-You mentioned that you want to integrate a payment portal. That is definitely something I can do. Do you already have a system in mind, if so I can integrate it. If you want me to suggest a service, I would be happy to.
+- [ ] Generators & async/await: In my opinion, the best way to write asynchronous code that looks synchronous. It has a learning curve, but once you’ve learned it, the code will be easier to read.
 
-I can also incorporate a carousel with rotating photos. Do you have high-quality images I can use?
+- [ ] Performance: RAIL — Start with “PageSpeed Insights” & “WebPageTest.org”
 
-I can also integrate cloud storage. I am assuming this is to hold all the form and such?
+- [ ] Progressive Web Applications (PWAs): See “Native Apps are Doomed” & “Why Native Apps Really Are Doomed”
 
-With regard to your request for social media integration, do you just want links to you pages or do you want a section with a feed of your social media stream. Either can be done. It was just a little unclear.
+- [ ] Node & Express: Node lets you use JavaScript on the server, meaning your users can store data in the cloud and access it anywhere. Express is the most popular framework for Node by a landslide.
 
-I think I am a good fit for this job because I do a lot of work on business landing pages and websites for freelancers.
+#### React
 
-I am quoting a much lower rate than my usual hourly service because I am new to Upwork and I am looking for a 5-star review and great feedback to help get my profile started.
+- [x]  [React for Beginners](https://reactforbeginners.com/) (catch-of-the-day) $
+- [x]  [My second app](https://medium.com/learning-new-stuff/building-your-second-react-js-app-eb66924b3774#.erhc0lln7) (my-second-app)
+- [x]  [Complete React Web Developer](https://www.udemy.com/the-complete-react-web-app-developer-course) (inputer / [weather](https://build-clyvqpeoje.now.sh) )$
+- [x]  [Road to Learn React](http://www.robinwieruch.de/the-road-to-learn-react/) ([news](https://build-dpswyfvxij.now.sh))
+- [x]  Built my own mini app called [Ritual](https://ritual.now.sh/)
 
-I do my best to make the experience of getting a new website as hassle-free as possible for my clients.
+---
+- [ ]  Remake second app with promises and class components.
 
-Here is some feedback I had from my last three projects:
+- [ ]  thinking in react
+http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/
+- [ ]  tictactoe
 
-"Josh was a delight to work with; always cooperative, creative, responsive and technically excellent at his job - went above and beyond."
+- [ ]  react forebase tutorials
+- [ ]  survey in react projects on udemy
+- [ ]  wiki https://code.tutsplus.com/courses/building-a-wiki-with-react-and-firebase
+- [ ]  product hunt
+- [ ]  first react app˜ https://egghead.io/courses/build-your-first-react-js-application
+- [ ]  react starter course http://courses.reactjsprogram.com/
+- [ ]  ritual + beeminder
+- [ ]  freecodecamp
+- [ ]  redo all meteor tutorials in react
+- [ ] Next.js*: Dead simple Universal render & Routing for Node & React.
+- [ ] velocity-react*: Animations for React — allows you to use the VMD bookmarklet for interactive visual motion design on your pages.
 
-Bec Evans and Chris Smith, Founders of Prolifiko
-"Super easy to work with."
+### Redux
+Redux provides transactional, deterministic state management for your apps. In Redux, we iterate over a stream of action objects to reduce to the current application state. To learn why that’s important, read “10 Tips for Better Redux Architecture.”
 
-Kristin Braddock, Social Entrepreneur
-"Working with Josh was a great experience. His sense of design, aesthetics, and flow of information was amazing. I am very pleased with his work and recommend him very highly."
+To get started with Redux, check out the excellent courses by the creator of Redux, Dan Abramov:
+“Getting Started with Redux”
+“Building React Applications with Idiomatic Redux”
 
--Raju Arora, Founder
+Redux is mandatory learning, even if you never use Redux for a production project.
 
-If you would like me to redesign your website, I have put together two options for your company.
+Why?
 
-OPTION 1: Website redesign
-
-This would involve a professional, modern website redesign. For this option, you will need to provide the content (writing and images).
-
-OPTION 2: Website redesign + Design Work
-
-This option involves redesigning you website as well as designing a new logo and a set of icon, like the handshake icon on the demo site. Custom design work is not important of you are happy with your current logo but if you are looking to refresh your brand image I would recommend it.
-
-I am sorry for not using your logo in the demo site. I couldn't get a high-quality cut out of it. If you can send me the logo file I would be happy to include it so that you can see what it looks like.
-
-
-OPTION 3: Website redesign + Design + Copywriting + Technical SEO
-
-This option involves redesigning you website as well as rewriting the content for your site.
-
-I can create a simple, persuasive business narrative that helps emphasize the benefits of what you are offering to your customers.
-
-I can also help reduce the amount of question you get sent in by including responses to the most commonly asked question into the copy on the website.
-
-I will then edit the content and optimize it for one Google search phrase and three keywords of your choice (I can help you choose these if you don't already have keywords).
-
-I will also make sure that all of the websites complies with the latest web standards. Taking the time to do this means search engines will love your site. It also means the site will be accessible to blind people and the physically disadvantaged since screen readers work much the same way as search engines.
-
-If you would like go for the second or third option, I will need to send you a questionnaire (Or we could speak over Skype) so that I have the information I need to get started.
-
-Since I have spent considerable time putting this together, if you do not want to hire me all I ask if that you let me know why. Feedback is immensely helpful and is always appreciated.
-
-I am more than happy to answer any questions you might have before moving forward.
-
-Thank you for taking the time to read this and I look forward to hearing from you.
-
-Joshua Pitzalis
-
-### Which of the required job skills do you feel you are strongest at?
-
-I think building landing pages for businesses is my strongest card. This means being able to combine copywriting, design and coding skills. I may not be the best at each one, but I being good enough at all three makes much better than a lot of the competition when it comes to building a website for a business that requires coding, design and copywriting.
-
-### Do you have any questions about the job description?
-
-Will you be providing images for me to work with?
-
-What kind of payment portal would you like integrated? or would you like em to help you pick.
+Because it will give you lots of practice and teach you the value of using pure functions and teach you new ways to think about reducers, which are general-purpose functions for iterating over collections of data and extracting some value from them. Reducers are so generally useful that Array.prototype.reduce was added to the JS specification.
+Reducers are important for more than just arrays, and learning new ways of working with Reducers is valuable all by itself.
+redux-saga*: A synchronous-style side-effect library for Redux. Use this to manage I/O (such as handling network requests).
