@@ -53,7 +53,9 @@
 </head>
 <body>
 
-  <div><a href="/">Back to User List</a></div>
+  <div style='padding: 1em 0 0 1.5em;'><a href="/">Back to User List</a></div>
+  <br/>
+  <br/>
 
   <div class="pic">
     <img src="/profilepics/{{user.username}}_med.jpg" alt="">
@@ -62,7 +64,12 @@
   </div>
 
   <h1>{{user.name.full}}</h1>
-  <dl><dt>Street</dt>
+  <dl>
+    <dt>Name</dt>
+  <dd class='view'>{{user.name.full}}</dd><dd class='edit'><input type="text" id="name" value="{{user.name.full}}"></dd>
+
+<br/>
+    <dt>Street</dt>
   <dd class='view'>{{address.street}}</dd><dd class='edit'><input type="text" id="street" value="{{address.street}}"></dd>
 
 <br/>
@@ -86,8 +93,8 @@
   ></script>
 <script>
   function edit () {
-    $('.view').hide()
-    $('.edit').show()
+    $('.view').hide();
+    $('.edit').show();
   }
 
   function cancel () {
@@ -99,10 +106,13 @@
     $.ajax('/{{user.username}}', {
       method: 'PUT',
       data: {
-        street: $('#street').val(),
-        city: $('#city').val(),
-        state: $('#state').val(),
-        zip: $('#zip').val(),
+        name: $('#name').val(),
+        location: {
+          street: $('#street').val(),
+          city: $('#city').val(),
+          state: $('#state').val(),
+          zip: $('#zip').val()
+        },
         complete: function () {
           cancel()
           location.reload()
