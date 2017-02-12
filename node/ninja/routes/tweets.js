@@ -7,6 +7,8 @@ router
   const {user_id} = req.params;
   mongo.db.collection('tweets')
   .find().toArray((err, tweets) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.json(tweets);
   });
 })
@@ -14,6 +16,8 @@ router
   const {user_id} = req.params;
   mongo.db.collection('tweets')
   .find({user_id}).toArray((err, tweets) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.json({title: 'My User tweets',
       tweets});
   });
