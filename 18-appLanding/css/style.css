@@ -1,0 +1,128 @@
+* {
+  /*outline: 1px dotted green;*/
+}
+
+body {
+  padding-top: 50px;
+}
+
+.em-text {
+  color: #d65656 !important;
+}
+
+.jumbotron {
+  overflow: hidden;
+  height: 500px;
+  color: white;
+  /*background: url('optional background image') no-repeat center center;*/
+  background: #d65656;
+}
+
+.jumbotron h1 {
+  margin-top: 60px;
+}
+
+.jumbotron .app-btn {
+  width: 38%;
+  margin-top: 40px;
+  margin-right: 0 auto;
+}
+
+.jumbotron .showcase-img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .jumbotron .showcase-img {
+    display: none;
+    /*if using background image*//*background-size: 100% 100%;*/
+  }
+
+  .jumbotron {
+    height: 500px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron .showcase-img {
+    display: none;
+    /*if using background image*//*background-size: 100% 100%;*/
+  }
+
+  .jumbotron {
+    height: 500px;
+    text-align: center;
+  }
+
+  .jumbotron .app-btn {
+    display: block;
+    width: 48%;
+  }
+}
+
+.tri {
+  padding: 40px 0;
+}
+
+.tri .features {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.benefits {
+  padding: 40px 0;
+  color: white;
+  background: #d65656;
+}
+
+.benefits ul li {
+  font-size: 22px;
+  line-height: 2em;
+  list-style: circle;
+}
+
+.benefits .showcase-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.title-bar {
+  height: 80px;
+  color: white;
+  background-color: #d65656;
+}
+
+.about {
+  padding: 40px 0;
+}
+
+.contact {
+  padding: 40px 0;
+}
+
+.contact textarea {
+  min-height: 200px;
+}
+
+footer {
+  padding: 40px 0;
+  color: white;
+  background: black;
+}
+
+footer li {
+  float: left;
+  padding: 0 10px;
+  list-style: none;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  float: right;
+}
