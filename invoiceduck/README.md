@@ -1,2 +1,0 @@
-# invoiceduck
-Simple Invoice Generator

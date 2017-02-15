@@ -1,0 +1,4 @@
+{
+  "dbUri": "mongodb://joshpitzalis:100Fifty!@ds011472.mlab.com:11472/heroku_p8417xpv",
+  "jwtSecret": "i love dogs"
+}

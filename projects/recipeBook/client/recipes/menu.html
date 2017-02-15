@@ -1,0 +1,19 @@
+<template name="menu">
+  <h1 class='page-title'>My Current Menu</h1>
+  {{#each recipes}}
+    {{> menuItem}}
+    {{else}}
+    <p>
+      Please <a href='/recipeBook'>add recipes</a> to your Menu.
+    </p>
+  {{/each}}
+</template>
+
+<template name="menuItem">
+  <div class="menu-item">
+    <h3>{{name}}</h3>
+    <p>
+      {{desc}}
+    </p>
+  </div>
+</template>

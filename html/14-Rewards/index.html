@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Example Domain</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+  <style>
+    * {
+      /*border: 1px dotted black;*/
+    }
+
+    .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+      padding-right: 0;
+    }
+
+    .heroImg {
+      width: 100%;
+      height: 400px;
+    }
+
+    .centered {
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .sandwhich {
+      padding: 15px 0;
+      text-align: center;
+      border-top: 1px #002852 solid;
+      border-bottom: 1px #002852 solid;
+    }
+
+    .projects-4 h3 {
+      text-align: center;
+    }
+
+    .demo-card-square.mdl-card {
+      width: 100%;
+      height: 100%;
+    }
+
+    .demo-card-square > .mdl-card__title {
+      background: url('http://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VG9DQVluOFJ4Tnc/materialdesign_principles_metaphor.png') center 25%;
+    }
+
+    .topSpace{
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Uses a header that contracts as the page scrolls down. -->
+
+
+  <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+
+    <header class="mdl-layout__header mdl-layout__header--waterfall" style="background-color: #002852">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title centered"></span>
+        <!-- <div class="mdl-layout-spacer"></div> -->
+        <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="waterfall-exp" />
+        </div>
+      </div> -->
+      </div>
+      <!-- Bottom row, not visible on scroll -->
+      <div class="mdl-layout__header-row">
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <!-- <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav> -->
+      </div>
+    </header>
+
+    <!-- <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Score Card</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div> -->
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+        <div class="mdl-grid">
+
+          <div class="mdl-cell mdl-cell--8-col centered">
+            <img class='heroImg' src="http://foodiesfeed.com/wp-content/uploads/2015/05/foodiesfeed.com_family-gathering_low-1024x683.jpg" />
+            <!-- source: https://foodiesfeed.com/download/family-gathering/ -->
+
+
+
+            <h2 class="sandwhich" style="color:#002852;">
+              GET THE REWARDS YOU REALLY WANT!
+            </h2>
+
+            <h6 class="centered" style="color:#6E9EC3;">
+              The Rewards program makes it easy to score great merchandise using all the points you've earned with your EZ card. We offer thousandsof products perfect for your home, electronics, personal sports, recreationa nd travel needs.
+              <br/>
+              <br/> And now you can make sure you get any kind of rewards you want most. Just answer a few quick questions. And we'll send you customized noticeswith our newest and most popular products. SO you can always get rewards you love.
+            </h6>
+
+
+          </div>
+
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="mdl-grid projects-4">
+
+
+          <h3 class="mdl-cell mdl-cell--12-col">
+            <strong style="color:#002852;">Question #1:</strong>Which one looks like your Saturday?</h3>
+
+          <!-- Square card -->
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-2">
+                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-3">
+                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-4">
+                    <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--2-col centered topSpace">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                  Nope, none of these.
+                  </button>
+          </div>
+        </div>
+
+        <div class="mdl-grid projects-4">
+
+
+          <h3 class="mdl-cell mdl-cell--12-col">
+            <strong style="color:#002852;">Question #2:</strong>What does your monday look like?</h3>
+
+          <!-- Square card -->
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-2">
+                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-3">
+                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-4">
+                    <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--2-col centered topSpace">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                  Nope, none of these.
+                  </button>
+          </div>
+        </div>
+
+        <div class="mdl-grid projects-4">
+
+
+          <h3 class="mdl-cell mdl-cell--12-col">
+            <strong style="color:#002852;">Question #3:</strong>What product would you use the most?</h3>
+
+          <!-- Square card -->
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-2">
+                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-3">
+                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-4">
+                    <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--2-col centered topSpace">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                  Nope, none of these.
+                  </button>
+          </div>
+        </div>
+
+        <div class="mdl-grid projects-4">
+
+
+          <h3 class="mdl-cell mdl-cell--12-col">
+            <strong style="color:#002852;">Question #4:</strong>What product would you pick if it were free?</h3>
+
+          <!-- Square card -->
+
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-1">
+                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-2">
+                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-3">
+                    <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet selection">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title mdl-card--expand">
+                <form href="#">
+                  <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect " for="checkbox-4">
+                    <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" />
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--2-col centered topSpace">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                  Nope, none of these.
+                  </button>
+          </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--1-col centered topSpace">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored padded">
+                    > Send it in
+                </button>
+        </div>
+
+        <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+  </div>
+
+
+</body>
+
+</html>

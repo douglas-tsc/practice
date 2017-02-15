@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>How to Write a Server</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 1em;
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        body {
+            background-color: #fff;
+        }
+        div {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 0;
+            padding: 1em;
+        }
+    }
+    </style>
+</head>
+
+<body>
+<div>
+    <h1>How to Write a Server.</h1>
+    <p>This page will explain how to get a simple multipage website up a running from scratch.
+		<br/>
+		<br/>
+		I will going to assume you have absolutely zero understanding of how to write a web server or what a web server even is. You should know what a browser is, have a text editor installed and have a basic understanding of HTML, CSS and Javascript.
+		<br/>
+		<br/>
+		I am also assuming that you know what the terminal is, have a github account and know how to use git.
+		<br/>
+		<h2>What is a Web Server?</h2>
+
+		For the purposes of this little walkthrough, think of a web server is the piece of software that lives inside a website and spends it's life waiting for you to click on a link so that it can serve you the page you expect.
+		<br/>
+		The word 'server' also refers to a computer or data storage unit, the physical machine that the software is saved on. To avoid confusion, in this post the word 'web server' will only refer to the piece of software that lives on a website and serves people information.
+
+		<h2>How do I get one?</h2>
+
+		You write one. The one we are about to write is going to be written in javascript (because that is the only way I know how).
+		<br/>
+		Javascript is usually confined to working inside a web browser. If you want to use write a web sever you will have to install something called node.
+		<br/>
+		Asking people what node is will leads to confusing answers. All you need to node is that it will let you write javascript that can do things outside of your browser.
+		<br/>
+		<br/>
+		1. Go to <a href="https://nodejs.org/">Nodejs.org</a> and click on the green button that says install. This should download a file to your computer that you need to double click on. This is all I had to do using a macbook running OSX Yosemite.
+		<br/>
+		<br/>
+		2. Open up your terminal and type in `node -v`. If everything installed correctly then it will tell you what version of node is running. I got `v0.12.3` at the time of writing this, you should see something similar.
+		<br/>
+		<br/>
+		3. Now that you have node set up, create a new repository in github, call it whatever you want and clone it to your computer.
+		<br/>
+		<br/>
+		4. Open you text editor and create a file in the cloned repository called `server.js` (you can call it whatever you want, as long as the file suffix is .js).
+		<br/>
+		<br/>
+		5. Copy and paste the example web server code from nodejs.org. I have highlighted the bit you need to copy into you `server.js` file in the image below.
+		<br/>
+		<img src="./images/node.png" alt="Node Screenshot">
+		<br/>
+		<br/>
+		6. In your terminal, navigate into the repo you just closed and then type `node server.js` (or node [whatever-you-called-your-file.js]). You should see a response that says `Server running at http://127.0.0.1:1337/`. You can copy the `http://127.0.0.1:1337/` bit into your browser and it will load up a page that says "Hello World".
+		<br/>
+		<br/>
+		7. Go back to your server.js file in your text editor and change line 4 ( the line that read `res.end('Hello World\n');` to say "res.end('anything you want');". In your terminal press control+C (to stop the server running) and then type in `node server.js` once again to restart it. If you refresh your browser it should now say "anything you want" instead of "Hello Word".
+
+		<h2>You just set up a simple web server in 7 steps.</h2>
+		It doesn't do very much. We are now going to build on it. Each line of the code you just copied should start to make more sense as we progress.
+		</p>
+    <p><a href="http://www.iana.org/domains/example">Now for the hard part...</a></p>
+</div>
+</body>
+</html>
