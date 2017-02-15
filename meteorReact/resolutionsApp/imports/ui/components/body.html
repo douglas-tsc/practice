@@ -1,0 +1,14 @@
+<body>
+  <h1>Monthly Resolutions</h1>
+  {{> loginButtons}}
+  <lable class='hideFinished'>
+    <input type='checkbox' checked='{{hideFinished}}' />
+    Hide Finished Resolutions
+  </lable>
+{{#if currentUser}}
+{{>form}}
+{{/if}}
+<ul>
+{{> resolution}}
+</ul>
+</body>

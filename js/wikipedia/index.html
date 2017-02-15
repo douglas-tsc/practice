@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Wiki Viewer</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.3/css/tachyons.min.css" />
+
+    </head>
+
+    <body>
+        <div class="pa4-l">
+            <form class="bg-light-red mw7 center pa4 br2-ns ba b--black-10">
+                <fieldset class="cf bn ma0 pa0">
+                    <legend class="pa0 f5 f4-ns mb3 black-80">Search for a Wikipedia Article</legend>
+                    <div class="cf">
+                        <input class="fl f6 f5-l input-reset bn black-80 bg-white fl pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns" id='searchBox' placeholder="Search here..." type="text" name="Email_Adress" value="" id="Email_Adress">
+                        <input class="fl f6 f5-l button-reset pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns" type="submit" value="Search">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class='tc'>
+            <a class="f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-gray" href="https://en.wikipedia.org/wiki/Special:Random">Show Me a Random Article</a>
+        </div>
+
+        <ul class="list pl0">
+            <li class="pa3 pa4-ns bb b--black-10">
+                <b class="db f3 mb1">alignment</b>
+                <span class="f5 db lh-copy measure">
+      The positioning of text within the page margins. Alignment can be flush left, flush right, justified, or centered. Flush left and flush right are sometimes referred to as left justified and right justified.</span>
+            </li>
+            <li class="pa3 pa4-ns bb b--black-10">
+                <b class="db f3 mb1">
+      ascender
+    </b>
+                <span class="f5 db lh-copy measure">
+      The part of lowercase letters (such as k, b, and d) that ascends above the
+      x-height of the other lowercase letters in a face.
+    </span>
+            </li>
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+
+
+        </script>
+        <script>
+            const title = $('input:text').val()
+            const results = [];
+            // const endpoint =
+            // `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=bear&prop=info&inprop=url&utf8=&format=json`;
+
+            const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+            fetch(endpoint, {mode: 'no-cors'})
+            .then(blob => blob.json())
+            .then(data => console.log(data))
+
+        </script>
+    </body>
+</html>
