@@ -1,10 +1,10 @@
  const passport = require('passport');
- const LocalStrategy = require('passport-local').strategy;
+ const LocalStrategy = require('passport-local').Strategy;
  const db = require('./db');
 
  passport.use(new LocalStrategy(authenticate));
 
- function authentication (email, password, done) {
+ function authenticate (email, password, done) {
    db('users')
     .where('email', email)
     .first()
@@ -13,7 +13,7 @@
         return done(null, false, {message: 'invalid user, password or combination'});
       }
       done(null, user);
-    }, done);
+    });
  }
 
  passport.serializeUser(function (user, done) {
@@ -26,5 +26,5 @@
    .first()
    .then(user => {
      done(null, user);
-   }, done);
+   });
  });

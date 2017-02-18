@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-const path = require('path');
 
 class Tweets extends Component {
   constructor (props) {
@@ -13,7 +12,7 @@ class Tweets extends Component {
   }
 
   componentWillMount () {
-    fetch(`${this.props.url}${window.location.pathname}`)
+    fetch(`http://localhost:3000${window.location.pathname}`)
   .then(blob => blob.json()).then(res => {
     this.setState({ title: res.title, tweets: res.tweets });
   });
