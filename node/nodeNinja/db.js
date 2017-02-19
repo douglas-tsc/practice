@@ -11,12 +11,8 @@ mongoose.connection.on('error', (err) => {
 });
 
 const UserSchema = new mongoose.Schema({
-  email: {
-    type: String,
-    index: { unique: true }
-  },
-  password: String,
-  username: String
+  username: String,
+  password: String
 });
 
 module.exports = mongoose.model('User', UserSchema);
