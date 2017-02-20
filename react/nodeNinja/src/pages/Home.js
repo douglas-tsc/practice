@@ -1,100 +1,28 @@
 import React, { Component } from 'react';
 import { Redirect, Link } from 'react-router-dom';
+import ListItem from '../components/ListItem';
+import mongo from '../../public/images/mongodbw.jpg';
+import express from '../../public/images/expressbw.jpg';
+import react from '../../public/images/reactbw.png';
+import node from '../../public/images/nodejsbw.png';
+import redux from '../../public/images/reduxbw.png';
+import webpack from '../../public/images/webpackbw.png';
 
 export default class Home extends Component {
   render () {
     return (
-      <main className='mw6 center'>
-        <article>
-          <a className='link dt w-100 bb b--black-10 pb2 mt2 dim blue' href='#0'>
-            <div className='dtc w3'>
-              <img src='http://mrmrs.io/images/0010.jpg' className='db w-100' />
-            </div>
-            <div className='dtc v-top pl2'>
-              <h1 className='f6 f5-ns fw6 lh-title black mv0'>Grid Systems</h1>
-              <h2 className='f6 fw4 mt2 mb0 black-60'>Josef Müller-Brockmann</h2>
-              <dl className='mt2 f6'>
-                <dt className='clip'>Price</dt>
-                <dd className='ml0'>$75.00</dd>
-              </dl>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a className='link dt w-100 bb b--black-10 pb2 mt2 dim blue' href='#0'>
-            <div className='dtc w3'>
-              <img src='http://mrmrs.io/images/0002.jpg' className='db w-100' />
-            </div>
-            <div className='dtc v-top pl2'>
-              <h1 className='f6 f5-ns fw6 lh-title black mv0'>History of the Poster</h1>
-              <h2 className='f6 fw4 mt2 mb0 black-60'>Josef Müller-Brockmann</h2>
-              <dl className='mt2 f6'>
-                <dt className='clip'>Price</dt>
-                <dd className='ml0'>$15.00</dd>
-              </dl>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a className='link dt w-100 bb b--black-10 pb2 mt2 dim blue' href='#0'>
-            <div className='dtc w3'>
-              <img src='http://mrmrs.io/images/0004.jpg' className='db w-100' />
-            </div>
-            <div className='dtc v-top pl2'>
-              <h1 className='f6 f5-ns fw6 lh-title black mv0'>Graphic Design in IBM: Typography, Photography, and Illustration</h1>
-              <h2 className='f6 fw4 mt2 mb0 black-60'>Josef Müller-Brockmann</h2>
-              <dl className='mt2 f6'>
-                <dt className='clip'>Price</dt>
-                <dd className='ml0'>$15.00</dd>
-              </dl>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a className='link dt w-100 bb b--black-10 pb2 mt2 dim blue' href='#0'>
-            <div className='dtc w3'>
-              <img src='http://mrmrs.io/images/0006.jpg' className='db w-100' />
-            </div>
-            <div className='dtc v-top pl2'>
-              <h1 className='f6 f5-ns fw6 lh-title black mv0'>Fotoplakate: Von den Anfängen</h1>
-              <h2 className='f6 fw4 mt2 mb0 black-60'>Josef Müller-Brockmann</h2>
-              <dl className='mt2 f6'>
-                <dt className='clip'>Price</dt>
-                <dd className='ml0'>$15.00</dd>
-              </dl>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a className='link dt w-100 bb b--black-10 pb2 mt2 dim blue' href='#0'>
-            <div className='dtc w3'>
-              <img src='http://mrmrs.io/images/0030.jpg' className='db w-100' />
-            </div>
-            <div className='dtc v-top pl2'>
-              <h1 className='f6 f5-ns fw6 lh-title black mv0'>The Graphic Artist</h1>
-              <h2 className='f6 fw4 mt2 mb0 black-60'>Josef Müller-Brockmann</h2>
-              <dl className='mt2 f6'>
-                <dt className='clip'>Price</dt>
-                <dd className='ml0'>$15.00</dd>
-              </dl>
-            </div>
-          </a>
-        </article>
-        <article className='mt2'>
-          <a className='link dt w-100 bb b--black-10 dim blue' href='#0'>
-            <div className='dtc w3'>
-              <img src='http://mrmrs.io/images/0010.jpg' className='db w-100' />
-            </div>
-            <div className='dtc v-top pl2'>
-              <h1 className='f6 f5-ns fw6 lh-title black mv0'>A History of Visual Communication (Geschichte der visuellen Kommunikation)</h1>
-              <h2 className='f6 fw4 mt2 mb0 black-60'>Josef Müller-Brockmann</h2>
-              <dl className='mt2 f6'>
-                <dt className='clip'>Price</dt>
-                <dd className='ml0'>$15.00</dd>
-              </dl>
-            </div>
-          </a>
-        </article>
+      <main className='mw7 center mb5'>
+        <div className='flex justify-between mb5'>
+          <img src={mongo} width='100px' height='100%' role='presentation' />
+          <img src={express} width='100px' height='100%' role='presentation' />
+          <img src={react} width='100px' height='100%' role='presentation' />
+          <img src={node} width='100px' height='100%' role='presentation' />
+          <img src={redux} width='100px' height='100%' role='presentation' />
+          <img src={webpack} width='100px' height='100%' role='presentation' />
+        </div>
+        <ListItem />
+        <ListItem />
+        <ListItem />
       </main>
     );
   }

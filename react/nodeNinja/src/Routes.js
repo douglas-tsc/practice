@@ -5,6 +5,9 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Error from './pages/Error';
 import Home from './pages/Home';
+import Page from './pages/Page';
+import Edit from './pages/Edit';
+import Tutorials from './pages/Tutorials';
 import fakeAuth from './Auth';
 import {
   BrowserRouter as Router,
@@ -19,7 +22,9 @@ const Routes = () => (
       <Route exact path='/' component={Home} />
       <Route path='/login' component={Login} />
       <Route path='/signup' component={Signup} />
-      <PrivateRoute path='/protected' component={Protected} />
+      <Route path='/page' component={Page} />
+      <Route path='/edit' component={Edit} />
+      <PrivateRoute path='/tutorials' component={Tutorials} />
       <Route path='/error' component={Error} />
       <Footer />
     </div>

@@ -33,6 +33,7 @@ export default class Login extends Component {
   <form onSubmit={this.signup} acceptCharset="utf-8" className='measure center mt4'>
     <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
       <legend className="ph0 mh0 fw6 clip">Sign Up</legend>
+      <h1 className='f4 fw6 ph0 mh0 pb3'>Sign Up</h1>
       <div className="mt3">
         <label className="db fw4 lh-copy f6" htmlFor="username">Username</label>
         <input className="pa2 input-reset ba bg-transparent w-100 measure hover-bg-black hover-white" type="text" name="username" ref='username' />
