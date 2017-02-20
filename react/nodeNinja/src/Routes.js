@@ -1,25 +1,27 @@
 import React from 'react';
 import Login from './components/Login';
-import Logout from './components/Logout';
+import Signup from './components/Signup';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Error from './pages/Error';
+import Home from './pages/Home';
 import fakeAuth from './Auth';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Redirect
 } from 'react-router-dom';
 
 const Routes = () => (
   <Router>
     <div>
-      <Logout />
-      <ul>
-        <li><Link to='/public'>Public Page</Link></li>
-        <li><Link to='/protected'>Protected Page</Link></li>
-      </ul>
-      <Route path='/public' component={Public} />
+      <Nav />
+      <Route exact path='/' component={Home} />
       <Route path='/login' component={Login} />
+      <Route path='/signup' component={Signup} />
       <PrivateRoute path='/protected' component={Protected} />
+      <Route path='/error' component={Error} />
+      <Footer />
     </div>
   </Router>
 );
@@ -37,7 +39,6 @@ const PrivateRoute = ({ component, ...rest }) => (
   )} />
 );
 
-const Public = () => <h3>Public</h3>;
 const Protected = () => <h3>Protected</h3>;
 
 export default Routes;

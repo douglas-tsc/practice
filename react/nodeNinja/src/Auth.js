@@ -1,7 +1,9 @@
 const Auth = {
   isAuthenticated: false,
+  server: 'https://pie-lake.gomix.me/',
+  // server: 'http://localhost:3000/',
   authenticate (username, password, cb) {
-    fetch(`http://localhost:3001/login?username=${username.value}&password=${password.value}`, {
+    fetch(`${Auth.server}login?username=${username.value}&password=${password.value}`, {
       method: 'POST',
       credentials: 'include'
     })
@@ -12,8 +14,21 @@ const Auth = {
       }
     }).then(cb);
   },
+  register (username, password, cb) {
+    fetch(`${Auth.server}signup?username=${username.value}&password=${password.value}`, {
+      method: 'POST',
+      credentials: 'include'
+    })
+    .then(blob => blob.json())
+    .then(res => {
+      if (res.authenticated) {
+        Auth.isAuthenticated = true;
+      }
+    }
+  ).then(cb);
+  },
   signout (cb) {
-    fetch(`http://localhost:3001/logout`, {
+    fetch(`${Auth.server}logout`, {
       method: 'GET',
       credentials: 'include'
     })

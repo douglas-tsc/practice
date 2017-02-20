@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import fakeAuth from '../Auth';
 
 export default class Login extends Component {
@@ -31,13 +31,12 @@ export default class Login extends Component {
 
     return (
       <div>
-        <p>You must log in to view the page at {from.pathname}</p>
           <form className='measure center mt4' onSubmit={this.login}>
             <div id='sign_up' className='ba b--transparent ph0 mh0'>
-              <h1 className='f4 fw6 ph0 mh0 pb3'>Sign In</h1>
+              <h1 className='f4 fw6 ph0 mh0 pb3'>You must Login to view mern.surge.sh{from.pathname}</h1>
               <div className='mt3'>
-                <label className='db fw6 lh-copy f6' htmlFor='email-address'>Email</label>
-                <input className='pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100' type='email' name='email-address' ref='username' />
+                <label className='db fw6 lh-copy f6' htmlFor='email-address'>Username</label>
+                <input className='pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100' type='text' name='username' ref='username' />
               </div>
               <div className='mv3'>
                 <label className='db fw6 lh-copy f6' htmlFor='password'>Password</label>
@@ -45,10 +44,10 @@ export default class Login extends Component {
               </div>
             </div>
             <div className=''>
-              <input className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib' type='submit' value='Sign in' />
+              <input className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib' type='submit' value='Login' />
             </div>
             <div className='lh-copy mt3'>
-              <a href='#0' className='f6 link dim black db'>Sign up</a>
+              <Link to='/signup' className='f6 link dim black db'>Sign up</Link>
             </div>
           </form>
       </div>
