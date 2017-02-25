@@ -7,7 +7,7 @@ import {
   withRouter
 } from 'react-router-dom';
 import Login from './Login';
-import fakeAuth from './utils/fakeAuth';
+// import fakeAuth from './utils/fakeAuth';
 import AuthService from './utils/AuthService';
 
 const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.eu.auth0.com');
@@ -28,10 +28,10 @@ const AuthExample = () => (
 );
 
 const AuthButton = withRouter(({ push }) => (
-  fakeAuth.isAuthenticated ? (
+  auth.loggedIn() ? (
     <p>
       Welcome! <button onClick={() => {
-        fakeAuth.signout(() => push('/'));
+        auth.logout(() => push('/'));
       }}>Sign out</button>
     </p>
   ) : (
@@ -51,7 +51,6 @@ const PrivateRoute = ({ component, ...rest }) => (
     )
   )} />
 );
-
 const Public = () => <h3>Public</h3>;
 const Protected = () => <h3>Protected</h3>;
 

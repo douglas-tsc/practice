@@ -1,6 +1,6 @@
 import React from 'react';
-import fakeAuth from './utils/fakeAuth';
-import {  Redirect } from 'react-router-dom';
+// import fakeAuth from './utils/fakeAuth';
+import {Redirect} from 'react-router-dom';
 import AuthService from './utils/AuthService';
 
 
@@ -13,15 +13,16 @@ class Login extends React.Component {
   }
 
   login = () => {
-    auth.login(() => {
+    auth.login()
+    auth.loggedIn(() => {
       this.setState({ redirectToReferrer: true })
     })
   }
 
   render() {
 
-    console.log(fakeAuth);
-    console.log(auth);
+
+
     const { from } = this.props.location.state || { from: { pathname: '/' } }
     const { redirectToReferrer } = this.state
 
@@ -39,20 +40,5 @@ class Login extends React.Component {
     )
   }
 }
-
-
-// export class Login extends React.Component {
-//   render () {
-//     const { auth } = this.props;
-//     return (
-//       <div>
-//         <h2>Login</h2>
-//         <div>
-//           <a onClick={auth.login.bind(this)}>Login</a>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
 
 export default Login;
