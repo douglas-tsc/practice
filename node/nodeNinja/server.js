@@ -6,6 +6,8 @@ require('./passport');
 const config = require('./config');
 const mongo = require('./db');
 const mongoose = require('mongoose');
+const cookieParser = require('cookie-parser');
+const MongoStore = require('connect-mongo')(session);
 
 const origin = 'http://localhost:3001';
 // const origin = 'http://mern.surge.sh';
