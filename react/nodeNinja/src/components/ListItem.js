@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import mern from '../../public/images/mern.png';
 
 export default class ListItem extends Component {
@@ -8,7 +8,7 @@ export default class ListItem extends Component {
       <article>
         <Link className='link dt w-100 bb b--black-10 pb2 mt2 dim blue' to='/page'>
           <div className='dtc w3'>
-            <img src={mern} className='db w-100' />
+            <img src={mern} className='db w-100' role='presentation' />
           </div>
           <div className='dtc v-top pl2'>
             <h1 className='f6 f5-ns fw6 lh-title black mv0'>Build a complete React app, step-by-step with the MERN stack </h1>

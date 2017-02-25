@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import { Redirect, Link, withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import fakeAuth from '../Auth';
 
 export default class Nav extends Component {
   render () {
     const AuthButton = withRouter(({ push }) => (
       fakeAuth.isAuthenticated ? (
-        <a onClick={() => {
-          fakeAuth.signout(() => push('/'));
-        }} className='link dim white dib'>Logout</a>
+        <span>
+          <Link to='/tutorials' className='link dim white dib mr3 ' title='Login'>My Tutorials</Link>
+          <a onClick={() => {
+            fakeAuth.signout(() => push('/'));
+          }} className='link dim white dib'>Logout</a>
+        </span>
       ) : (
         <span>
           <Link to='/login' className='link dim white dib mr3 ' title='Login'>Login</Link>

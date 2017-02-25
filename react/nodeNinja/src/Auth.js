@@ -39,6 +39,18 @@ const Auth = {
       }
     }).then(cb);
   }
+  // addTutorial (cb) {
+  //   fetch(`${Auth.server}logout`, {
+  //     method: 'POST',
+  //     credentials: 'include'
+  //   })
+  //   .then(blob => blob.json())
+  //   .then(res => {
+  //     if (!res.authenticated) {
+  //       Auth.isAuthenticated = false;
+  //     }
+  //   }).then(cb);
+  // }
 };
 
 export default Auth;

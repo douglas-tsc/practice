@@ -23,7 +23,7 @@ const Routes = () => (
       <Route path='/login' component={Login} />
       <Route path='/signup' component={Signup} />
       <Route path='/page' component={Page} />
-      <Route path='/edit' component={Edit} />
+      <PrivateRoute path='/edit' component={Edit} />
       <PrivateRoute path='/tutorials' component={Tutorials} />
       <Route path='/error' component={Error} />
       <Footer />
@@ -43,7 +43,5 @@ const PrivateRoute = ({ component, ...rest }) => (
     )
   )} />
 );
-
-const Protected = () => <h3>Protected</h3>;
 
 export default Routes;

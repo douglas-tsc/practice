@@ -3,6 +3,7 @@ var app = express();
 var jwt = require('express-jwt');
 require('dotenv').config();
 var cors = require('cors');
+const mongo = require('./db');
 
 if (!process.env.AUTH0_CLIENT_ID || !process.env.AUTH0_SECRET) {
   throw 'Make sure you have AUTH0_CLIENT_ID and AUTH0_SECRET in your .env file';
@@ -17,6 +18,11 @@ var authenticate = jwt({
 });
 
 app.use(cors());
+app.get('/', function (req, res) {
+  mongo.find({}, (err, docs) => {
+    res.json(docs);
+  });
+});
 app.get('/api/public', function (req, res) {
   // res.header('Access-Control-Allow-Origin', origin);
   // res.header('Access-Control-Allow-Credentials', true);

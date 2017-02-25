@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import mern from '../../public/images/mern.png';
+import ListItem from '../components/ListItem';
 
 export default class Edit extends Component {
   // constructor (props) {
@@ -7,12 +8,12 @@ export default class Edit extends Component {
   //   this.state = {
   //     redirectToReferrer: false
   //   };
-  //   this.login = this.login.bind(this);
+  //   this.handleForm = this.handleForm.bind(this);
   // }
   //
-  // login = (e) => {
+  // handleForm = (e) => {
   //   e.preventDefault();
-  //   const { username, password } = this.refs;
+  //   const { title } = this.refs;
   //   fakeAuth.authenticate(username, password, () => {
   //     this.setState({ redirectToReferrer: true })
   //   })
@@ -21,9 +22,12 @@ export default class Edit extends Component {
   render () {
     return (
       <div>
-        <form className='measure center mv4' onSubmit={this.login}>
+        <div className='mw7 center'>
+          <ListItem />
+        </div>
+        <form className='measure center mv4' onSubmit={this.handleForm}>
           <div id='sign_up' className='ba b--transparent ph0 mh0'>
-            <h1 className='f4 fw6 ph0 mh0 pb3'>EDIT TUTORIAL</h1>
+
             <div className='mt3'>
               <label className='db fw6 lh-copy f6' htmlFor='title'>Title</label>
               <input className='pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100' type='text' name='title' ref='title' />
@@ -60,7 +64,7 @@ export default class Edit extends Component {
             <div className='mt3'>
               <img className='db ba b--black-10'
                 alt='Frank Ocean Blonde Album Cover'
-                src='https://s3-us-west-1.amazonaws.com/tachyonsio/img/Blonde-Frank_Ocean.jpeg' />
+                src={mern} />
               <br />
               <input className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib mr2' type='submit' value='Upload New Image' />
               <input className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib mr2' type='submit' value='Remove Image' />

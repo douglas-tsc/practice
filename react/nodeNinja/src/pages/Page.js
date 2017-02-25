@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import { Redirect, Link } from 'react-router-dom';
-import Stats from '../components/Stats';
 import mern from '../../public/images/mern.png';
 import mongo from '../../public/images/mongodbw.jpg';
 import express from '../../public/images/expressbw.jpg';
 import react from '../../public/images/reactbw.png';
 import node from '../../public/images/nodejsbw.png';
-import redux from '../../public/images/reduxbw.png';
-import webpack from '../../public/images/webpackbw.png';
 
 export default class Page extends Component {
 

@@ -21,6 +21,7 @@ export default class Login extends Component {
 
   render() {
     const { from } = this.props.location.state || { from: { pathname: '/' } }
+
     const { redirectToReferrer } = this.state
 
     if (redirectToReferrer) {
@@ -30,7 +31,7 @@ export default class Login extends Component {
     }
 
     return (
-  <form onSubmit={this.signup} acceptCharset="utf-8" className='measure center mt4'>
+  <form onSubmit={this.signup} acceptCharset="utf-8" className='measure center mt4 mb5'>
     <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
       <legend className="ph0 mh0 fw6 clip">Sign Up</legend>
       <h1 className='f4 fw6 ph0 mh0 pb3'>Sign Up</h1>

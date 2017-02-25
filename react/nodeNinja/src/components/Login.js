@@ -8,14 +8,20 @@ export default class Login extends Component {
     this.state = {
       redirectToReferrer: false
     };
-    this.login = this.login.bind(this);
   }
+
+  // componentWillMount(){
+  //   if (fakeAuth.isAuthenticated){
+  //     this.setState({ redirectToReferrer: true })
+  //   }
+  // }
 
   login = (e) => {
     e.preventDefault();
     const { username, password } = this.refs;
     fakeAuth.authenticate(username, password, () => {
       this.setState({ redirectToReferrer: true })
+      console.log('hello');
     })
   }
 
@@ -31,7 +37,7 @@ export default class Login extends Component {
 
     return (
       <div>
-          <form className='measure center mt4' onSubmit={this.login}>
+          <form className='measure center mt4 mb5' onSubmit={this.login}>
             <div id='sign_up' className='ba b--transparent ph0 mh0'>
               <h1 className='f4 fw6 ph0 mh0 pb3'>You must Login to view mern.surge.sh{from.pathname}</h1>
               <div className='mt3'>
