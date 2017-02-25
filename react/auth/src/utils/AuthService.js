@@ -1,5 +1,4 @@
 import Auth0Lock from 'auth0-lock';
-// import { browserHistory } from 'react-router-dom';
 
 export default class AuthService {
   constructor (clientId, domain) {
@@ -20,7 +19,6 @@ export default class AuthService {
     // Saves the user token
     this.setToken(authResult.idToken);
     // navigate to the home route
-    // browserHistory.replace('/home');
   }
 
   login () {
@@ -43,8 +41,9 @@ export default class AuthService {
     return localStorage.getItem('id_token');
   }
 
-  logout () {
+  logout (cb) {
     // Clear user token and profile data from local storage
     localStorage.removeItem('id_token');
+    setTimeout(cb, 100);
   }
 }
