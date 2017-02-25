@@ -7,7 +7,8 @@ import {
   withRouter
 } from 'react-router-dom';
 import Login from './Login';
-// import fakeAuth from './utils/fakeAuth';
+import Messages from './Messages';
+import PrivateMessages from './PrivateMessages';
 import AuthService from './utils/AuthService';
 
 const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.eu.auth0.com');
@@ -20,9 +21,9 @@ const AuthExample = () => (
         <li><Link to='/public'>Public Page</Link></li>
         <li><Link to='/protected'>Protected Page</Link></li>
       </ul>
-      <Route path='/public' component={Public} />
+      <Route path='/public' component={Messages} />
       <Route path='/login' component={Login} />
-      <PrivateRoute path='/protected' component={Protected} />
+      <PrivateRoute path='/protected' component={PrivateMessages} />
     </div>
   </Router>
 );
@@ -51,7 +52,5 @@ const PrivateRoute = ({ component, ...rest }) => (
     )
   )} />
 );
-const Public = () => <h3>Public</h3>;
-const Protected = () => <h3>Protected</h3>;
 
 export default AuthExample;
