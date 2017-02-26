@@ -1,9 +1,10 @@
-var express = require('express');
-var app = express();
-var jwt = require('express-jwt');
+const express = require('express');
+const app = express();
+const jwt = require('express-jwt');
 require('dotenv').config();
-var cors = require('cors');
+const cors = require('cors');
 const mongo = require('./db');
+const bodyParser = require('body-parser');
 
 if (!process.env.AUTH0_CLIENT_ID || !process.env.AUTH0_SECRET) {
   throw 'Make sure you have AUTH0_CLIENT_ID and AUTH0_SECRET in your .env file';
@@ -17,6 +18,9 @@ var authenticate = jwt({
   audience: process.env.AUTH0_CLIENT_ID
 });
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+// body-parse reads a form's input and stores it as a javascript object accessible through req.body
 app.use(cors());
 app.get('/', function (req, res) {
   mongo.find({}, (err, tutorials) => {
@@ -24,19 +28,15 @@ app.get('/', function (req, res) {
   });
 });
 
-app.get('/api/public', function (req, res) {
-  // res.header('Access-Control-Allow-Origin', origin);
-  // res.header('Access-Control-Allow-Credentials', true);
-  // res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  res.json({ message: "Hello from a public endpoint! You don't need to be authenticated to see this." });
-});
-
-app.get('/api/private', authenticate, function (req, res) {
-  res.json({ message: 'Hello from a private endpoint! You DO need to be authenticated to see this.' });
-});
-
-app.post('/api/private', authenticate, function (req, res) {
-  res.json({ message: 'Hello from a private endpoint! You DO need to be authenticated to see this.' });
+app.post('/api/add', authenticate, function (req, res) {
+  mongo.create({
+    image: req.query.image,
+    title: req.query.title,
+    author: req.query.author,
+    link: req.query.link,
+    id: req.query.id}, (err, tutorial) => {
+    if (err) return console.error(err);
+  });
 });
 
 app.listen(3001);
