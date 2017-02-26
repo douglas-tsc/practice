@@ -19,10 +19,11 @@ var authenticate = jwt({
 
 app.use(cors());
 app.get('/', function (req, res) {
-  mongo.find({}, (err, docs) => {
-    res.json(docs);
+  mongo.find({}, (err, tutorials) => {
+    res.json(tutorials);
   });
 });
+
 app.get('/api/public', function (req, res) {
   // res.header('Access-Control-Allow-Origin', origin);
   // res.header('Access-Control-Allow-Credentials', true);
@@ -31,10 +32,10 @@ app.get('/api/public', function (req, res) {
 });
 
 app.get('/api/private', authenticate, function (req, res) {
-  console.log(res);
-  // res.header('Access-Control-Allow-Origin', origin);
-  // res.header('Access-Control-Allow-Credentials', true);
-  // res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.json({ message: 'Hello from a private endpoint! You DO need to be authenticated to see this.' });
+});
+
+app.post('/api/private', authenticate, function (req, res) {
   res.json({ message: 'Hello from a private endpoint! You DO need to be authenticated to see this.' });
 });
 
