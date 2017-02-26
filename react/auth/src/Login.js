@@ -7,7 +7,6 @@ const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.e
 class Login extends React.Component {
   render () {
     const { from } = this.props.location.state || { from: { pathname: '/' } };
-    console.log(from);
     if (auth.loggedIn()) {
       return (
         <Redirect to={from} />

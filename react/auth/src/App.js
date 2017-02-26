@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import Login from './Login';
 import Messages from './Messages';
-import PrivateMessages from './PrivateMessages';
+import Profile from './Profile';
 import AuthService from './utils/AuthService';
 
 const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.eu.auth0.com');
@@ -19,11 +19,11 @@ const AuthExample = () => (
       <AuthButton />
       <ul>
         <li><Link to='/public'>Public Page</Link></li>
-        <li><Link to='/protected'>Protected Page</Link></li>
+        <li><Link to='/profile'>Profile Page</Link></li>
       </ul>
       <Route path='/public' component={Messages} />
       <Route path='/login' component={Login} />
-      <PrivateRoute path='/protected' component={PrivateMessages} />
+      <PrivateRoute path='/profile' component={Profile} />
     </div>
   </Router>
 );
