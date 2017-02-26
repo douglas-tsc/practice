@@ -9,6 +9,7 @@ import {
 import Login from './Login';
 import Messages from './Messages';
 import Profile from './Profile';
+import Edit from './Edit';
 import AuthService from './utils/AuthService';
 
 const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.eu.auth0.com');
@@ -18,11 +19,13 @@ const AuthExample = () => (
     <div>
       <AuthButton />
       <ul>
-        <li><Link to='/public'>Public Page</Link></li>
-        <li><Link to='/profile'>Profile Page</Link></li>
+        <li><Link to='/public'>Home</Link></li>
+        <li><Link to='/profile'>My Profile</Link></li>
       </ul>
+      <Route exact path='/' component={Messages} />
       <Route path='/public' component={Messages} />
       <Route path='/login' component={Login} />
+      <PrivateRoute path='/edit' component={Edit} />
       <PrivateRoute path='/profile' component={Profile} />
     </div>
   </Router>
@@ -31,7 +34,7 @@ const AuthExample = () => (
 const AuthButton = withRouter(({ push }) => (
   auth.loggedIn() ? (
     <p>
-      Welcome! <button onClick={() => {
+      <button onClick={() => {
         auth.logout(() => push('/'));
       }}>Sign out</button>
     </p>

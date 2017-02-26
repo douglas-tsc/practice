@@ -1,5 +1,6 @@
 import React from 'react';
 import AuthService from './utils/AuthService';
+import {Link} from 'react-router-dom';
 
 const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.eu.auth0.com');
 
@@ -7,25 +8,31 @@ class Messages extends React.Component {
   constructor () {
     super();
     this.state = {
-      privateMsg: 'hey',
+      tutorials: [],
       user: auth.getProfile()
     };
   }
 
   componentWillMount () {
-    auth.fetch('http://localhost:3001/api/private')
-      .then(response => this.setState({privateMsg: response.message}))
-      .catch(error => this.setState({privateMsg: '' + error}));
+    fetch('http://localhost:3001/')
+      .then(response => response.json())
+      .then(response =>
+        this.setState({tutorials: response})
+      );
   }
 
   render () {
+    const tutorials = this.state.tutorials
+    .filter(tut => tut.id === this.state.user.user_id)
+    .map((tut, index) => <li key={index}>{tut.title}</li>);
+
     return (
       <div>
         <p>hello {this.state.user.nickname}</p>
-        <p>User ID : {this.state.user.user_id}</p>
-        <p>
-          {this.state.privateMsg}
-        </p>
+        <Link to='/edit'><button>+ Add Tutorial</button></Link>
+        <ul>
+          {tutorials}
+        </ul>
       </div>
     );
   }

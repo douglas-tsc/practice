@@ -18,7 +18,7 @@ class Messages extends React.Component {
   }
 
   render () {
-    const tutorials = this.state.tutorials.map((tut, index) => <li key={index}>{tut.text}</li>);
+    const tutorials = this.state.tutorials.map((tut, index) => <li key={index}>{tut.title}</li>);
     return (
       <div>
         <ul>
