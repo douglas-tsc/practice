@@ -39,4 +39,24 @@ app.post('/api/add', authenticate, function (req, res) {
   });
 });
 
+// app.put('/api/edit', authenticate, function (req, res) {
+//   mongo.findById(req.params.id, function (err, p) {
+//     if (!p) {
+//       return next(new Error('Could not load Document'));
+//     } else {
+//     // do your updates here
+//       p.modified = new Date();
+//
+//       p.save({
+//         image: req.query.image,
+//         title: req.query.title,
+//         author: req.query.author,
+//         link: req.query.link,
+//         id: req.query.id}, (err, tutorial) => {
+//         if (err) return console.error(err);
+//       });
+//     }
+//   });
+// });
+
 app.listen(3001);
