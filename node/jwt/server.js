@@ -41,7 +41,6 @@ app.post('/api/add', authenticate, function (req, res) {
 });
 
 app.put('/api/edit', authenticate, function (req, res) {
-  // mongo.findById(req.query._id, function (err, tutorial) {
   mongo.findOneAndUpdate({_id: req.query._id},
     {
       image: req.query.image,
@@ -49,10 +48,14 @@ app.put('/api/edit', authenticate, function (req, res) {
       author: req.query.author,
       link: req.query.link,
       id: req.query.id},
-      (err, tutorial) => {
-        if (err) return console.error(err);
-      });
-  // });
+    (err, tutorial) => {
+      if (err) return console.error(err);
+    });
+});
+
+app.delete('/api/delete', authenticate, function (req, res) {
+  console.log(req.query.id);
+  mongo.find({_id: req.query.id}).remove().exec();
 });
 
 app.listen(3001);
