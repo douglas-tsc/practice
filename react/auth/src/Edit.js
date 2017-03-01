@@ -31,7 +31,8 @@ class Edit extends React.Component {
     const {image, title, author, link, id} = this.state
     auth.fetch(`http://localhost:3001/api/add?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}`,
       {method: 'POST'})
-      .then(this.setState({ redirectToReferrer: true }))
+      .then(
+        this.setState({ redirectToReferrer: true }))
       .catch(error => console.log('Request failed', error));
   }
 
@@ -51,9 +52,8 @@ class Edit extends React.Component {
         <article className='w5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10 mh5'>
           <div className='tc'>
             <img src={this.state.image} className='h4 w4 dib ba b--black-05 pa2' title={this.state.title} alt={this.state.title}/>
-            <h1 className='f3 mb2 truncate'>{this.state.title}</h1>
+            <a href={this.state.link} target="_blank"><h1 className='f3 mb2 truncate'>{this.state.title}</h1></a>
             <h2 className='f5 fw4 gray mt0 truncate'>{this.state.author}</h2>
-            <a href={this.state.link} target="_blank" className='f5 fw4 gray mt0 truncate'>Click to Tutorial</a>
           </div>
         </article>
         <form

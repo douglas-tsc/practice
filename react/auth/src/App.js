@@ -7,7 +7,7 @@ import {
   withRouter
 } from 'react-router-dom';
 import Login from './Login';
-import Messages from './Messages';
+import Home from './Home';
 import Profile from './Profile';
 import Edit from './Edit';
 import AuthService from './utils/AuthService';
@@ -22,8 +22,8 @@ const AuthExample = () => (
         <li><Link to='/public'>Home</Link></li>
         <li><Link to='/profile'>My Profile</Link></li>
       </ul>
-      <Route exact path='/' component={Messages} />
-      <Route path='/public' component={Messages} />
+      <Route exact path='/' component={Home} />
+      <Route path='/public' component={Home} />
       <Route path='/login' component={Login} />
       <PrivateRoute path='/edit' component={Edit} />
       <PrivateRoute path='/profile' component={Profile} />
