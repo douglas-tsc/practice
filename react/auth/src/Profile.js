@@ -24,7 +24,10 @@ class Messages extends React.Component {
   render () {
     const tutorials = this.state.tutorials
     .filter(tut => tut.id === this.state.user.user_id)
-    .map((tut, index) => <Link to={`/edit/${tut._id}`} key={index} className='w5 bg-white br3 pa3 pa4-ns ma1 ba b--black-10' tutorial={tut}>
+    .map((tut, index) => <Link to={{
+      pathname: '/edit',
+      state: tut
+    }} key={index} className='w5 bg-white br3 pa3 pa4-ns ma1 ba b--black-10' tutorial={tut}>
       <div className='tc'>
         <img src={tut.image} className='h4 w4 dib ba b--black-05 pa2' title={tut.title} alt={tut.title} />
         <a href={tut.link} target='_blank'><h1 className='f3 mb2 truncate'>{tut.title}</h1></a>

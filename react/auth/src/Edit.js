@@ -9,35 +9,54 @@ class Edit extends React.Component {
   constructor () {
     super();
     this.state = {
+      edited: false,
       redirectToReferrer: false,
       image: mern,
       title: 'Title',
       author: 'Author',
-      link: 'link',
+      link: '',
       id: auth.getProfile().user_id
     };
+  }
+
+  componentDidMount(){
+    this.setState({
+      image: this.props.location.state.image,
+      title: this.props.location.state.title,
+      author: this.props.location.state.author,
+      link: this.props.location.state.link,
+      edited: this.props.location.state.edited
+    })
   }
 
   handleChange = (e) => {
     let target = e.target.name;
     let value = e.target.value;
     let obj = {};
-    obj[target] = value;
-    this.setState(obj);
+    obj[target] = value
+    this.setState(obj)
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
     const {image, title, author, link, id} = this.state
-    auth.fetch(`http://localhost:3001/api/add?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}`,
-      {method: 'POST'})
-      .then(
-        this.setState({ redirectToReferrer: true }))
-      .catch(error => console.log('Request failed', error));
+    if (this.state.edited) {
+      console.log(this.props.location.state._id);
+      auth.fetch(`http://localhost:3001/api/edit?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}&_id=${this.props.location.state._id}`,
+        {method: 'PUT'})
+        .then(
+          this.setState({ redirectToReferrer: true }))
+        .catch(error => console.log('Request failed', error));
+    }else {
+      auth.fetch(`http://localhost:3001/api/add?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}`,
+        {method: 'POST'})
+        .then(
+          this.setState({ redirectToReferrer: true }))
+        .catch(error => console.log('Request failed', error));
+    }
   }
 
   render () {
-
     const { from } = this.props.location.state || { from: { pathname: '/' } }
     const { redirectToReferrer } = this.state
 
@@ -60,10 +79,10 @@ class Edit extends React.Component {
           onSubmit={this.handleSubmit}
           className='mh5'>
           <div>
-            <p>Image URL:<input type='url' name='image' onChange={this.handleChange} placeholder='Refresh page to reset' /></p>
-            <p>Title:<input type='text' name='title' onChange={this.handleChange} /></p>
-            <p>Author:<input type='text' name='author' onChange={this.handleChange} /></p>
-            <p>Link:<input type='url' name='link' onChange={this.handleChange} /></p>
+            <p><input type='url' name='image' onChange={this.handleChange} placeholder='Add image link here' /></p>
+            <p><input type='text' name='title' onChange={this.handleChange} value={this.state.title}/></p>
+            <p><input type='text' name='author' onChange={this.handleChange} value={this.state.author} /></p>
+            <p><input type='url' name='link' onChange={this.handleChange} value={this.state.link} /></p>
           </div>
           <input type='submit' value='Submit' />
         </form>
