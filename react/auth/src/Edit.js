@@ -2,6 +2,7 @@ import React from 'react';
 import mern from '../public/images/mern.png';
 import AuthService from './utils/AuthService';
 import {Redirect} from 'react-router-dom';
+import domain from './utils/domain';
 
 const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.eu.auth0.com');
 
@@ -42,13 +43,13 @@ class Edit extends React.Component {
     const {image, title, author, link, id} = this.state
     if (this.state.edited) {
       console.log(this.props.location.state._id);
-      auth.fetch(`http://localhost:3001/api/edit?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}&_id=${this.props.location.state._id}`,
+      auth.fetch(`${domain.server}/api/edit?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}&_id=${this.props.location.state._id}`,
         {method: 'PUT'})
         .then(
           this.setState({ redirectToReferrer: true }))
         .catch(error => console.log('Request failed', error));
     }else {
-      auth.fetch(`http://localhost:3001/api/add?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}`,
+      auth.fetch(`${domain.server}/api/add?image=${image}&title=${title}&author=${author}&link=${link}&id=${id}`,
         {method: 'POST'})
         .then(
           this.setState({ redirectToReferrer: true }))

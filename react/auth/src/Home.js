@@ -1,4 +1,5 @@
 import React from 'react';
+import domain from './utils/domain';
 
 class Home extends React.Component {
   constructor () {
@@ -10,7 +11,7 @@ class Home extends React.Component {
 
   componentWillMount () {
     // public http request
-    fetch('http://localhost:3001/')
+    fetch(domain.server)
       .then(response => response.json())
       .then(response =>
         this.setState({tutorials: response})

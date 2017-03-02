@@ -2,7 +2,7 @@ import React from 'react';
 import AuthService from './utils/AuthService';
 import {Link} from 'react-router-dom';
 import {Redirect} from 'react-router-dom';
-
+import domain from './utils/domain';
 
 const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.eu.auth0.com');
 
@@ -17,7 +17,7 @@ class Profile extends React.Component {
   }
 
   componentWillMount () {
-    fetch('http://localhost:3001/')
+    fetch(domain.server)
       .then(response => response.json())
       .then(response =>
         this.setState({tutorials: response})
@@ -25,12 +25,12 @@ class Profile extends React.Component {
   }
 
   handleDelete = (id) => {
-    auth.fetch(`http://localhost:3001/api/delete?id=${id}`,
+    auth.fetch(`${domain.server}/api/delete?id=${id}`,
       {method: 'DELETE'})
       .then(
-      //   this.setState({
-      //   refresh: true
-      // })
+        this.setState({
+        refresh: true
+      })
     )
   }
 
@@ -52,7 +52,7 @@ class Profile extends React.Component {
 
     if (this.state.refresh) {
       return (
-        <Redirect push to='/profile'/>
+        <Redirect to='/'/>
       )
     }
 
