@@ -17,29 +17,38 @@ const auth = new AuthService('erkEIgY6SdjJWODOCH9sKomBr15dxp7Z', 'joshpitzalis.e
 const AuthExample = () => (
   <Router >
     <div>
-      <AuthButton />
-      <ul>
-        <li><Link to='/public'>Home</Link></li>
-        <li><Link to='/profile'>My Profile</Link></li>
-      </ul>
+      <nav className='pa3 pa4-ns bb b--black-10 mb6'>
+        <a className='link dim black b f6 f5-ns dib mr3' href='#' title='Home'>MERN STACK TUTORIALS</a>
+        <Link to='/public' className='link dim gray f6 f5-ns dib mr3'>Home</Link>
+        <Link to='/profile' className='link dim gray f6 f5-ns dib mr3'>My Profile</Link>
+        <AuthButton className='link dim gray f6 f5-ns dib mr3' />
+
+      </nav>
+
       <Route exact path='/' component={Home} />
       <Route path='/public' component={Home} />
       <Route path='/login' component={Login} />
       <PrivateRoute path='/edit' component={Edit} />
       <PrivateRoute path='/profile' component={Profile} />
+      <footer className='pv4 ph3 ph5-m ph6-l mid-gray bt b--black-10 mt6'>
+        <small className='f6 db tc'>An <a href='https://github.com/aditya2337' class='ttu'>Aditya</a> and <a href='https://github.com/joshpitzalis' class='ttu'>Josh</a> production, No Rights Reserved.</small>
+        <div className='tc mt3'>
+          <p>If you find a bug, <a href='https://twitter.com/joshpitzalis' className='f6 dib ph2 link mid-gray dim'>let us know</a>.</p>
+        </div>
+      </footer>
     </div>
   </Router>
 );
 
 const AuthButton = withRouter(({ push }) => (
   auth.loggedIn() ? (
-    <p>
-      <button onClick={() => {
-        auth.logout(() => push('/'));
-      }}>Sign out</button>
-    </p>
+
+    <a className='link dim gray f6 f5-ns dib mr3' onClick={() => {
+      auth.logout(() => push('/'));
+    }}>Sign Out</a>
+
   ) : (
-    <p>You are not logged in.</p>
+    <a className='link dim gray f6 f5-ns dib mr3' onClick={auth.login.bind(this)}>Sign Up</a>
   )
 ));
 

@@ -80,12 +80,12 @@ class Edit extends React.Component {
           onSubmit={this.handleSubmit}
           className='mh5'>
           <div>
-            <p><input type='url' name='image' onChange={this.handleChange} placeholder='Add image link here' /></p>
-            <p><input type='text' name='title' onChange={this.handleChange} value={this.state.title}/></p>
-            <p><input type='text' name='author' onChange={this.handleChange} value={this.state.author} /></p>
-            <p><input type='url' name='link' onChange={this.handleChange} value={this.state.link} /></p>
+            <p><input className="b pa2 input-reset ba bg-transparent" type='url' name='image' onChange={this.handleChange} placeholder='Add image link here' /></p>
+            <p><input className="b pa2 input-reset ba bg-transparent" type='text' name='title' onChange={this.handleChange} value={this.state.title}/></p>
+            <p><input className="b pa2 input-reset ba bg-transparent" type='text' name='author' onChange={this.handleChange} value={this.state.author} /></p>
+            <p><input className="b pa2 input-reset ba bg-transparent" type='url' name='link' onChange={this.handleChange} value={this.state.link} /></p>
           </div>
-          <input type='submit' value='Submit' />
+          <input className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type='submit' value='Submit' />
         </form>
       </div>
     );

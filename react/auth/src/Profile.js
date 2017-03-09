@@ -57,9 +57,8 @@ class Profile extends React.Component {
     }
 
     return (
-      <div>
-        <p>hello {this.state.user.nickname}</p>
-        <Link to='/edit'><button>+ Add Tutorial</button></Link>
+      <div className='tc'>
+        <Link to='/edit'><button className='f6 grow no-underline br-pill ph3 pv2 mb2 dib white bg-black'>Add Tutorial</button></Link>
         <div className='flex flex-wrap justify-center mt4'>
           {tutorials}
         </div>

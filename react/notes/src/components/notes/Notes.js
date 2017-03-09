@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NoteList from './NoteList';
 
-class Notes extends Component {
-  render () {
-    return (
-      <div>
-        <NoteList username={this.props.username} notes={this.props.notes}
-          addNote={this.props.addNote} />
-      </div>
+const Notes = ({notes, username, addNote}) => (
+  <div>
+    <NoteList username={username} notes={notes}
+      addNote={addNote} />
+  </div>
     );
-  }
-}
 
 export default Notes;

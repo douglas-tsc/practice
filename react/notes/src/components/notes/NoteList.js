@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AddNote from './AddNote';
 
-class NoteList extends Component {
-  render () {
-    const notes = this.props.notes.map((note, index) =>
-      <li className='ph3 pv2 bb b--light-silver' key={index}>{note}</li>
+const NoteList = ({username, addNote, notes}) => (
+  <div>
+    <h2 className='f4 bold center mw5'>Notes on {username}</h2>
+    <AddNote addNote={addNote} />
+    <ul className='list pl0 ml0 center mw5 ba b--light-silver br3'>
+      {notes.map((note, index) =>
+        <li className='ph3 pv2 bb b--light-silver' key={index}>{note}</li>)}
+    </ul>
+  </div>
     );
-    return (
-      <div>
-        <h2 className='f4 bold center mw5'>{this.props.username} Notes</h2>
-        <AddNote addNote={this.props.addNote} />
-        <ul className='list pl0 ml0 center mw5 ba b--light-silver br3' >{notes}</ul>
-      </div>
-    );
-  }
-}
 
 NoteList.propTypes = {
   username: React.PropTypes.string.isRequired,

@@ -1,13 +1,8 @@
-import React, { Component } from 'react';
-
-class Home extends Component {
-  render () {
-    return (
-      <h2 className='tc'>
-        Search by Github Username Above
-      </h2>
-    );
-  }
-}
+import React from 'react';
+const Home = () => (
+  <h2 className='tc pt5'>
+    Search by Github Username Above
+  </h2>
+  );
 
 export default Home;
