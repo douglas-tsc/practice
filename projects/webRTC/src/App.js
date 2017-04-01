@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Filesharer from './Filesharer';
+// import Filesharer from './Filesharer';
+import Video from './Video';
 
 export default class App extends Component {
   render () {
@@ -11,8 +12,7 @@ export default class App extends Component {
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to React</h2>
         </div>
-        <p className='App-intro'>React FileSharer</p>
-        <Filesharer opts={{
+        <Video opts={{
           peerjs_key: 'jljaqy6e1anel8fr'
         }} />
       </div>

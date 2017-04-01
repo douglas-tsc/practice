@@ -3,7 +3,6 @@ import Peer from 'peerjs';
 import randomstring from 'randomstring';
 
 export default class FileSharer extends Component {
-
   constructor (props) {
     super(props);
     this.state = {
