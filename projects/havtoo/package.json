@@ -1,0 +1,18 @@
+{
+  "name": "official-meteor-tutorial",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "meteor-node-stubs": "~0.2.0",
+    "moment": "^2.14.1",
+    "react": "^15.2.1",
+    "react-addons-pure-render-mixin": "^15.2.1",
+    "react-bootstrap": "^0.30.0-rc.2",
+    "react-datepicker": "^0.28.1",
+    "react-dom": "^15.2.1",
+    "react-router": "^2.6.0"
+  }
+}

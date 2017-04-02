@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guess the Colour</title>
+</head>
+
+<body onload='do_game()'>
+  <script>
+    var TARGET;
+    var FINISHED = false;
+    var GUESS_INPUT;
+    var GUESS_INPUT_TEXT;
+    var GUESSES = 0;
+    /* global variables im all caps because of conventions
+    laid out on w3 http://www.w3schools.com/js/js_conventions.asp*/
+    var colors = ['blue', 'cyan', 'gold', 'gray', 'green', 'magenta', 'orange',
+      'white', 'yellow'
+    ];
+
+    function do_game() {
+      TARGET = colors[Math.floor(Math.random() * (colors.length + 1))];
+      alert(TARGET);
+      while (!FINISHED) {
+        GUESS_INPUT_TEXT = prompt('I am thinking of a colour. \n\n' +
+          'It is either ' +
+          'blue, cyan, gray, green, gold, magenta, orange, white or yellow \n\n' + 'Can you guess the colour?');
+        GUESSES += 1;
+        FINISHED = check_guess();
+      }
+    }
+
+    function check_guess() {
+      if (GUESS_INPUT_TEXT.toLowerCase() === TARGET) {
+        var myBody = document.getElementsByTagName("body")[0];
+        myBody.style.background = TARGET;
+        alert('You are right! You took ' + GUESSES + ' guesses');
+        return true;
+    } else if (GUESS_INPUT_TEXT !== 'blue' &&
+        GUESS_INPUT_TEXT !== 'cyan' &&
+        GUESS_INPUT_TEXT !== 'gold' &&
+        GUESS_INPUT_TEXT !== 'gray' &&
+        GUESS_INPUT_TEXT !== 'green' &&
+        GUESS_INPUT_TEXT !== 'magenta' &&
+        GUESS_INPUT_TEXT !== 'orange' &&
+        GUESS_INPUT_TEXT !== 'white' &&
+        GUESS_INPUT_TEXT !== 'yellow') {
+        alert('I do not recognize that color!');
+        return false;
+      } else if (GUESS_INPUT_TEXT > TARGET) {
+        alert('Your input is alphabetically higher than mine!');
+        return false;
+      } else if (GUESS_INPUT_TEXT < TARGET) {
+        alert('Your input is alphabetically lower than mine!');
+        return false;
+      } else {
+        alert('Wrong. Guess again');
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guess the Colour</title>
+</head>
+
+<body onload='do_game()'>
+  <script>
+    var TARGET;
+    var FINISHED = false;
+    var GUESS_INPUT;
+    var GUESS_INPUT_TEXT;
+    /* global variables im all caps because of conventions
+    laid out on w3 http://www.w3schools.com/js/js_conventions.asp*/
+    var colors = ['blue', 'cyan', 'gold', 'gray', 'green', 'magenta', 'orange',
+      'white', 'yellow'
+    ];
+
+    function do_game() {
+      TARGET = colors[Math.floor(Math.random() * (colors.length - 1))];
+      alert(TARGET);
+      while (!FINISHED) {
+        GUESS_INPUT_TEXT = prompt('I am thinking of a colour. \n\n' +
+          'It is either' +
+          ' blue, cyan, gold, gray, green, magenta, orange, white or yellow \n\n' +
+          'Can you guess the colour?');
+        if (GUESS_INPUT_TEXT == TARGET) {
+          alert('You got it');
+          FINISHED = true;
+        } else {
+          alert('Wrong. Guess again');
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

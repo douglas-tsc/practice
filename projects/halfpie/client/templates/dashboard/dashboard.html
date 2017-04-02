@@ -1,0 +1,57 @@
+<template name="dashboard">
+  <div class="template-dashboard">
+    <div class="page-header">
+      <h1>My Projects</h1>
+    </div>
+
+    <a href="/projects/add" class='btn btn-lg btn-primary'>+ Start a new project</a>
+    <a href="/grunts/addGrunts" class='btn btn-lg btn-primary'>+ Find a project to work on</a>
+    <br/>
+    <br/>
+
+    <ul class="list-group">
+      {{#each myProjects}}
+        <li class="list-group-item"> <a data-toggle="modal" data-target="#modal{{_id}}">{{ title }}</a> <span class="label label-default">{{ help }}</span><a id={{_id}} class='pull-right remove-project'><i class='fa fa-remove'></i></a></li>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal{{_id}}" tabindex="-1" role="dialog" aria-labelledby="modal{{_id}}Label">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal{{_id}}Label">Edit Project</h4>
+              </div>
+              <div class="modal-body">
+                  <form class="update-project-form">
+                      <div class="form-group">
+                          <label for="title">Project Name</label>
+                          <input type="text" class="title form-control" id="title" placeholder=""
+                          value='{{title}}'>
+                          <p class="help-block">This is what people will see in the listing.</p>
+                      </div>
+                      <div class="form-group">
+                          <label for="description">Project Description</label>
+                          <textarea id='description' class='form-control' name="Name" rows="8" cols="40" value='{{description}}'></textarea>
+                          <p class="help-block">Please explain why you started this project, what the project goals are and how it will make money.</p>
+                      </div>
+                      <input type="hidden" name="id" value="{{_id}}">
+                      <br/>
+                      <button type="submit" class="btn btn-primary">
+                          Update Project
+                      </button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        {{else}}
+        <p>You currently have no projects.</p>
+
+      {{/each}}
+    </ul>
+
+  </div>
+</template>

@@ -1,0 +1,40 @@
+<head>
+    <title>Death Bed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <img src="/images/coffin.png" alt="coffin" id="logo">
+        <h1>Welcome to <br/>
+        Death Bed</h1>
+
+    </header>
+
+
+    {{> loginButtons}} {{#if currentUser}} {{> points}}
+    <br/>
+    <br/> {{> notes}} {{/if}}
+
+</body>
+
+
+<template name="points">
+    <p>You have {{counter}} Death Bed points.</p>
+
+    <button type="button" id='alone'>Alone</button>
+    <button type="button" id='people'>People</button>
+    <button type="button" id='work'>Work</button>
+    <button type="button" id='none'>None</button>
+
+
+</template>
+
+<template name="notes">
+    <form class="new-note">
+        <input type="text" name="text" placeholder="Type to add a note for today" />
+        <input type="submit" value="Submit" class="button">
+    </form>
+
+</template>

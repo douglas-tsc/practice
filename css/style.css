@@ -1,0 +1,148 @@
+* {
+  /*outline: 1px dotted red;*/
+  }
+.top {
+  padding-top: 80px;
+}
+
+
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+}
+
+.btn-xlg {
+  height: 100px;
+  width: 160px;
+}
+
+  /* line 4, ../scss/style.scss */
+.colorBox {
+  display: flex;
+}
+/* line 6, ../scss/style.scss */
+.colorBox .yellow {
+  display: inline-block;
+  width: 25%;
+  height: 10px;
+  background-color: #A7DFFF;
+}
+/* line 12, ../scss/style.scss */
+.colorBox .orange {
+  display: block;
+  width: 25%;
+  height: 10px;
+  background-color: #78CEFF;
+}
+/* line 18, ../scss/style.scss */
+.colorBox .blue {
+  display: inline-block;
+  width: 25%;
+  height: 10px;
+  background-color: #66AFD9;
+}
+/* line 24, ../scss/style.scss */
+.colorBox .lightBlue {
+  display: inline-block;
+  width: 25%;
+  height: 10px;
+  background-color: #42718C;
+}
+
+/* line 31, ../scss/style.scss */
+.jumbotron {
+  font-family: 'Nunito', sans-serif;
+  color: #787878 !important;
+  background-color: white !important;
+}
+/* line 35, ../scss/style.scss */
+.jumbotron .cta {
+  text-align: center;
+}
+/* line 47, ../scss/style.scss */
+.jumbotron img {
+  margin: 0 auto !important;
+}
+
+/* line 51, ../scss/style.scss */
+.tri {
+  font-family: 'Nunito', sans-serif;
+  padding: 50px 0;
+  color: #787878 !important;
+}
+/* line 55, ../scss/style.scss */
+.tri .features {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+/* line 71, ../scss/style.scss */
+.orangeFeature {
+  padding: 40px 0;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color: #78CEFF;
+}
+/* line 76, ../scss/style.scss */
+.orangeFeature img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+/* line 82, ../scss/style.scss */
+.contact {
+  font-family: 'Nunito', sans-serif;
+  color: #787878 !important;
+  padding: 50px 0;
+  text-align: center;
+}
+/* line 88, ../scss/style.scss */
+.contact .cta {
+  border: 1px solid #70b9da;
+  background-color: #70b9da;
+  color: white !important;
+  padding: 25px;
+}
+
+/* line 95, ../scss/style.scss */
+.commentSection {
+  font-family: 'Nunito', sans-serif;
+  color: #787878 !important;
+  padding: 50px 0;
+}
+
+/* line 100, ../scss/style.scss */
+footer {
+  font-family: 'Nunito', sans-serif;
+  padding: 40px 0;
+  color: white;
+  background: black;
+}
+/* line 105, ../scss/style.scss */
+footer li {
+  float: left;
+  padding: 0 10px;
+  list-style: none;
+}
+/* line 110, ../scss/style.scss */
+footer a {
+  color: white;
+}
+/* line 113, ../scss/style.scss */
+footer p {
+  float: right;
+}
