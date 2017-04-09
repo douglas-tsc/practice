@@ -2,11 +2,12 @@ import React from 'react';
 import {auth} from './firebase';
 
 const User = ({user}) => (
-  <div>
-    <p>{user.displayName}</p>
-    <img src={user.photoURL} alt={user.displayName} />
-    <p>{user.email}</p>
-    <button onClick={() => auth.signOut()}>Sign Out</button>
+  <div className='flex items-center flex-column'>
+    <p className='ma0'>You are signed in as</p>
+    <p className='mv1'>{user.displayName}</p>
+    <button
+      className='mv2'
+      onClick={() => auth.signOut()}>Sign Out</button>
   </div>
 );
 
