@@ -1,0 +1,20 @@
+{
+  "name": "firstFlight",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "db": "json-server --watch db.json"
+  },
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "graphql": "^0.9.3",
+    "json-server": "^0.10.0",
+    "lodash": "^4.17.4",
+    "nodemon": "^1.11.0"
+  }
+}
