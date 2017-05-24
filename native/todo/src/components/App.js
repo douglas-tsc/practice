@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import { Text, View, TextInput, TouchableHighlight } from 'react-native'
+import { Text, View, TextInput, TouchableHighlight, TouchableOpacity } from 'react-native'
 import s from '../../styles'
 import {connect} from 'react-redux'
+import { ADD_TODO } from '../../reducers'
 
 class Home extends Component {
 
   constructor (props) {
     super(props)
     this.state = {
-      todos: [],
       newTodo: ''
     }
     this.handleChange = this.handleChange.bind(this)
@@ -20,15 +20,14 @@ class Home extends Component {
   }
 
   handlePress () {
-    const todos = [...this.state.todos, this.state.newTodo]
-    this.setState({todos, newTodo: ''})
+    this.setState({newTodo: ''})
   }
 
   render () {
     return (
       <View style={[s.mxc, s.cxc, s.h_100]}>
-        {this.state.todos.map((todo, index) =>
-          <Text key={index}>{todo}</Text>)}
+        {this.props.todos.map((todo, index) =>
+          <Text key={index}>{todo.title}</Text>)}
         <TextInput onChangeText={this.handleChange}
           value={this.state.newTodo}
           style={s.w_100}
@@ -36,13 +35,22 @@ class Home extends Component {
         <TouchableHighlight onPress={this.handlePress}>
           <Text>Add Todo</Text>
         </TouchableHighlight>
+
+        <TouchableOpacity onPress={this.props.addTodos}>
+          <Text>Add Hoo</Text>
+        </TouchableOpacity>
       </View>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  todos: state
+  todos: state.todos
 })
 
-export const App = connect(mapStateToProps, null)(Home)
+const mapActionsToProps = (dispatch) => ({
+  addTodos () {
+    dispatch({ type: ADD_TODO, payload: {title: 'nam'} })
+  }
+})
+export const App = connect(mapStateToProps, mapActionsToProps)(Home)
