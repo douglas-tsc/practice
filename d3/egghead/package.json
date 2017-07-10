@@ -1,0 +1,13 @@
+{
+  "name": "egghead",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.12"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files index.html src"
+  }
+}
