@@ -1,49 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a name and an image to the page 1`] = `
-<div
-  className="App"
->
-  <div
-    className="App-header"
-  >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
-    <h2>
-      Welcome to React
-    </h2>
-  </div>
-  <div>
-    <h3>
-      John Smith
-    </h3>
-    <img
-      alt="John Smith"
-      src="http://lorempixel.com/200/200/"
-    />
-  </div>
-  <div>
-    <h5>
-      My hobbies:
-    </h5>
-    <ul>
-      <li>
-        coding
-      </li>
-      <li>
-        writing
-      </li>
-      <li>
-        skiing
-      </li>
-    </ul>
-  </div>
-</div>
-`;
-
 exports[`renders a name, an image and a list of hobbies to the page 1`] = `
 <div
   className="App"
