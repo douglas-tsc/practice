@@ -5,18 +5,13 @@ import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 import store from './store'
 
-const render = () => {
-  const state = store.getState()
-  ReactDOM.render(<App {...state} />, document.getElementById('root'))
-}
+import { Provider } from 'react-redux'
 
-render()
-store.subscribe(render)
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
 
-// setTimeout(() => {
-//   store.dispatch({
-//     type: 'TODO_ADD',
-//     payload: { id: 4, name: 'New ToDo', isComplete: false }
-//   })
-// }, 1000)
 registerServiceWorker()
