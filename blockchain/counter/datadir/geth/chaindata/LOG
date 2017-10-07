@@ -104,3 +104,15 @@
 10:34:35.472302 db@open done T·7.678463ms
 10:38:55.538553 db@close closing
 10:38:55.539051 db@close done T·494.076µs
+=============== Oct 7, 2017 (IST) ===============
+09:16:48.329947 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:16:48.330962 version@stat F·[1 2] S·2MiB[243B 2MiB] Sc·[0.25 0.03]
+09:16:48.331031 db@open opening
+09:16:48.331164 journal@recovery F·1
+09:16:48.334671 journal@recovery recovering @25
+09:16:48.337742 memdb@flush created L0@27 N·411 S·25KiB "\x014l..\x84\x86\xaf,v58185":"\xfc\xe4\xfa..@\v\x8f,v58275"
+09:16:48.340433 version@stat F·[2 2] S·2MiB[26KiB 2MiB] Sc·[0.50 0.03]
+09:16:48.342230 db@janitor F·6 G·0
+09:16:48.342294 db@open done T·11.2223ms
+09:45:01.740383 db@close closing
+09:45:01.740921 db@close done T·526.627µs
