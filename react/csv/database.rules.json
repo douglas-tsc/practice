@@ -1,0 +1,40 @@
+// These were rules for the spirit animal upload app
+
+// {
+//   "rules": {
+//     ".read": "true",
+//       "users": {
+//         "$userId": {
+//           ".write": "$userId === auth.uid"
+//         }
+//       }
+//   }
+// }
+
+
+// This is what it is supposed to be for messaging app
+// {
+//   "rules": {
+//     ".read": "true",
+//     "users": {
+//       "$user":{
+//        ".write":"newData.exists() || data.child('uid').val() == auth.uid",
+//        ".validate": "newData.hasChildren(['displayName', 'photoURL'])"
+//       }
+//     },
+//     "messages":{
+//       "$message": {
+//         ".write":"newData.exists() || data.child('uid').val() == auth.uid || root.child('admins').child(auth.uid).val() == true",
+//         ".validate": "newData.hasChildren(['content','timeStamp','uid'])"
+//       }
+//     }
+//   }
+// }
+
+// This is default
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
