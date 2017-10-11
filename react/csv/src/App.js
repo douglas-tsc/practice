@@ -7,7 +7,14 @@ import { db } from './firebase'
 class App extends Component {
   componentDidMount () {
     csv.map(item => {
+      const newRecord = db
+        .collection('users')
+        .doc(item.UUID)
+        .collection('records')
+        .doc()
+
       const data = {
+        recordId: newRecord,
         Date: item.Date,
         create_date: item.create_date,
         account_id: item.account_id,
@@ -31,14 +38,9 @@ class App extends Component {
         impression: item.impression,
         click: item.click
       }
-      return db
-        .collection('users')
-        .doc(item.UUID)
-        .collection('records')
-        .add(data)
-        .catch(function (error) {
-          console.error('Error adding document: ', error)
-        })
+      return newRecord.set(data).catch(function (error) {
+        console.error('Error adding document: ', error)
+      })
     })
   }
   render () {
