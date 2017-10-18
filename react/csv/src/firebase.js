@@ -3,12 +3,12 @@ import firebase from 'firebase';
 require('firebase/firestore');
 
 const config = {
-  apiKey: 'AIzaSyBLm-M-hjnS9x3piyS0kER1fHk-29eptB8',
-  authDomain: 'frontend-2ba5a.firebaseapp.com',
-  databaseURL: 'https://frontend-2ba5a.firebaseio.com',
-  projectId: 'frontend-2ba5a',
-  storageBucket: 'frontend-2ba5a.appspot.com',
-  messagingSenderId: '793373377314',
+  apiKey: "AIzaSyATAtgPhR4io5-ShsobnD5bic6U2rJRZao",
+    authDomain: "openup-8e7d9.firebaseapp.com",
+    databaseURL: "https://openup-8e7d9.firebaseio.com",
+    projectId: "openup-8e7d9",
+    storageBucket: "openup-8e7d9.appspot.com",
+    messagingSenderId: "126862670800"
 };
 firebase.initializeApp(config);
 

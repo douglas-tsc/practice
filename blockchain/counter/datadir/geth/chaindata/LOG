@@ -116,3 +116,23 @@
 09:16:48.342294 db@open done T·11.2223ms
 09:45:01.740383 db@close closing
 09:45:01.740921 db@close done T·526.627µs
+=============== Oct 18, 2017 (IST) ===============
+10:40:49.963519 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:40:49.964923 version@stat F·[2 2] S·2MiB[26KiB 2MiB] Sc·[0.50 0.03]
+10:40:49.964957 db@open opening
+10:40:49.965471 journal@recovery F·1
+10:40:49.968783 journal@recovery recovering @28
+10:40:49.970355 memdb@flush created L0@30 N·109 S·8KiB "\v\x8c\x1d..\x8d\x19\x89,v58534":"\xfa\x8f\xd4..\xe8oy,v58522"
+10:40:49.972983 version@stat F·[3 2] S·2MiB[34KiB 2MiB] Sc·[0.75 0.03]
+10:40:49.975811 db@janitor F·7 G·0
+10:40:49.975877 db@open done T·10.89768ms
+10:43:44.267283 table@compaction L0·3 -> L1·2 S·2MiB Q·58621
+10:43:44.355660 table@build created L1@33 N·37393 S·2MiB "\x008\xaa..\x00yg,v53861":"h\x00\x00..{\xce\x01,v46028"
+10:43:44.409528 table@build created L1@34 N·11633 S·657KiB "h\x00\x00..\xce\x01t,v46026":"\xff\xcf'..\x89\xb2\xd2,v54715"
+10:43:44.409650 version@stat F·[0 2] S·2MiB[0B 2MiB] Sc·[0.00 0.03]
+10:43:44.410075 table@compaction committed F-3 S+6KiB Ke·0 D·177 T·142.68695ms
+10:43:44.410311 table@remove removed @30
+10:43:44.410498 table@remove removed @27
+10:43:44.415368 table@remove removed @24
+10:43:44.415921 table@remove removed @22
+10:43:44.416172 table@remove removed @23
