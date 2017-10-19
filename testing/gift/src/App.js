@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import Gift from './components/Gifts/Gifts'
+import { max_number } from './helpers'
 
 class App extends Component {
   state = {
@@ -8,10 +10,17 @@ class App extends Component {
   }
   addGift = () => {
     const { gifts } = this.state
-    const ids = this.state.gifts.map(gift => gift.id)
-    const max_id = ids.length > 0 ? Math.max(...ids) : 0
-    gifts.push({ id: max_id + 1 })
+    gifts.push({
+      id: max_number(this.state.gifts.map(gift => gift.id)) + 1
+    })
+    this.setState({ gifts })
   }
+
+  removeGift = id => {
+    const gifts = this.state.gifts.filter(gift => gift.id !== id)
+    this.setState({ gifts })
+  }
+
   render () {
     return (
       <div className='App'>
@@ -22,6 +31,16 @@ class App extends Component {
         <button data-test='addButton' onClick={this.addGift}>
           Add
         </button>
+        <ul data-test='addList'>
+          {this.state.gifts &&
+            this.state.gifts.map(gift => (
+              <li key={gift.id}>
+                <Gift id={gift.id} removeGift={this.removeGift}>
+                  {gift.id}
+                </Gift>
+              </li>
+            ))}
+        </ul>
       </div>
     )
   }

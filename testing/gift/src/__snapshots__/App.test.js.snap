@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`App renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -38,6 +38,9 @@ ShallowWrapper {
         >
           Add
         </button>,
+        <ul
+          data-test="addList"
+        />,
       ],
       "className": "App",
     },
@@ -105,6 +108,18 @@ ShallowWrapper {
         "rendered": "Add",
         "type": "button",
       },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "data-test": "addList",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "ul",
+      },
     ],
     "type": "div",
   },
@@ -135,6 +150,9 @@ ShallowWrapper {
           >
             Add
           </button>,
+          <ul
+            data-test="addList"
+          />,
         ],
         "className": "App",
       },
@@ -201,6 +219,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Add",
           "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "data-test": "addList",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "ul",
         },
       ],
       "type": "div",
