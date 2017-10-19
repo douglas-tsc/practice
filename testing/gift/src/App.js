@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Gift from './components/Gifts/Gifts'
-import { max_number } from './helpers'
+import { maxNumber } from './helpers'
 
 class App extends Component {
   state = {
@@ -11,7 +11,7 @@ class App extends Component {
   addGift = () => {
     const { gifts } = this.state
     gifts.push({
-      id: max_number(this.state.gifts.map(gift => gift.id)) + 1
+      id: maxNumber(this.state.gifts.map(gift => gift.id)) + 1
     })
     this.setState({ gifts })
   }

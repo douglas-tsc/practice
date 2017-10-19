@@ -36,6 +36,17 @@ describe('App', () => {
     })
   })
 
+  describe('When the user wants to add an entry', () => {
+    beforeEach(() => {
+      app.setState({ gifts: [] })
+    })
+
+    it(`adds the gift to state`, () => {
+      app.instance().addGift()
+      expect(app.state().gifts).toEqual([{ id: 1 }])
+    })
+  })
+
   describe('When the user wants to remove an entry', () => {
     beforeEach(() => {
       app.instance().removeGift(1)
