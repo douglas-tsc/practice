@@ -1,0 +1,8 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    allow read;
+    match /databases/frontend-2ba5a/documents/students/{students} {
+allow write : if request.auth !== null;
+    }
+  }
+}
