@@ -1,0 +1,281 @@
+eth.accounts
+miner.start
+miner.start()
+miner.stop()
+eth.blockNUmber
+eth.blockNumber
+eth.blockNumbere
+eth.accounts
+eth.getBalance(eth.accounts[0])
+miner.start()
+miner.stop()
+eth.getBalance(eth.accounts[0])
+eth.getBalance(eth.accounts[1])
+eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(3, "ether")})
+eth.getBalance(eth.accounts[0])
+eth.getBalance(eth.accounts[1])
+miner.start()
+miner.stop()
+eth.getBalance(eth.accounts[0])
+eth.getBalance(eth.accounts[1])
+web3.fromWei(eth.getBalance(eth.accounts[1]), "ether")
+eth.getTransaction("XYZ123")
+eth.getTransaction("0x00ab6cbc9fceed1b7964191901df49d5bef7e5b5c41a744316f91f517737e01d")
+var counterCode = '6060604052341561000f57600080fd5b600160008190555060c9806100256000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636d4ce63c14604e578063d09de08a146074575b600080fd5b3415605857600080fd5b605e6086565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b6084608f565b005b60008054905090565b6001600054016000819055505600a165627a7a7230582099467c70984de3ab9d222c69bb6bed582b82a8dadd298fd35bbb28c37b44cd520029Josh'
+counterCode
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);eth.sendTransaction(
+  {
+    from: eth.accounts[1],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+eth.sendTransaction(
+  {
+    from: eth.accounts[1],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+eth.sendTransaction(
+  {
+    from: eth.accounts[1],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);eth.sendTransaction(
+  {
+    from: eth.accounts[1],
+    data: "0x6060604052341561000f57600080fd5b600160008190555060c9806100256000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636d4ce63c14604e578063d09de08a146074575b600080fd5b3415605857600080fd5b605e6086565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b6084608f565b005b60008054905090565b6001600054016000819055505600a165627a7a7230582099467c70984de3ab9d222c69bb6bed582b82a8dadd298fd35bbb28c37b44cd520029Josh",
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+counterCode
+eth.sendTransaction(
+  {
+    from: eth.accounts[1],
+    data: "0x6060604052341561000f57600080fd5b600160008190555060c9806100256000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636d4ce63c14604e578063d09de08a146074575b600080fd5b3415605857600080fd5b605e6086565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b6084608f565b005b60008054905090565b6001600054016000819055505600a165627a7a7230582099467c70984de3ab9d222c69bb6bed582b82a8dadd298fd35bbb28c37b44cd520029",
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+eth.sendTransaction(
+  {
+    from: eth.accounts[1],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);eth.sendTransaction(
+  {
+    from: eth.accounts[1],
+    data: "0x6060604052341561000f57600080fd5b600160008190555060c9806100256000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636d4ce63c14604e578063d09de08a146074575b600080fd5b3415605857600080fd5b605e6086565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b6084608f565b005b60008054905090565b6001600054016000819055505600a165627a7a7230582099467c70984de3ab9d222c69bb6bed582b82a8dadd298fd35bbb28c37b44cd520029Josh",
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+var counterCode = "6060604052341561000f57600080fd5b600160008190555060c9806100256000396000f3006060604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680636d4ce63c14604e578063d09de08a146074575b600080fd5b3415605857600080fd5b605e6086565b6040518082815260200191505060405180910390f35b3415607e57600080fd5b6084608f565b005b60008054905090565b6001600054016000819055505600a165627a7a7230582099467c70984de3ab9d222c69bb6bed582b82a8dadd298fd35bbb28c37b44cd520029"
+counterCode
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + counterCode,
+    gas: 100
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+eth.getBalance(eth.accounts[1])
+miner.start()
+miner.stop()
+eth.getBalance(eth.accounts[1])
+miner.start()
+miner.stop()
+eth.getBalance(eth.accounts[1])
+miner.start(1)
+miner.stop()
+eth.getBalance(eth.accounts[1])
+eth.getBalance(eth.accounts[0])
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + counterCode,
+    gas: 100
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+miner.stop()
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + counterCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+var contractAdd = "0x5A5AE8BD59Fb96d614EC1622b7c8b75aA0EE67Bb"
+eth.getCode(contractAdd)
+txpool.status
+miner.start()
+miner.stop()
+eth.getCode(contractAdd)
+ls
+var abi = JSON.parse('[{"constant":true,"inputs":[],"name":"get","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"increment","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]')
+abi
+var Counter = eth.contract(abi)
+contractAddr
+contractAdd
+var counter = Counter.at(contractAdd)
+counter
+counter.get()
+counter.increment.sendTransaction({from: eth.accounts[0]})
+miner.start()
+miner.stop()
+counter.get()
+ls
+var contract = 6060604052341561000f57600080fd5b5b61021f8061001f6000396000f30060606040526000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806323732d881461004957806369d640fd1461009e575b600080fd5b341561005457600080fd5b61009c60048080359060200190919080359060200190919080357cffffffffffffffffffffffffffffffffffffffffffffffffffffffffff191690602001909190505061011e565b005b34156100a957600080fd5b6100c8600480803590602001909190803590602001909190505061018f565b60405180827cffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167cffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b806000846103e88110151561012f57fe5b6064020160005b50836103e88110151561014557fe5b600a91828204019190066003025b6101000a81548162ffffff02191690837d010000000000000000000000000000000000000000000000000000000000900402179055505b505050565b6000826103e88110151561019f57fe5b6064020160005b50816103e8811015156101b557fe5b600a91828204019190066003025b915091509054906101000a90047d01000000000000000000000000000000000000000000000000000000000002815600a165627a7a7230582010c01563d2d2a2b79467744f8fe2603c82800f533f7cfcf809117fb423b520c70029
+var contract = '6060604052341561000f57600080fd5b5b61021f8061001f6000396000f30060606040526000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806323732d881461004957806369d640fd1461009e575b600080fd5b341561005457600080fd5b61009c60048080359060200190919080359060200190919080357cffffffffffffffffffffffffffffffffffffffffffffffffffffffffff191690602001909190505061011e565b005b34156100a957600080fd5b6100c8600480803590602001909190803590602001909190505061018f565b60405180827cffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167cffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815260200191505060405180910390f35b806000846103e88110151561012f57fe5b6064020160005b50836103e88110151561014557fe5b600a91828204019190066003025b6101000a81548162ffffff02191690837d010000000000000000000000000000000000000000000000000000000000900402179055505b505050565b6000826103e88110151561019f57fe5b6064020160005b50816103e8811015156101b557fe5b600a91828204019190066003025b915091509054906101000a90047d01000000000000000000000000000000000000000000000000000000000002815600a165627a7a7230582010c01563d2d2a2b79467744f8fe2603c82800f533f7cfcf809117fb423b520c70029'
+contract
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + contractCode,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + contract,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+miner.start()
+miner.stop()
+cat MillionEtherPage_sol_MillionEtherPage.abi | pbcopy
+var abi = JSON.parse('[{"constant":false,"inputs":[{"name":"x","type":"uint256"},{"name":"y","type":"uint256"},{"name":"color","type":"bytes3"}],"name":"colorPixel","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"name":"pixels","outputs":[{"name":"","type":"bytes3"}],"payable":false,"stateMutability":"view","type":"function"}]')
+var MillionEtherPage = eth.contract(abi);
+var mep = MillionEtherPage.at(contractAddr)
+var MillionEtherPage = eth.contract(abi);eth.sendTransaction(
+...   {
+......     from: eth.accounts[0],
+......     data: "0x" + contract,
+......     gas: 1000000
+......   },
+...   function(err, tx) {
+......     console.log(err, tx);
+......   }
+... );
+eth.sendTransaction(
+...   {
+......     from: eth.accounts[0],
+......     data: "0x" + contract,
+......     gas: 1000000
+......   },
+...   function(err, tx) {
+......     console.log(err, tx);
+......   }
+... );
+contract
+eth.sendTransaction(
+...   {
+......     from: eth.accounts[0],
+......     data: "0x" + contract,
+......     gas: 1000000
+......   },
+...   function(err, tx) {
+......     console.log(err, tx);
+......   }
+... )
+eth.sendTransaction(
+  {
+    from: eth.accounts[0],
+    data: "0x" + contract,
+    gas: 1000000
+  },
+  function(err, tx) {
+    console.log(err, tx);
+  }
+);
+contractAddr='0x5A5AE8BD59Fb96d614EC1622b7c8b75aA0EE67Bb'
+var mep = MillionEtherPage.at(contractAddr)
+mep
+mep.pixels(1,2)
+mep.colorPixel.sendTransaction(1, 2, "0xA62A40", { from: eth.accounts[0] })
+miner.start()
+miner.stop()
+mep.pixels(1,2)
+var mining_threads = 1
+function checkWork() {
+    if (eth.getBlock("pending").transactions.length > 0) {
+        if (eth.mining) return;
+        console.log("== Pending transactions! Mining...");
+        miner.start(mining_threads);
+    } else {
+        miner.stop();
+        console.log("== No transactions! Mining stopped.");
+    }
+}
+eth.filter("latest", function(err, block) { checkWork(); });
+eth.filter("pending", function(err, block) { checkWork(); });
+checkWork();
+loadScript("../scripts/mineWhenTx.js")
+eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(3, "ether")})
