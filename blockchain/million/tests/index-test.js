@@ -15,6 +15,6 @@ describe('App template', () => {
 
   it('displays a welcome message', () => {
     require('src/index')
-    expect(app.innerHTML).toContain('Welcome to ui')
+    expect(app.innerHTML).toContain('Welcome to million-ether-page')
   })
 })

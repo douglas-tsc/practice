@@ -1,3 +1,3 @@
-# ui
+# million-ether-page
 
-Describe ui here.
+Describe million-ether-page here.

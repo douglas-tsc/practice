@@ -1,7 +1,7 @@
 {
-  "name": "ui",
+  "name": "million-ether-page",
   "version": "1.0.0",
-  "description": "Describe ui here",
+  "description": "Describe million-ether-page here",
   "private": true,
   "scripts": {
     "build": "nwb build-web-app",
@@ -13,15 +13,10 @@
   },
   "dependencies": {
     "get-pixels": "^3.3.0",
-    "web3": "^1.0.0-beta.26"
+    "web3": "^1.0.0-beta.30"
   },
   "devDependencies": {
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "nwb": "0.19.x"
+    "nwb": "0.21.x"
   },
   "author": "",
   "license": "MIT",
