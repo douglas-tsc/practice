@@ -25,6 +25,7 @@ contract Lottery {
         uint index = random() % players.length;
         players[index].transfer(this.balance);
         //   @notice resets the players array after every payout
+        
         players = new address[](0);
     }
     
